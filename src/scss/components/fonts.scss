@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url('../fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bungee';
+  src: url('../fonts/Bungee/Bungee_Color_Fonts/BungeeColor-Regular_svg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilbert';
+  src: url('../fonts/Gilbert_1.004_alpha/Gilbert-Color-Bold-Preview_1004.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bixa';
+  src: url('../fonts/NTBixa-Color-original/NTBixa-Color.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Abelone';
+  src: url('../fonts/Abelone/Abelone-FREE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playbox';
+  src: url('../fonts/Playbox/Playbox-FREE.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KairosSans';
+  src: url('../fonts/KairosSans/KairosSans_Variable.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FF Meta VF';
+  src: url('../fonts/FFMeta/MetaVariableDemo-Set.woff2') format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AmstelvarVF';
+  font-display: swap;
+  src: url('../fonts/Amstelvar/AmstelvarAlpha-VF.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Gingham';
+  font-display: swap;
+  src: url('../fonts/Gingham/Gingham.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: Decovar;
+  src: url('../fonts/Decovar/DecovarAlpha-VF.ttf') format("truetype");
+  font-display: swap;
+}
+
+.font {
+  font: 160px/1 Arial Black, sans-serif;
+  color: yellowgreen;
+}
+
+.fonts--colored {
+  .font {
+    &:nth-child(1) {
+      color: tomato;
+    }
+    &:nth-child(3) {
+      color: steelblue;
+    }
+    &:nth-child(4) {
+      color: gold;
+    }
+  }
+}
+
+.font--pacifico {
+  font-family: 'Pacifico-Regular' !important;
+}
+
+.font--gilbert {
+  font-family: 'Gilbert';
+}
+
+.font--bixa {
+  font-family: 'Bixa';
+}
+
+.font--abelone {
+  font-family: 'Abelone';
+}
+
+.font--playbox {
+  font-family: 'Playbox';
+}
+
+.font--kairo {
+  font-family: 'KairosSans';
+}
+
+.font--ffmeta {
+  font-family: 'FF Meta VF';
+}
+
+.font--amstel {
+  font-family: 'AmstelvarVF';
+}
+
+.font--gingham {
+  font-family: 'Gingham';
+}
+
+.font--decovar {
+  font-family: 'Decovar';
+
+  &:nth-child(1) {
+    font-variation-settings: "BLDA" 1000;
+  }
+  &:nth-child(2) {
+    font-variation-settings: "BLDA" 367.3, "TRME" 1000;
+  }
+  &:nth-child(3) {
+    font-variation-settings: "TRMG" 1000;
+  }
+  &:nth-child(4) {
+    font-variation-settings: "BLDA" 913.8, "BLDB" 162.8, "SKLB" 1000;
+  }
+  &:nth-child(5) {
+    font-variation-settings: "TRMD" 1000, "SKLA" 1000;
+  }
+  &:nth-child(6) {
+    font-variation-settings: "TRMC" 1000, "SKLD" 226.7;
+  }
+}
+
+.font--animated {
+  position: relative;
+  font-family: 'KairosSans';
+  font-size: 180px;
+  text-align: center;
+
+  .slide--active & {
+    animation: fontVariations 12s infinite;
+  }
+}
+
+@supports (-webkit-background-clip: text) {
+  .font--animated {
+    background: linear-gradient(to right bottom,
+      indigo 10%, crimson, orange,
+      gold, teal, indigo, purple
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes fontVariations {
+  0% {
+    font-variation-settings: "ital" 0, "wght" 900, "wdth" 75;
+  }
+  50% {
+    font-variation-settings: "ital" 0, "wght" 250, "wdth" 75;
+  }
+  75% {
+    font-variation-settings: "ital" 1, "wght" 250, "wdth" 125;
+  }
+  100% {
+    font-variation-settings: "ital" 0, "wght" 900, "wdth" 75;
+  }
+}
