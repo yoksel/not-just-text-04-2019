@@ -356,13 +356,13 @@
     <h4>Песочницы</h4>
 
     <ul>
-      <li><a href="https://v-fonts.com/">v-fonts.com/</a></li>
+      <li><a href="https://v-fonts.com/">v-fonts.com</a></li>
       <li><a href="https://axis-praxis.org/">axis-praxis.org</a></li>
     </ul>
   </section>
 
   <section class="slide">
-    <h3>Бесплатные шрифты</h3>
+    <h4>Бесплатные шрифты</h4>
 
     <ul>
       <li><a href="https://github.com/adobe-fonts/adobe-variable-font-prototype/releases">Adobe Variable Font Prototype</a></li>
@@ -415,21 +415,100 @@
     </div>
   </section>
 
-
   <section class="slide">
-    <h3>Плюсы</h3>
+    <h4>Существующие форматы</h4>
 
     <ul>
-      <li class="next">широкие возможности</li>
-      <li class="next">хорошая поддержка браузерами</li>
-      <li class="next">интерактивность</li>
-      <li class="next">доступность контента, к которому применен фильтр</li>
+      <li>SBIX (Apple)</li>
+      <li>CBDT/CBLC (Google)</li>
+      <li>COLR/CPAL (Microsoft)</li>
+      <li>SVG Open Type (Mozilla/Adobe)</li>
     </ul>
   </section>
 
-  <section class="slide slide--dark slide--section-title slide--main-title" data-animation="title-animated">
-    <!--=include ../src/components/title.html -->
+  <section class="slide">
+    <h5>SBIX (Apple)</h5>
+
+    <ul>
+      <li>содержит растровые изображения</li>
+      <li>много весит (десятки мегабайт)</li>
+      <li>не входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>MacOS, iOS, и только в приложениях, которые используют системный рендеринг</li>
+      <li>Chrome, Safari  Edge (check it)</li>
+    </ul>
   </section>
+
+  <section class="slide">
+    <h5>CBDT/CBLC (Google)</h5>
+
+    <ul>
+      <li>содержит растровые изображения</li>
+      <li>много весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Android, Chrome OS</li>
+      <li>Chrome Linux, Firefox, Edge (check it)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>COLR/CPAL (Microsoft)</h5>
+
+    <ul>
+      <li>глифы в кривых</li>
+      <li>для каждого символа несколько глифов, которые накладываются друг на друга</li>
+      <li>в будущем можно будет перекрашивать через CSS</li>
+      <li>мало весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Windows с 8.1 в шрифте Segoe UI Emoji.</li>
+      <li>Браузеры: Firefox, Chrome, Safai, Edge (need to check)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>SVG Open Type (Mozilla/Adobe)</h5>
+
+    <ul>
+      <li>глифы в SVG, могут содержать градиенты и растроввые изображения</li>
+      <li>в будущем можно будет перекрашивать через CSS</li>
+      <li>мало весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Illustrator CC 2018+, Photoshop CC 2017+ и InDesign CC 2019+</li>
+      <li>MacOS Mojave</li>
+      <li>Браузеры: Firefox, Edge (need to check)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>Поддержка в браузерах</h5>
+
+    <ul>
+      <li>Edge: все форматы</li>
+      <li>Firefox: SVG, COLR, SBIX</li>
+      <li>Chrome: все, кроме SVG Open Type</li>
+      <li>Safari: SBIX, COLR, SVG Open Type (Mojave)</li>
+    </ul>
+  </section>
+
 
   <section class="slide slide--section-title slide--questions">
     <h2>Вопросы?</h2>

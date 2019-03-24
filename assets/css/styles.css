@@ -253,7 +253,7 @@ UL {
 .slide--dark {
   background: #000; }
 
-.slide H3 {
+.slide H3, .slide H4, .slide H5 {
   margin-top: 0;
   margin-bottom: .35em; }
 

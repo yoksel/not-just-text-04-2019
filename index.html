@@ -356,13 +356,13 @@
     <h4>Песочницы</h4>
 
     <ul>
-      <li><a href="https://v-fonts.com/">v-fonts.com/</a></li>
+      <li><a href="https://v-fonts.com/">v-fonts.com</a></li>
       <li><a href="https://axis-praxis.org/">axis-praxis.org</a></li>
     </ul>
   </section>
 
   <section class="slide">
-    <h3>Бесплатные шрифты</h3>
+    <h4>Бесплатные шрифты</h4>
 
     <ul>
       <li><a href="https://github.com/adobe-fonts/adobe-variable-font-prototype/releases">Adobe Variable Font Prototype</a></li>
@@ -415,225 +415,100 @@
     </div>
   </section>
 
-
   <section class="slide">
-    <h3>Плюсы</h3>
+    <h4>Существующие форматы</h4>
 
     <ul>
-      <li class="next">широкие возможности</li>
-      <li class="next">хорошая поддержка браузерами</li>
-      <li class="next">интерактивность</li>
-      <li class="next">доступность контента, к которому применен фильтр</li>
+      <li>SBIX (Apple)</li>
+      <li>CBDT/CBLC (Google)</li>
+      <li>COLR/CPAL (Microsoft)</li>
+      <li>SVG Open Type (Mozilla/Adobe)</li>
     </ul>
   </section>
 
-  <section class="slide slide--dark slide--section-title slide--main-title" data-animation="title-animated">
-    <h2 class="main-title">
-      <svg class="demo demo--full aberrations">
-        <filter
-          id="filter-aberrations" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feTurbulence
-            type="fractalNoise" baseFrequency="0.01" numOctaves="1" seed="2" stitchTiles="stitch"
-            result="turbulence"
-            class="aberrations__turbulence"/>
-    
-          <feFlood
-            flood-color="#ff5b05" flood-opacity="1"
-            result="flood"/>
-          <feFlood
-            flood-color="#8dff09" flood-opacity="1"
-            result="flood1"/>
-          <feFlood
-            flood-color="#0a7cff" flood-opacity="1"
-            result="flood2"/>
-    
-          <feComposite
-            in="flood" in2="SourceAlpha" operator="in"
-            result="composite"/>
-          <feComposite
-            in="flood1" in2="SourceAlpha" operator="in"
-            result="composite1"/>
-          <feComposite
-            in="flood2" in2="SourceAlpha" operator="in"
-            result="composite2"/>
-    
-          <feDisplacementMap
-            scale="0" xChannelSelector="R" yChannelSelector="B"
-            in="composite" in2="turbulence"
-            result="displacementMap"
-            class="aberrations__displacementMap-1"/>
-          <feDisplacementMap
-            scale="0" xChannelSelector="G" yChannelSelector="B"
-            in="composite1" in2="turbulence"
-            result="displacementMap1"
-            class="aberrations__displacementMap-2"/>
-          <feDisplacementMap
-            scale="0" xChannelSelector="B" yChannelSelector="A"
-            in="composite2" in2="turbulence"
-            result="displacementMap2"
-            class="aberrations__displacementMap-3"/>
-    
-          <feBlend
-            mode="screen"
-            in="SourceGraphic" in2="displacementMap"
-            result="blend"/>
-          <feBlend
-            mode="screen"
-            in="blend" in2="displacementMap1"
-            result="blend1"/>
-          <feBlend
-            mode="screen"
-            in="blend1" in2="displacementMap2"
-            result="blend2"/>
-        </filter>
-    
-        <text
-          x="50%" y="50%" dy=".31em"
-          text-anchor="middle"
-          fill="white"
-          filter="url(#filter-aberrations)"
-          id="text"
-        >SVG-фильтры</text>
-      </svg>
-    </h2>
-    
-    <script type="text/javascript">
-      (function() {
-        var requestAnimationFrame = window.requestAnimationFrame
-          || window.mozRequestAnimationFrame
-          || window.webkitRequestAnimationFrame
-          || window.msRequestAnimationFrame;
-    
-        const turbulence = document.querySelector('.aberrations__turbulence');
-        const offset = document.querySelector('.aberrations__offset');
-        const displacementMap1 = document.querySelector('.aberrations__displacementMap-1');
-        const displacementMap2 = document.querySelector('.aberrations__displacementMap-2');
-        const displacementMap3 = document.querySelector('.aberrations__displacementMap-3');
-    
-        const min = 0;
-        let counter = 0;
-        const maxCounter = 55;
-        let isRunning = false;
-        const delay = 1; // s
-        let direction = 'forward';
-        const duration = 0.03; // s
-        const pausa = 1; // s
-    
-        const changedElems = [
-          {
-            elem: displacementMap1,
-            propName: 'scale',
-            initial: 0,
-            step: 2,
-          },
-          {
-            elem: displacementMap2,
-            propName: 'scale',
-            initial: 0,
-            step: 2,
-          },
-          {
-            elem: displacementMap3,
-            propName: 'scale',
-            initial: 0,
-            step: 2,
-          },
-        ];
-    
-        function changeProp() {
-          if(!isRunning) {
-            return;
-          }
-    
-          let hasNextStep = false;
-          let currentDuration = duration;
-    
-          changedElems.forEach(item => {
-            const delay = item.delay || 0;
-            let itemCounter = item.counter || counter;
-    
-            if(itemCounter > delay) {
-              let newValue = itemCounter * item.step + item.initial;
-    
-              if(direction === 'backward'){
-                itemCounter++;
-              }
-              else {
-                itemCounter--;
-              }
-    
-              const itemMax = item.max || maxCounter;
-    
-              if(itemCounter <= itemMax) {
-                hasNextStep = true;
-    
-                item.elem.setAttribute(item.propName, newValue);
-              }
-            }
-            else {
-              hasNextStep = true;
-            }
-          });
-    
-          if(direction === 'forward') {
-            counter++;
-          }
-          else {
-            counter--;
-          }
-    
-          if (counter >= maxCounter) {
-            direction = 'backward';
-          }
-          else if (counter <= 0) {
-            direction = 'forward';
-            currentDuration = pausa;
-    
-            const newFreq = 0.0005 + Math.random() * 0.015;
-    
-            turbulence.setAttribute('seed', turbulence.seed.baseVal + 1);
-            turbulence.setAttribute('baseFrequency', newFreq);
-          }
-    
-          setTimeout(() => {
-              requestAnimationFrame(changeProp);
-            }, currentDuration * 1000);
-        }
-    
-        function setInitial() {
-          direction = 'forward';
-          counter = 0;
-    
-          changedElems.forEach(item => {
-            let newValue = item.initial;
-    
-            const attrName = item.attrName || item.propName;
-    
-            item.elem.setAttribute(attrName, newValue);
-    
-          });
-        }
-    
-        // ------------------------------
-    
-        window['title-animated'] = {
-          play: () => {
-            setTimeout(() => {
-              if(!isRunning) {
-                requestAnimationFrame(changeProp);
-                isRunning = true;
-              }
-            }, delay * 1000);
-          },
-          pause: () => {
-            setInitial();
-            isRunning = false;
-          }
-        };
-      })(window);
-    </script>
-    
+  <section class="slide">
+    <h5>SBIX (Apple)</h5>
+
+    <ul>
+      <li>содержит растровые изображения</li>
+      <li>много весит (десятки мегабайт)</li>
+      <li>не входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>MacOS, iOS, и только в приложениях, которые используют системный рендеринг</li>
+      <li>Chrome, Safari  Edge (check it)</li>
+    </ul>
   </section>
+
+  <section class="slide">
+    <h5>CBDT/CBLC (Google)</h5>
+
+    <ul>
+      <li>содержит растровые изображения</li>
+      <li>много весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Android, Chrome OS</li>
+      <li>Chrome Linux, Firefox, Edge (check it)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>COLR/CPAL (Microsoft)</h5>
+
+    <ul>
+      <li>глифы в кривых</li>
+      <li>для каждого символа несколько глифов, которые накладываются друг на друга</li>
+      <li>в будущем можно будет перекрашивать через CSS</li>
+      <li>мало весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Windows с 8.1 в шрифте Segoe UI Emoji.</li>
+      <li>Браузеры: Firefox, Chrome, Safai, Edge (need to check)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>SVG Open Type (Mozilla/Adobe)</h5>
+
+    <ul>
+      <li>глифы в SVG, могут содержать градиенты и растроввые изображения</li>
+      <li>в будущем можно будет перекрашивать через CSS</li>
+      <li>мало весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Illustrator CC 2018+, Photoshop CC 2017+ и InDesign CC 2019+</li>
+      <li>MacOS Mojave</li>
+      <li>Браузеры: Firefox, Edge (need to check)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>Поддержка в браузерах</h5>
+
+    <ul>
+      <li>Edge: все форматы</li>
+      <li>Firefox: SVG, COLR, SBIX</li>
+      <li>Chrome: все, кроме SVG Open Type</li>
+      <li>Safari: SBIX, COLR, SVG Open Type (Mojave)</li>
+    </ul>
+  </section>
+
 
   <section class="slide slide--section-title slide--questions">
     <h2>Вопросы?</h2>
