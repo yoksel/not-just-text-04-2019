@@ -8,8 +8,11 @@
 }
 
 .about-slide__photo {
-  float: right;
   width: 200px;
   height: 200px;
-  margin-left: 2.5em;
+  margin-left: auto !important;
+}
+
+.about-slide__list + .about-slide__list {
+  margin-left: 5rem;
 }

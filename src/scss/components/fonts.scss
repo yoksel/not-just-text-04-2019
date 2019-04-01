@@ -77,6 +77,7 @@
 }
 
 .font {
+  position: relative;
   font: 160px/1 Arial Black, sans-serif;
   color: yellowgreen;
 }
@@ -189,4 +190,15 @@
   100% {
     font-variation-settings: "ital" 0, "wght" 900, "wdth" 75;
   }
+}
+
+.font__tip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 !important;
+  color: #777;
+  font-size: 1rem;
+  font: italic 25px/1 'PT Sans', sans-serif;
 }

@@ -77,6 +77,13 @@
   }
 }
 
+.img {
+  &--full {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .video {
   height: 100%;
 }

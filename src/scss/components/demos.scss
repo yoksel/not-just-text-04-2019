@@ -58,7 +58,28 @@
 }
 
 .demo--upper {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.demo--languages {
+  padding: 0 2rem;
+  align-content: space-evenly;
+
+  .font {
+    height: 190px;
+    margin: 0;
+    padding-bottom: 30px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #000;
+
+    &--big {
+      font-size: 150px;
+    }
+  }
 }
 
 .demo__example {
@@ -111,5 +132,3 @@
 .demo-range__input {
   cursor: pointer;
 }
-
-

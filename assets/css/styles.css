@@ -60,6 +60,10 @@
     font-size: 100px;
     color: #FFF; }
 
+.img--full {
+  width: 100%;
+  height: auto; }
+
 .video {
   height: 100%; }
 
@@ -144,6 +148,7 @@ UL {
   font-display: swap; }
 
 .font {
+  position: relative;
   font: 160px/1 Arial Black, sans-serif;
   color: yellowgreen; }
 
@@ -233,6 +238,16 @@ UL {
   100% {
     font-variation-settings: "ital" 0, "wght" 900, "wdth" 75; } }
 
+.font__tip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 !important;
+  color: #777;
+  font-size: 1rem;
+  font: italic 25px/1 'PT Sans', sans-serif; }
+
 .slide {
   padding: 40px 50px; }
   .slide UL {
@@ -247,6 +262,9 @@ UL {
   right: 25px;
   font-size: 24px; }
 
+.slide--no-label::after {
+  content: none; }
+
 .slide--tiny-padding {
   padding-top: 30px; }
 
@@ -256,6 +274,9 @@ UL {
 .slide H3, .slide H4, .slide H5 {
   margin-top: 0;
   margin-bottom: .35em; }
+
+.slide--main-title H2 {
+  font-weight: normal; }
 
 .slide--tiny-font UL {
   font-size: 20px; }
@@ -268,12 +289,16 @@ UL {
 .slide--section-title {
   padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center; }
 
 /* Titles */
 .slide--section-title H2,
-.slide--section-title H3 {
+.slide--section-title H3,
+.slide--section-title H4 {
+  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -281,12 +306,19 @@ UL {
   line-height: 1.1;
   font-family: 'PT Sans Narrow', sans-serif; }
 
+.slide--section-title H1 {
+  font-size: 130px; }
+
 .slide--section-title H2 {
-  font-size: 140px; }
+  font-size: 115px; }
 
 .slide--section-title H3 {
   font-size: 100px; }
 
+.slide--section-title H4 {
+  font-size: 80px; }
+
+.slide--dark H1,
 .slide--dark H2,
 .slide--dark H3 {
   color: #FFF; }
@@ -326,6 +358,9 @@ UL {
   .slide__tips-wrapper .slide__tip {
     position: static; }
 
+.slide__term {
+  font-style: italic; }
+
 .about-slide__company {
   font-weight: normal;
   color: #777; }
@@ -334,10 +369,12 @@ UL {
   margin-bottom: 0; }
 
 .about-slide__photo {
-  float: right;
   width: 200px;
   height: 200px;
-  margin-left: 2.5em; }
+  margin-left: auto !important; }
+
+.about-slide__list + .about-slide__list {
+  margin-left: 5rem; }
 
 @font-face {
   font-family: KairosSans;
@@ -376,6 +413,22 @@ UL {
 
 .demo--upper {
   text-transform: uppercase; }
+
+.demo--languages {
+  padding: 0 2rem;
+  align-content: space-evenly; }
+  .demo--languages .font {
+    height: 190px;
+    margin: 0;
+    padding-bottom: 30px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: #000; }
+    .demo--languages .font--big {
+      font-size: 150px; }
 
 .demo__example {
   font-size: 250px;
@@ -675,3 +728,52 @@ pre[class*="language-"] {
 .line-highlight {
   background: rgba(255, 213, 0, 0.5);
   mix-blend-mode: darken; }
+
+.figure {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .figure__img-wrapper {
+    flex-grow: 1;
+    overflow: hidden; }
+  .figure__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  .figure--caption-aside {
+    flex-direction: row; }
+    .figure--caption-aside .figure__caption {
+      -webkit-writing-mode: vertical-rl;
+          -ms-writing-mode: tb-rl;
+              writing-mode: vertical-rl; }
+    .figure--caption-aside .figure__caption-content {
+      display: inline-block;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+      background: none; }
+
+.encoding-table {
+  width: 100%;
+  margin-left: 0 !important;
+  padding: 1rem;
+  border: none;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace; }
+  .encoding-table TD,
+  .encoding-table TH {
+    padding: .45rem !important;
+    border: none; }
+  .encoding-table TH {
+    background-color: #EEE !important;
+    color: #999; }
+    .encoding-table TH:empty {
+      background: none !important; }
+  .encoding-table TD {
+    font-family: Georgia, serif; }
+  .encoding-table SMALL {
+    display: none; }
