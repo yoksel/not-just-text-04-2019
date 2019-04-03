@@ -1,5 +1,9 @@
 # Reading list
 
+## ASCII
+
+* [ASCII](https://ethw.org/ASCII)
+
 ## OpenType
 
 * [OpenType specification change log](https://docs.microsoft.com/ru-ru/typography/opentype/spec/changes)
@@ -15,9 +19,16 @@
 
 * [CSS Almanac: font-feature-settings](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
 
+## * [Font features playground](http://clagnut.com/sandbox/css3/)
+
 ## Emoji
 
 * [Why and How I Created Emoji (web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
+* [Articles on Emoji](https://www.unicode.org//press/emoji.html)
+* [Emojipedia](https://emojipedia.org/)
+* (SoftBank is now on Emojipedia)[https://blog.emojipedia.org/softbank-is-now-on-emojipedia/]
+* (SoftBank emoji (Emojipedia))[https://emojipedia.org/softbank/]
+* (Apple iPhone OS 2.2 (Emojipedia))[https://emojipedia.org/apple/iphone-os-2.2/]
 
 ## Color fonts
 
@@ -29,3 +40,5 @@
 * [ChromaCheck: JS for checking color browser fonts support](https://github.com/RoelN/ChromaCheck)
 * [It All Started With Emoji: Color Typography on the Web (css-tricks)](https://css-tricks.com/it-all-started-with-emoji-color-typography-on-the-web/)
 * [OpenType-SVG color fonts (Adobe)](https://helpx.adobe.com/fonts/using/ot-svg-color-fonts.html)
+* [What are OpenType SVG Color Fonts?](https://vectortwist.com/opentype-svg-color-fonts/)
+* [Trajan Color Font (Adobe fonts)](https://fonts.adobe.com/fonts/trajan-color)
