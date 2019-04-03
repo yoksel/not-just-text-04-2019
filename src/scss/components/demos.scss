@@ -5,21 +5,9 @@
   src: url(https://yoksel.github.io/variable-fonts/assets/fonts/KairosSans/KairosSans_Variable.ttf) format("truetype");
 }
 
-// HTML, BODY {
-// display: flex;
-// min-height: 100%;
-// width: 100%;
-// }
-
-// BODY {
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// font: 16px/1.4 Trebuchet MS, Arial, sans-serif;
-// }
-
 .demo {
   position: relative;
+  height: 100%;
 }
 
 .demo--full {
@@ -33,6 +21,7 @@
 .demo--column {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -110,6 +99,10 @@
   .demo--weight & {
     line-height: 1;
   }
+}
+
+.demo__code {
+  margin-bottom: 40px;
 }
 
 .demo-range {

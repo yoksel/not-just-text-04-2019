@@ -20,23 +20,33 @@
   </header>
 
   <section class="slide about-slide"><div>
-    <h3>Бухвалова Юлия, <span class="about-slide__company">LiveJournal</span></h3>
+    <h2 class="visually-hidden">Об авторе</h2>
+    <div class="about-slide__author">
+      <span class="about-slide__name">Бухвалова Юлия</span>
+      <span class="about-slide__company">LiveJournal</span>
+    </div>
 
     <div class="columns">
-      <ul class="about-slide__list next">
-        <li><a href="https://github.com/yoksel/common-words">Common Words</a></li>
-        <li><a href="http://yoksel.github.io/html-tree/">HTML Tree</a></li>
-        <li><a href="http://yoksel.github.io/url-encoder/">URL-encoder для SVG</a></li>
-        <li><a href="http://yoksel.github.io/svg-filters/#/">SVG Filters</a></li>
-      </ul>
+      <div class="column">
+        <ul class="about-slide__list">
+          <li><a href="https://github.com/yoksel/common-words">Common Words</a></li>
+          <li><a href="http://yoksel.github.io/html-tree/">HTML Tree</a></li>
+          <li><a href="http://yoksel.github.io/url-encoder/">URL-encoder для SVG</a></li>
+          <li><a href="http://yoksel.github.io/svg-filters/#/">SVG Filters</a></li>
+        </ul>
+      </div>
 
-      <ul class="about-slide__list next">
-        <li><a href="http://css.yoksel.ru/">css.yoksel.ru</a></li>
-        <li><a href="https://twitter.com/yoksel">@yoksel</a></li>
-        <li><a href="http://codepen.io/yoksel">codepen.io/yoksel</a></li>
-      </ul>
+      <div class="column">
+        <ul class="about-slide__list">
+          <li><a href="http://css.yoksel.ru/">css.yoksel.ru</a></li>
+          <li><a href="https://twitter.com/yoksel">@yoksel</a></li>
+          <li><a href="http://codepen.io/yoksel">codepen.io/yoksel</a></li>
+        </ul>
+      </div>
 
-      <img src="./assets/img/me.jpeg" class="about-slide__photo">
+      <div class="column">
+        <img src="./assets/img/me.jpeg" class="about-slide__photo">
+      </div>
     </div>
   </div></section>
 
@@ -50,7 +60,7 @@
   </div></section>
 
   <section class="slide slide--dark slide--section-title slide--main-title">
-    <h1>Не просто текст</h1>
+    <h2>Не просто текст</h2>
   </section>
 
   <section class="slide">
@@ -100,17 +110,11 @@
         </span>
       </figcaption>
 
-      <!--=include ../src/demos/ascii.html -->
+      <div class="figure__content">
+        <!--=include ../src/demos/ascii.html -->
+      </div>
     </figure>
   </section>
-
-  <!-- <section class="slide slide--section-title">
-    <h3>2<sup>7</sup> = 128</h3>
-  </section>
-
-  <section class="slide slide--section-title">
-    <h3>2<sup>8</sup> = 256</h3>
-  </section> -->
 
   <section class="slide slide--section-title">
     <h3>Расширенные кодировки</h3>
@@ -125,7 +129,9 @@
         </span>
       </figcaption>
 
-      <!--=include ../src/demos/win-1251.html -->
+      <div class="figure__content">
+        <!--=include ../src/demos/win-1251.html -->
+      </div>
     </figure>
   </section>
 
@@ -138,7 +144,9 @@
         </span>
       </figcaption>
 
-      <!--=include ../src/demos/koi8-r.html -->
+      <div class="figure__content">
+        <!--=include ../src/demos/koi8-r.html -->
+      </div>
     </figure>
   </section>
 
@@ -166,6 +174,30 @@
   <section class="slide slide--section-title slide--term">
     <h3>Unicode</h3>
     <p class="slide__term">Универсальная кодировка</p>
+  </section>
+
+  <section class="slide">
+    <h4>История</h4>
+
+    <ul>
+      <li>
+        1988 — первый черновик
+      </li>
+      <li>
+        1991 — опубликована версия 1.0.0
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/standards.png"/>
+        <figcaption class="copyright right">
+            <a href="https://xkcd.ru/927/">xkcd.ru/927/</a>
+        </figcaption>
+    </figure>
   </section>
 
   <section class="slide">
@@ -207,10 +239,34 @@
   </section>
 
   <section class="slide">
+    <h4>Форматы</h4>
+
+    <ul>
+      <li>
+        <code>EOT</code> — поддерживается только в IE
+      </li>
+      <li>
+        <code>OTF</code> — на основе PostScript
+      </li>
+      <li>
+        <code>TTF</code> — на основе TrueType
+      </li>
+      <li>
+        <code>WOFF</code> — <a href="http://www.w3.org/TR/WOFF/">сжатый</a> OpenType шрифт
+      </li>
+      <li>
+        <code>WOFF2</code> — <a href="https://www.w3.org/TR/WOFF2/">более лучше сжатый</a> OpenType шрифт
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide">
     <h4>История</h4>
 
     <ul>
-      <li>Разрабатывается совместными усилиями Microsoft и Adobe на основе TrueType и PostScript</li>
+      <li>1994 — Microsoft разработала технологию <strong>TrueType Open</strong></li>
+      <li>1996 — Adobe присоединяется к разработке; <strong>OpenType</strong> анонсируется как название для комбинированных технологий двух компаний</li>
+      <li>2007 — стандартизируется как <strong>Open Font Format</strong></li>
     </ul>
   </section>
 
@@ -227,28 +283,70 @@
     </ul>
   </section>
 
+  <section class="slide slide--dark slide--section-title">
+    <h2>Кастомные шрифты</h2>
+  </section>
+
   <section class="slide">
+    <h4>Пример кода</h4>
+
+    <pre><code class="language-css">@font-face {
+  font-family: MyFont;
+  src: local('MyFont'),
+    url('path/MyFont.woff2') format('woff2'),
+    url('path/MyFont.woff') format('woff');
+}</code></pre>
+
+  <pre><code class="language-css">BODY {
+  font-family: MyFont, Helvetica, Arial, sans-serif;
+}</code></pre>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <figcaption
+        class="figure__caption">
+        <a
+          class="figure__caption-content"
+          href="https://fonts.google.com/">fonts.google.com</a>
+      </figcaption>
+
+      <div class="figure__img-wrapper">
+        <img
+          class="figure__img"
+          src="./assets/img/google-fonts.png"/>
+      </div>
+    </figure>
+  </section>
+
+  <section class="slide">
+    <h2>Где брать?</h2>
+
     <ul>
       <li>
-        <code>EOT</code> — поддерживается только в IE
+        <a href="https://fonts.google.com/">fonts.google.com</a> — бесплатно
       </li>
       <li>
-        <code>otf</code> — на основе PostScript
+        <a href="https://www.fontsquirrel.com/">fontsquirrel.com</a> — бесплатно
       </li>
+      <li><a href="https://fonts.adobe.com/">fonts.adobe.com</a> — в составе подписки на Creative Cloud</li>
+      <li><a href="https://www.myfonts.com/">myfonts.com</a> — покупка отдельных шрифтов</li>
+      <li><a href="https://www.fontspring.com/license/webfont">fontspring.com</a> — покупка отдельных шрифтов, есть бесплатные</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>Когда использовать?</h2>
+
+    <ul>
       <li>
-        <code>ttf</code> — на основе TrueType
-      </li>
-      <li>
-        <code>woff</code> — <a href="http://www.w3.org/TR/WOFF/">сжатый</a> OpenType шрифт
-      </li>
-      <li>
-        <code>woff2</code> — <a href="https://www.w3.org/TR/WOFF2/">более лучше сжатый</a> OpenType шрифт
+        ????
       </li>
     </ul>
   </section>
 
   <section class="slide slide--dark slide--section-title">
-    <h2>Проблема кастомных шрифтов</h2>
+    <h3>Проблема кастомных шрифтов</h3>
   </section>
 
   <section class="slide">
@@ -267,11 +365,13 @@
     <h2>Вариативные шрифты</h2>
   </section>
 
-  <section class="slide">
-    <img src="./assets/img/variations.png">
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <div class="figure__content">
+        <!--=include ../src/demos/variations.html -->
+      </div>
+    </figure>
   </section>
-
-
 
   <section class="slide slide--section-title">
     <h3>Настройки шрифта</h3>
@@ -279,6 +379,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--italic">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--ffmeta"></div>
 
       <div class="demo__range demo-range">
@@ -294,7 +398,7 @@
         max: 1,
         name: 'ital',
         fullName: 'Italic',
-        step: .1,
+        step: 1,
         targetClass: '.demo--italic'
       });
     </script>
@@ -302,6 +406,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--slant">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--kairo"></div>
 
       <div class="demo__range demo-range">
@@ -325,6 +433,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--optical">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--amstel"></div>
 
       <div class="demo__range demo-range">
@@ -343,7 +455,7 @@
         step: 1,
         additionalProps: [{
           name: 'wdth',
-          value: 400
+          value: 600
         }],
         targetClass: '.demo--optical'
       });
@@ -353,9 +465,11 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--optical-with-content">
-      <div class="demo__example font font--amstel">
-        <h1>Aliquam gravida</h1>
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
 
+      <div class="demo__example font font--amstel">
         <p>
           Fusce semper id arcu id porttitor. Etiam sed quam vel ante laoreet varius at sed purus. Morbi commodo est nec felis tempor sollicitudin. Aliquam gravida nunc quis vestibulum volutpat. Sed quis dui sodales, congue risus vel, blandit lectus. In porta odio purus, id posuere tortor viverra vel. Etiam nunc quam, rutrum non diam eu, cursus tincidunt lorem.
         </p>
@@ -393,6 +507,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--width">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--gingham"></div>
 
       <div class="demo__range demo-range">
@@ -416,6 +534,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--weight">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--ffmeta"></div>
 
       <div class="demo__range demo-range">
@@ -577,6 +699,135 @@
       <span class="font">💃</span>
     </div>
   </section>
+
+  <section class="slide">
+    https://www.youtube.com/watch?v=DUwZpLBSuiI
+    https://wsd.events/2017/10/21/pres/whats-emoji/#60
+    Что не так с эмоджи
+    Алексей Авдеев,
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/happy-pencil.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/1903699-Batik-India-Color-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/2259523-Funny-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/add-some-color-.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/Bouqet-Flower-Watercolor.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/ColorTube-Samples-A-to-P.png"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/FLEURO-Colour-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/loki-color-font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/MEMPHIS-Type-Collection.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/Sarah-Jon-Watercolor-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/yeah-balloon-colour-font-001.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
 
   <section class="slide">
     <h4>Существующие форматы</h4>

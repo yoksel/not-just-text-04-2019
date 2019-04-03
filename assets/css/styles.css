@@ -1,65 +1,3 @@
-.iframe {
-  width: 100%;
-  height: 100%; }
-
-.svg-defs {
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.svg-fulscreen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-.svg-text {
-  font: 250px/1 Arial Black, sans-serif;
-  color: lightseagreen; }
-  .svg-text--big {
-    font-size: 320px; }
-
-.screen {
-  max-width: 100%;
-  max-height: 450px;
-  margin-top: .5rem; }
-
-.columns {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  grid-column-gap: 0; }
-  .columns--full-page {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0; }
-  .about-slide .columns {
-    align-items: flex-start; }
-
-.column {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-grow: 1; }
-  .column IMG {
-    width: 100%;
-    height: auto; }
-  .column__title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.75);
-    font-size: 100px;
-    color: #FFF; }
-
 .img--full {
   width: 100%;
   height: auto; }
@@ -67,18 +5,21 @@
 .video {
   height: 100%; }
 
-.table--valtop TD {
-  vertical-align: top; }
-
 UL {
   margin-left: 20px; }
 
 .disabled {
   color: #999; }
 
-.slide ul > li.disabled::before {
-  content: "?";
-  color: inherit; }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 @font-face {
   font-family: 'Pacifico-Regular';
@@ -295,6 +236,19 @@ UL {
   justify-content: center; }
 
 /* Titles */
+.slide H2,
+.slide H3,
+.slide H4 {
+  color: var(--color-grey);
+  font: bold 50px/1 'PT Sans Narrow', sans-serif;
+  margin-bottom: 1em; }
+
+.slide H3 {
+  font-size: 42px; }
+
+.slide H4 {
+  font-size: 34px; }
+
 .slide--section-title H2,
 .slide--section-title H3,
 .slide--section-title H4 {
@@ -320,7 +274,8 @@ UL {
 
 .slide--dark H1,
 .slide--dark H2,
-.slide--dark H3 {
+.slide--dark H3,
+.slide--dark P {
   color: #FFF; }
 
 /* Slide components */
@@ -361,17 +316,30 @@ UL {
 .slide__term {
   font-style: italic; }
 
+.about-slide__author {
+  margin-bottom: 3rem; }
+
+.about-slide__name {
+  color: var(--color-grey);
+  font: bold 50px/1 'PT Sans Narrow', sans-serif; }
+
 .about-slide__company {
+  margin-left: .5rem;
   font-weight: normal;
   color: #777; }
 
 .slide .about-slide__list {
   margin-bottom: 0; }
 
+.about-slide .column:last-child {
+  margin-left: auto;
+  flex-grow: 0;
+  padding-left: 5rem; }
+
 .about-slide__photo {
-  width: 200px;
-  height: 200px;
-  margin-left: auto !important; }
+  width: 230px;
+  height: 230px;
+  border-radius: 5px; }
 
 .about-slide__list + .about-slide__list {
   margin-left: 5rem; }
@@ -382,7 +350,8 @@ UL {
   src: url(https://yoksel.github.io/variable-fonts/assets/fonts/KairosSans/KairosSans_Variable.ttf) format("truetype"); }
 
 .demo {
-  position: relative; }
+  position: relative;
+  height: 100%; }
 
 .demo--full {
   position: absolute;
@@ -394,6 +363,7 @@ UL {
 .demo--column {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center; }
 
 .demo--cells {
@@ -448,6 +418,9 @@ UL {
       margin-bottom: .5em; }
   .demo--weight .demo__example {
     line-height: 1; }
+
+.demo__code {
+  margin-bottom: 40px; }
 
 .demo-range {
   width: 100%;
@@ -735,7 +708,7 @@ pre[class*="language-"] {
   max-height: 100%;
   display: flex;
   flex-direction: column; }
-  .figure__img-wrapper {
+  .figure__img-wrapper, .figure__content {
     flex-grow: 1;
     overflow: hidden; }
   .figure__img {
@@ -748,12 +721,38 @@ pre[class*="language-"] {
     .figure--caption-aside .figure__caption {
       -webkit-writing-mode: vertical-rl;
           -ms-writing-mode: tb-rl;
-              writing-mode: vertical-rl; }
+              writing-mode: vertical-rl;
+      line-height: 1; }
     .figure--caption-aside .figure__caption-content {
       display: inline-block;
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
       background: none; }
+    .figure--caption-aside .figure__caption + .figure__img-wrapper,
+    .figure--caption-aside .figure__caption + .figure__content,
+    .figure--caption-aside .figure__img-wrapper + .figure__caption,
+    .figure--caption-aside .figure__content + .figure__caption {
+      margin-left: 1rem; }
+
+.columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-gap: 0; }
+  .columns--full-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0; }
+  .about-slide .columns {
+    align-items: flex-start; }
+
+.column {
+  position: relative;
+  padding-right: 3rem;
+  flex-grow: 1; }
+  .column:last-child {
+    padding-right: 0; }
 
 .encoding-table {
   width: 100%;
@@ -777,3 +776,47 @@ pre[class*="language-"] {
     font-family: Georgia, serif; }
   .encoding-table SMALL {
     display: none; }
+
+.variations-demo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 16px/1.2 Trebuchet MS, sans-serif;
+  font-variation-settings: "wght" 250, "wdth" 75; }
+
+.variations-demo__container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  outline: 5px solid #DDD;
+  width: 600px;
+  padding-bottom: 10px; }
+
+.variations-demo__char {
+  width: 20%;
+  text-align: center;
+  font: 100px/.8 KairosSans, sans-serif; }
+
+.variations-demo__tip {
+  position: absolute;
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 2rem;
+  font-weight: bold; }
+  .variations-demo__tip--Width {
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin-bottom: .5em;
+    text-align: center; }
+  .variations-demo__tip--Weight {
+    background: red;
+    top: 50%;
+    bottom: 50%;
+    right: 100%;
+    margin: auto;
+    margin-right: 1.5em;
+    -webkit-transform: translateX(50%) rotate(-90deg);
+            transform: translateX(50%) rotate(-90deg); }

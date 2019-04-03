@@ -20,23 +20,33 @@
   </header>
 
   <section class="slide about-slide"><div>
-    <h3>Бухвалова Юлия, <span class="about-slide__company">LiveJournal</span></h3>
+    <h2 class="visually-hidden">Об авторе</h2>
+    <div class="about-slide__author">
+      <span class="about-slide__name">Бухвалова Юлия</span>
+      <span class="about-slide__company">LiveJournal</span>
+    </div>
 
     <div class="columns">
-      <ul class="about-slide__list next">
-        <li><a href="https://github.com/yoksel/common-words">Common Words</a></li>
-        <li><a href="http://yoksel.github.io/html-tree/">HTML Tree</a></li>
-        <li><a href="http://yoksel.github.io/url-encoder/">URL-encoder для SVG</a></li>
-        <li><a href="http://yoksel.github.io/svg-filters/#/">SVG Filters</a></li>
-      </ul>
+      <div class="column">
+        <ul class="about-slide__list">
+          <li><a href="https://github.com/yoksel/common-words">Common Words</a></li>
+          <li><a href="http://yoksel.github.io/html-tree/">HTML Tree</a></li>
+          <li><a href="http://yoksel.github.io/url-encoder/">URL-encoder для SVG</a></li>
+          <li><a href="http://yoksel.github.io/svg-filters/#/">SVG Filters</a></li>
+        </ul>
+      </div>
 
-      <ul class="about-slide__list next">
-        <li><a href="http://css.yoksel.ru/">css.yoksel.ru</a></li>
-        <li><a href="https://twitter.com/yoksel">@yoksel</a></li>
-        <li><a href="http://codepen.io/yoksel">codepen.io/yoksel</a></li>
-      </ul>
+      <div class="column">
+        <ul class="about-slide__list">
+          <li><a href="http://css.yoksel.ru/">css.yoksel.ru</a></li>
+          <li><a href="https://twitter.com/yoksel">@yoksel</a></li>
+          <li><a href="http://codepen.io/yoksel">codepen.io/yoksel</a></li>
+        </ul>
+      </div>
 
-      <img src="./assets/img/me.jpeg" class="about-slide__photo">
+      <div class="column">
+        <img src="./assets/img/me.jpeg" class="about-slide__photo">
+      </div>
     </div>
   </div></section>
 
@@ -50,7 +60,7 @@
   </div></section>
 
   <section class="slide slide--dark slide--section-title slide--main-title">
-    <h1>Не просто текст</h1>
+    <h2>Не просто текст</h2>
   </section>
 
   <section class="slide">
@@ -100,194 +110,188 @@
         </span>
       </figcaption>
 
-      <table class="encoding-table">
-        <thead>
-          <tr>
-            <th width="4%"></th>
-            <th width="6%">.0</th>
-            <th width="6%">.1</th>
-            <th width="6%">.2</th>
-            <th width="6%">.3</th>
-            <th width="6%">.4</th>
-            <th width="6%">.5</th>
-            <th width="6%">.6</th>
-            <th width="6%">.7</th>
-            <th width="6%">.8</th>
-            <th width="6%">.9</th>
-            <th width="6%">.A</th>
-            <th width="6%">.B</th>
-            <th width="6%">.C</th>
-            <th width="6%">.D</th>
-            <th width="6%">.E</th>
-            <th width="6%">.F</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>0.</th>
-            <td>NUL</td>
-            <td>SOH</td>
-            <td>STX</td>
-            <td>ETX</td>
-            <td>EOT</td>
-            <td>ENQ</td>
-            <td>ACK</td>
-            <td>BEL</td>
-            <td>BS</td>
-            <td>HT</td>
-            <td>LF</td>
-            <td>VT</td>
-            <td>FF</td>
-            <td>CR</td>
-            <td>SO</td>
-            <td>SI</td>
-          </tr>
-          <tr>
-            <th>1.</th>
-            <td>DLE</td>
-            <td>DC1</td>
-            <td>DC2</td>
-            <td>DC3</td>
-            <td>DC4</td>
-            <td>NAK</td>
-            <td>SYN</td>
-            <td>ETB</td>
-            <td>CAN</td>
-            <td>EM</td>
-            <td>SUB</td>
-            <td>ESC</td>
-            <td>FS</td>
-            <td>GS</td>
-            <td>RS</td>
-            <td>US</td>
-          </tr>
-          <tr>
-            <th>2.</th>
-            <td>&nbsp;&nbsp;&nbsp;</td>
-            <td>!</td>
-            <td>"</td>
-            <td>#</td>
-            <td>$</td>
-            <td>%</td>
-            <td>&amp;</td>
-            <td>'</td>
-            <td>(</td>
-            <td>)</td>
-            <td>*</td>
-            <td>+</td>
-            <td>,</td>
-            <td>-</td>
-            <td>.</td>
-            <td>/</td>
-          </tr>
-          <tr>
-            <th>3.</th>
-            <td>0</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>:</td>
-            <td>;</td>
-            <td>&lt;</td>
-            <td>=</td>
-            <td>&gt;</td>
-            <td>?</td>
-          </tr>
-          <tr>
-            <th>4.</th>
-            <td>@</td>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-            <td>J</td>
-            <td>K</td>
-            <td>L</td>
-            <td>M</td>
-            <td>N</td>
-            <td>O</td>
-          </tr>
-          <tr>
-            <th>5.</th>
-            <td>P</td>
-            <td>Q</td>
-            <td>R</td>
-            <td>S</td>
-            <td>T</td>
-            <td>U</td>
-            <td>V</td>
-            <td>W</td>
-            <td>X</td>
-            <td>Y</td>
-            <td>Z</td>
-            <td>[</td>
-            <td>\</td>
-            <td>]</td>
-            <td>^</td>
-            <td>_</td>
-          </tr>
-          <tr>
-            <th>6.</th>
-            <td>`</td>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
-            <td>g</td>
-            <td>h</td>
-            <td>i</td>
-            <td>j</td>
-            <td>k</td>
-            <td>l</td>
-            <td>m</td>
-            <td>n</td>
-            <td>o</td>
-          </tr>
-          <tr>
-            <th>7.</th>
-            <td>p</td>
-            <td>q</td>
-            <td>r</td>
-            <td>s</td>
-            <td>t</td>
-            <td>u</td>
-            <td>v</td>
-            <td>w</td>
-            <td>x</td>
-            <td>y</td>
-            <td>z</td>
-            <td>{</td>
-            <td>|</td>
-            <td>}</td>
-            <td>~</td>
-            <td>DEL</td>
-          </tr>
-        </tbody>
-      </table>
-      
+      <div class="figure__content">
+        <table class="encoding-table">
+          <thead>
+            <tr>
+              <th width="4%"></th>
+              <th width="6%">.0</th>
+              <th width="6%">.1</th>
+              <th width="6%">.2</th>
+              <th width="6%">.3</th>
+              <th width="6%">.4</th>
+              <th width="6%">.5</th>
+              <th width="6%">.6</th>
+              <th width="6%">.7</th>
+              <th width="6%">.8</th>
+              <th width="6%">.9</th>
+              <th width="6%">.A</th>
+              <th width="6%">.B</th>
+              <th width="6%">.C</th>
+              <th width="6%">.D</th>
+              <th width="6%">.E</th>
+              <th width="6%">.F</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0.</th>
+              <td>NUL</td>
+              <td>SOH</td>
+              <td>STX</td>
+              <td>ETX</td>
+              <td>EOT</td>
+              <td>ENQ</td>
+              <td>ACK</td>
+              <td>BEL</td>
+              <td>BS</td>
+              <td>HT</td>
+              <td>LF</td>
+              <td>VT</td>
+              <td>FF</td>
+              <td>CR</td>
+              <td>SO</td>
+              <td>SI</td>
+            </tr>
+            <tr>
+              <th>1.</th>
+              <td>DLE</td>
+              <td>DC1</td>
+              <td>DC2</td>
+              <td>DC3</td>
+              <td>DC4</td>
+              <td>NAK</td>
+              <td>SYN</td>
+              <td>ETB</td>
+              <td>CAN</td>
+              <td>EM</td>
+              <td>SUB</td>
+              <td>ESC</td>
+              <td>FS</td>
+              <td>GS</td>
+              <td>RS</td>
+              <td>US</td>
+            </tr>
+            <tr>
+              <th>2.</th>
+              <td>&nbsp;&nbsp;&nbsp;</td>
+              <td>!</td>
+              <td>"</td>
+              <td>#</td>
+              <td>$</td>
+              <td>%</td>
+              <td>&amp;</td>
+              <td>'</td>
+              <td>(</td>
+              <td>)</td>
+              <td>*</td>
+              <td>+</td>
+              <td>,</td>
+              <td>-</td>
+              <td>.</td>
+              <td>/</td>
+            </tr>
+            <tr>
+              <th>3.</th>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>:</td>
+              <td>;</td>
+              <td>&lt;</td>
+              <td>=</td>
+              <td>&gt;</td>
+              <td>?</td>
+            </tr>
+            <tr>
+              <th>4.</th>
+              <td>@</td>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+              <td>D</td>
+              <td>E</td>
+              <td>F</td>
+              <td>G</td>
+              <td>H</td>
+              <td>I</td>
+              <td>J</td>
+              <td>K</td>
+              <td>L</td>
+              <td>M</td>
+              <td>N</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <th>5.</th>
+              <td>P</td>
+              <td>Q</td>
+              <td>R</td>
+              <td>S</td>
+              <td>T</td>
+              <td>U</td>
+              <td>V</td>
+              <td>W</td>
+              <td>X</td>
+              <td>Y</td>
+              <td>Z</td>
+              <td>[</td>
+              <td>\</td>
+              <td>]</td>
+              <td>^</td>
+              <td>_</td>
+            </tr>
+            <tr>
+              <th>6.</th>
+              <td>`</td>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+              <td>g</td>
+              <td>h</td>
+              <td>i</td>
+              <td>j</td>
+              <td>k</td>
+              <td>l</td>
+              <td>m</td>
+              <td>n</td>
+              <td>o</td>
+            </tr>
+            <tr>
+              <th>7.</th>
+              <td>p</td>
+              <td>q</td>
+              <td>r</td>
+              <td>s</td>
+              <td>t</td>
+              <td>u</td>
+              <td>v</td>
+              <td>w</td>
+              <td>x</td>
+              <td>y</td>
+              <td>z</td>
+              <td>{</td>
+              <td>|</td>
+              <td>}</td>
+              <td>~</td>
+              <td>DEL</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
     </figure>
   </section>
-
-  <!-- <section class="slide slide--section-title">
-    <h3>2<sup>7</sup> = 128</h3>
-  </section>
-
-  <section class="slide slide--section-title">
-    <h3>2<sup>8</sup> = 256</h3>
-  </section> -->
 
   <section class="slide slide--section-title">
     <h3>Расширенные кодировки</h3>
@@ -302,439 +306,441 @@
         </span>
       </figcaption>
 
-      <table class="encoding-table">
-        <thead>
-          <tr>
-            <th width="4%"></th>
-            <th width="6%">.0</th>
-            <th width="6%">.1</th>
-            <th width="6%">.2</th>
-            <th width="6%">.3</th>
-            <th width="6%">.4</th>
-            <th width="6%">.5</th>
-            <th width="6%">.6</th>
-            <th width="6%">.7</th>
-            <th width="6%">.8</th>
-            <th width="6%">.9</th>
-            <th width="6%">.A</th>
-            <th width="6%">.B</th>
-            <th width="6%">.C</th>
-            <th width="6%">.D</th>
-            <th width="6%">.E</th>
-            <th width="6%">.F</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>8.</th>
-            <td>
-              <span>Ђ</span><br><small>402</small>
-            </td>
-            <td>
-              <span>Ѓ</span><br><small>403</small>
-            </td>
-            <td>
-              <span>‚</span><br><small>201A</small>
-            </td>
-            <td>
-              <span>ѓ</span><br><small>453</small>
-            </td>
-            <td>
-              <span>„</span><br><small>201E</small>
-            </td>
-            <td>
-              <span>…</span><br><small>2026</small>
-            </td>
-            <td>
-              <span>†</span><br><small>2020</small>
-            </td>
-            <td>
-              <span>‡</span><br><small>2021</small>
-            </td>
-            <td>
-              <span>€</span><br><small>20AC</small>
-            </td>
-            <td>
-              <span>‰</span><br><small>2030</small>
-            </td>
-            <td>
-              <span>Љ</span><br><small>409</small>
-            </td>
-            <td>
-              <span>‹</span><br><small>2039</small>
-            </td>
-            <td>
-              <span>Њ</span><br><small>40A</small>
-            </td>
-            <td>
-              <span>Ќ</span><br><small>40C</small>
-            </td>
-            <td>
-              <span>Ћ</span><br><small>40B</small>
-            </td>
-            <td>
-              <span>Џ</span><br><small>40F</small>
-            </td>
-          </tr>
-          <tr>
-            <th>9.</th>
-            <td>
-              <span>ђ</span><br><small>452</small>
-            </td>
-            <td>
-              <span>‘</span><br><small>2018</small>
-            </td>
-            <td>
-              <span>’</span><br><small>2019</small>
-            </td>
-            <td>
-              <span>“</span><br><small>201C</small>
-            </td>
-            <td>
-              <span>”</span><br><small>201D</small>
-            </td>
-            <td>
-              <span>•</span><br><small>2022</small>
-            </td>
-            <td>
-              <span>–</span><br><small>2013</small>
-            </td>
-            <td>
-              <span>—</span><br><small>2014</small>
-            </td>
-            <td>
-            </td>
-            <td>
-              <span>™</span><br><small>2122</small>
-            </td>
-            <td>
-              <span>љ</span><br><small>459</small>
-            </td>
-            <td>
-              <span>›</span><br><small>203A</small>
-            </td>
-            <td>
-              <span>њ</span><br><small>45A</small>
-            </td>
-            <td>
-              <span>ќ</span><br><small>45C</small>
-            </td>
-            <td>
-              <span>ћ</span><br><small>45B</small>
-            </td>
-            <td>
-              <span>џ</span><br><small>45F</small>
-            </td>
-          </tr>
-          <tr>
-            <th>A.</th>
-            <td>
-              <span>&nbsp;</span><br><small>A0</small>
-            </td>
-            <td>
-              <span>Ў</span><br><small>40E</small>
-            </td>
-            <td>
-              <span>ў</span><br><small>45E</small>
-            </td>
-            <td>
-              <span>Ј</span><br><small>408</small>
-            </td>
-            <td>
-              <span>¤</span><br><small>A4</small>
-            </td>
-            <td>
-              <span>Ґ</span><br><small>490</small>
-            </td>
-            <td>
-              <span>¦</span><br><small>A6</small>
-            </td>
-            <td>
-              <span>§</span><br><small>A7</small>
-            </td>
-            <td>
-              <span>Ё</span><br><small>401</small>
-            </td>
-            <td>
-              <span>©</span><br><small>A9</small>
-            </td>
-            <td>
-              <span>Є</span><br><small>404</small>
-            </td>
-            <td>
-              <span>«</span><br><small>AB</small>
-            </td>
-            <td>
-              <span>¬</span><br><small>AC</small>
-            </td>
-            <td>
-              <span>­</span><br><small>AD</small>
-            </td>
-            <td>
-              <span>®</span><br><small>AE</small>
-            </td>
-            <td>
-              <span>Ї</span><br><small>407</small>
-            </td>
-          </tr>
-          <tr>
-            <th>B.</th>
-            <td>
-              <span>°</span><br><small>B0</small>
-            </td>
-            <td>
-              <span>±</span><br><small>B1</small>
-            </td>
-            <td>
-              <span>І</span><br><small>406</small>
-            </td>
-            <td>
-              <span>і</span><br><small>456</small>
-            </td>
-            <td>
-              <span>ґ</span><br><small>491</small>
-            </td>
-            <td>
-              <span>µ</span><br><small>B5</small>
-            </td>
-            <td>
-              <span>¶</span><br><small>B6</small>
-            </td>
-            <td>
-              <span>·</span><br><small>B7</small>
-            </td>
-            <td>
-              <span>ё</span><br><small>451</small>
-            </td>
-            <td>
-              <span>№</span><br><small>2116</small>
-            </td>
-            <td>
-              <span>є</span><br><small>454</small>
-            </td>
-            <td>
-              <span>»</span><br><small>BB</small>
-            </td>
-            <td>
-              <span>ј</span><br><small>458</small>
-            </td>
-            <td>
-              <span>Ѕ</span><br><small>405</small>
-            </td>
-            <td>
-              <span>ѕ</span><br><small>455</small>
-            </td>
-            <td>
-              <span>ї</span><br><small>457</small>
-            </td>
-          </tr>
-          <tr>
-            <th>C.</th>
-            <td>
-              <span>А</span><br><small>410</small>
-            </td>
-            <td>
-              <span>Б</span><br><small>411</small>
-            </td>
-            <td>
-              <span>В</span><br><small>412</small>
-            </td>
-            <td>
-              <span>Г</span><br><small>413</small>
-            </td>
-            <td>
-              <span>Д</span><br><small>414</small>
-            </td>
-            <td>
-              <span>Е</span><br><small>415</small>
-            </td>
-            <td>
-              <span>Ж</span><br><small>416</small>
-            </td>
-            <td>
-              <span>З</span><br><small>417</small>
-            </td>
-            <td>
-              <span>И</span><br><small>418</small>
-            </td>
-            <td>
-              <span>Й</span><br><small>419</small>
-            </td>
-            <td>
-              <span>К</span><br><small>41A</small>
-            </td>
-            <td>
-              <span>Л</span><br><small>41B</small>
-            </td>
-            <td>
-              <span>М</span><br><small>41C</small>
-            </td>
-            <td>
-              <span>Н</span><br><small>41D</small>
-            </td>
-            <td>
-              <span>О</span><br><small>41E</small>
-            </td>
-            <td>
-              <span>П</span><br><small>41F</small>
-            </td>
-          </tr>
-          <tr>
-            <th>D.</th>
-            <td>
-              <span>Р</span><br><small>420</small>
-            </td>
-            <td>
-              <span>С</span><br><small>421</small>
-            </td>
-            <td>
-              <span>Т</span><br><small>422</small>
-            </td>
-            <td>
-              <span>У</span><br><small>423</small>
-            </td>
-            <td>
-              <span>Ф</span><br><small>424</small>
-            </td>
-            <td>
-              <span>Х</span><br><small>425</small>
-            </td>
-            <td>
-              <span>Ц</span><br><small>426</small>
-            </td>
-            <td>
-              <span>Ч</span><br><small>427</small>
-            </td>
-            <td>
-              <span>Ш</span><br><small>428</small>
-            </td>
-            <td>
-              <span>Щ</span><br><small>429</small>
-            </td>
-            <td>
-              <span>Ъ</span><br><small>42A</small>
-            </td>
-            <td>
-              <span>Ы</span><br><small>42B</small>
-            </td>
-            <td>
-              <span>Ь</span><br><small>42C</small>
-            </td>
-            <td>
-              <span>Э</span><br><small>42D</small>
-            </td>
-            <td>
-              <span>Ю</span><br><small>42E</small>
-            </td>
-            <td>
-              <span>Я</span><br><small>42F</small>
-            </td>
-          </tr>
-          <tr>
-            <th>E.</th>
-            <td>
-              <span>а</span><br><small>430</small>
-            </td>
-            <td>
-              <span>б</span><br><small>431</small>
-            </td>
-            <td>
-              <span>в</span><br><small>432</small>
-            </td>
-            <td>
-              <span>г</span><br><small>433</small>
-            </td>
-            <td>
-              <span>д</span><br><small>434</small>
-            </td>
-            <td>
-              <span>е</span><br><small>435</small>
-            </td>
-            <td>
-              <span>ж</span><br><small>436</small>
-            </td>
-            <td>
-              <span>з</span><br><small>437</small>
-            </td>
-            <td>
-              <span>и</span><br><small>438</small>
-            </td>
-            <td>
-              <span>й</span><br><small>439</small>
-            </td>
-            <td>
-              <span>к</span><br><small>43A</small>
-            </td>
-            <td>
-              <span>л</span><br><small>43B</small>
-            </td>
-            <td>
-              <span>м</span><br><small>43C</small>
-            </td>
-            <td>
-              <span>н</span><br><small>43D</small>
-            </td>
-            <td>
-              <span>о</span><br><small>43E</small>
-            </td>
-            <td>
-              <span>п</span><br><small>43F</small>
-            </td>
-          </tr>
-          <tr>
-            <th>F.</th>
-            <td>
-              <span>р</span><br><small>440</small>
-            </td>
-            <td>
-              <span>с</span><br><small>441</small>
-            </td>
-            <td>
-              <span>т</span><br><small>442</small>
-            </td>
-            <td>
-              <span>у</span><br><small>443</small>
-            </td>
-            <td>
-              <span>ф</span><br><small>444</small>
-            </td>
-            <td>
-              <span>х</span><br><small>445</small>
-            </td>
-            <td>
-              <span>ц</span><br><small>446</small>
-            </td>
-            <td>
-              <span>ч</span><br><small>447</small>
-            </td>
-            <td>
-              <span>ш</span><br><small>448</small>
-            </td>
-            <td>
-              <span>щ</span><br><small>449</small>
-            </td>
-            <td>
-              <span>ъ</span><br><small>44A</small>
-            </td>
-            <td>
-              <span>ы</span><br><small>44B</small>
-            </td>
-            <td>
-              <span>ь</span><br><small>44C</small>
-            </td>
-            <td>
-              <span>э</span><br><small>44D</small>
-            </td>
-            <td>
-              <span>ю</span><br><small>44E</small>
-            </td>
-            <td>
-              <span>я</span><br><small>44F</small>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
+      <div class="figure__content">
+        <table class="encoding-table">
+          <thead>
+            <tr>
+              <th width="4%"></th>
+              <th width="6%">.0</th>
+              <th width="6%">.1</th>
+              <th width="6%">.2</th>
+              <th width="6%">.3</th>
+              <th width="6%">.4</th>
+              <th width="6%">.5</th>
+              <th width="6%">.6</th>
+              <th width="6%">.7</th>
+              <th width="6%">.8</th>
+              <th width="6%">.9</th>
+              <th width="6%">.A</th>
+              <th width="6%">.B</th>
+              <th width="6%">.C</th>
+              <th width="6%">.D</th>
+              <th width="6%">.E</th>
+              <th width="6%">.F</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>8.</th>
+              <td>
+                <span>Ђ</span><br><small>402</small>
+              </td>
+              <td>
+                <span>Ѓ</span><br><small>403</small>
+              </td>
+              <td>
+                <span>‚</span><br><small>201A</small>
+              </td>
+              <td>
+                <span>ѓ</span><br><small>453</small>
+              </td>
+              <td>
+                <span>„</span><br><small>201E</small>
+              </td>
+              <td>
+                <span>…</span><br><small>2026</small>
+              </td>
+              <td>
+                <span>†</span><br><small>2020</small>
+              </td>
+              <td>
+                <span>‡</span><br><small>2021</small>
+              </td>
+              <td>
+                <span>€</span><br><small>20AC</small>
+              </td>
+              <td>
+                <span>‰</span><br><small>2030</small>
+              </td>
+              <td>
+                <span>Љ</span><br><small>409</small>
+              </td>
+              <td>
+                <span>‹</span><br><small>2039</small>
+              </td>
+              <td>
+                <span>Њ</span><br><small>40A</small>
+              </td>
+              <td>
+                <span>Ќ</span><br><small>40C</small>
+              </td>
+              <td>
+                <span>Ћ</span><br><small>40B</small>
+              </td>
+              <td>
+                <span>Џ</span><br><small>40F</small>
+              </td>
+            </tr>
+            <tr>
+              <th>9.</th>
+              <td>
+                <span>ђ</span><br><small>452</small>
+              </td>
+              <td>
+                <span>‘</span><br><small>2018</small>
+              </td>
+              <td>
+                <span>’</span><br><small>2019</small>
+              </td>
+              <td>
+                <span>“</span><br><small>201C</small>
+              </td>
+              <td>
+                <span>”</span><br><small>201D</small>
+              </td>
+              <td>
+                <span>•</span><br><small>2022</small>
+              </td>
+              <td>
+                <span>–</span><br><small>2013</small>
+              </td>
+              <td>
+                <span>—</span><br><small>2014</small>
+              </td>
+              <td>
+              </td>
+              <td>
+                <span>™</span><br><small>2122</small>
+              </td>
+              <td>
+                <span>љ</span><br><small>459</small>
+              </td>
+              <td>
+                <span>›</span><br><small>203A</small>
+              </td>
+              <td>
+                <span>њ</span><br><small>45A</small>
+              </td>
+              <td>
+                <span>ќ</span><br><small>45C</small>
+              </td>
+              <td>
+                <span>ћ</span><br><small>45B</small>
+              </td>
+              <td>
+                <span>џ</span><br><small>45F</small>
+              </td>
+            </tr>
+            <tr>
+              <th>A.</th>
+              <td>
+                <span>&nbsp;</span><br><small>A0</small>
+              </td>
+              <td>
+                <span>Ў</span><br><small>40E</small>
+              </td>
+              <td>
+                <span>ў</span><br><small>45E</small>
+              </td>
+              <td>
+                <span>Ј</span><br><small>408</small>
+              </td>
+              <td>
+                <span>¤</span><br><small>A4</small>
+              </td>
+              <td>
+                <span>Ґ</span><br><small>490</small>
+              </td>
+              <td>
+                <span>¦</span><br><small>A6</small>
+              </td>
+              <td>
+                <span>§</span><br><small>A7</small>
+              </td>
+              <td>
+                <span>Ё</span><br><small>401</small>
+              </td>
+              <td>
+                <span>©</span><br><small>A9</small>
+              </td>
+              <td>
+                <span>Є</span><br><small>404</small>
+              </td>
+              <td>
+                <span>«</span><br><small>AB</small>
+              </td>
+              <td>
+                <span>¬</span><br><small>AC</small>
+              </td>
+              <td>
+                <span>­</span><br><small>AD</small>
+              </td>
+              <td>
+                <span>®</span><br><small>AE</small>
+              </td>
+              <td>
+                <span>Ї</span><br><small>407</small>
+              </td>
+            </tr>
+            <tr>
+              <th>B.</th>
+              <td>
+                <span>°</span><br><small>B0</small>
+              </td>
+              <td>
+                <span>±</span><br><small>B1</small>
+              </td>
+              <td>
+                <span>І</span><br><small>406</small>
+              </td>
+              <td>
+                <span>і</span><br><small>456</small>
+              </td>
+              <td>
+                <span>ґ</span><br><small>491</small>
+              </td>
+              <td>
+                <span>µ</span><br><small>B5</small>
+              </td>
+              <td>
+                <span>¶</span><br><small>B6</small>
+              </td>
+              <td>
+                <span>·</span><br><small>B7</small>
+              </td>
+              <td>
+                <span>ё</span><br><small>451</small>
+              </td>
+              <td>
+                <span>№</span><br><small>2116</small>
+              </td>
+              <td>
+                <span>є</span><br><small>454</small>
+              </td>
+              <td>
+                <span>»</span><br><small>BB</small>
+              </td>
+              <td>
+                <span>ј</span><br><small>458</small>
+              </td>
+              <td>
+                <span>Ѕ</span><br><small>405</small>
+              </td>
+              <td>
+                <span>ѕ</span><br><small>455</small>
+              </td>
+              <td>
+                <span>ї</span><br><small>457</small>
+              </td>
+            </tr>
+            <tr>
+              <th>C.</th>
+              <td>
+                <span>А</span><br><small>410</small>
+              </td>
+              <td>
+                <span>Б</span><br><small>411</small>
+              </td>
+              <td>
+                <span>В</span><br><small>412</small>
+              </td>
+              <td>
+                <span>Г</span><br><small>413</small>
+              </td>
+              <td>
+                <span>Д</span><br><small>414</small>
+              </td>
+              <td>
+                <span>Е</span><br><small>415</small>
+              </td>
+              <td>
+                <span>Ж</span><br><small>416</small>
+              </td>
+              <td>
+                <span>З</span><br><small>417</small>
+              </td>
+              <td>
+                <span>И</span><br><small>418</small>
+              </td>
+              <td>
+                <span>Й</span><br><small>419</small>
+              </td>
+              <td>
+                <span>К</span><br><small>41A</small>
+              </td>
+              <td>
+                <span>Л</span><br><small>41B</small>
+              </td>
+              <td>
+                <span>М</span><br><small>41C</small>
+              </td>
+              <td>
+                <span>Н</span><br><small>41D</small>
+              </td>
+              <td>
+                <span>О</span><br><small>41E</small>
+              </td>
+              <td>
+                <span>П</span><br><small>41F</small>
+              </td>
+            </tr>
+            <tr>
+              <th>D.</th>
+              <td>
+                <span>Р</span><br><small>420</small>
+              </td>
+              <td>
+                <span>С</span><br><small>421</small>
+              </td>
+              <td>
+                <span>Т</span><br><small>422</small>
+              </td>
+              <td>
+                <span>У</span><br><small>423</small>
+              </td>
+              <td>
+                <span>Ф</span><br><small>424</small>
+              </td>
+              <td>
+                <span>Х</span><br><small>425</small>
+              </td>
+              <td>
+                <span>Ц</span><br><small>426</small>
+              </td>
+              <td>
+                <span>Ч</span><br><small>427</small>
+              </td>
+              <td>
+                <span>Ш</span><br><small>428</small>
+              </td>
+              <td>
+                <span>Щ</span><br><small>429</small>
+              </td>
+              <td>
+                <span>Ъ</span><br><small>42A</small>
+              </td>
+              <td>
+                <span>Ы</span><br><small>42B</small>
+              </td>
+              <td>
+                <span>Ь</span><br><small>42C</small>
+              </td>
+              <td>
+                <span>Э</span><br><small>42D</small>
+              </td>
+              <td>
+                <span>Ю</span><br><small>42E</small>
+              </td>
+              <td>
+                <span>Я</span><br><small>42F</small>
+              </td>
+            </tr>
+            <tr>
+              <th>E.</th>
+              <td>
+                <span>а</span><br><small>430</small>
+              </td>
+              <td>
+                <span>б</span><br><small>431</small>
+              </td>
+              <td>
+                <span>в</span><br><small>432</small>
+              </td>
+              <td>
+                <span>г</span><br><small>433</small>
+              </td>
+              <td>
+                <span>д</span><br><small>434</small>
+              </td>
+              <td>
+                <span>е</span><br><small>435</small>
+              </td>
+              <td>
+                <span>ж</span><br><small>436</small>
+              </td>
+              <td>
+                <span>з</span><br><small>437</small>
+              </td>
+              <td>
+                <span>и</span><br><small>438</small>
+              </td>
+              <td>
+                <span>й</span><br><small>439</small>
+              </td>
+              <td>
+                <span>к</span><br><small>43A</small>
+              </td>
+              <td>
+                <span>л</span><br><small>43B</small>
+              </td>
+              <td>
+                <span>м</span><br><small>43C</small>
+              </td>
+              <td>
+                <span>н</span><br><small>43D</small>
+              </td>
+              <td>
+                <span>о</span><br><small>43E</small>
+              </td>
+              <td>
+                <span>п</span><br><small>43F</small>
+              </td>
+            </tr>
+            <tr>
+              <th>F.</th>
+              <td>
+                <span>р</span><br><small>440</small>
+              </td>
+              <td>
+                <span>с</span><br><small>441</small>
+              </td>
+              <td>
+                <span>т</span><br><small>442</small>
+              </td>
+              <td>
+                <span>у</span><br><small>443</small>
+              </td>
+              <td>
+                <span>ф</span><br><small>444</small>
+              </td>
+              <td>
+                <span>х</span><br><small>445</small>
+              </td>
+              <td>
+                <span>ц</span><br><small>446</small>
+              </td>
+              <td>
+                <span>ч</span><br><small>447</small>
+              </td>
+              <td>
+                <span>ш</span><br><small>448</small>
+              </td>
+              <td>
+                <span>щ</span><br><small>449</small>
+              </td>
+              <td>
+                <span>ъ</span><br><small>44A</small>
+              </td>
+              <td>
+                <span>ы</span><br><small>44B</small>
+              </td>
+              <td>
+                <span>ь</span><br><small>44C</small>
+              </td>
+              <td>
+                <span>э</span><br><small>44D</small>
+              </td>
+              <td>
+                <span>ю</span><br><small>44E</small>
+              </td>
+              <td>
+                <span>я</span><br><small>44F</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
     </figure>
   </section>
 
@@ -747,440 +753,442 @@
         </span>
       </figcaption>
 
-      <table class="encoding-table">
-        <thead>
-          <tr>
-            <th width="4%"></th>
-            <th width="6%">.0</th>
-            <th width="6%">.1</th>
-            <th width="6%">.2</th>
-            <th width="6%">.3</th>
-            <th width="6%">.4</th>
-            <th width="6%">.5</th>
-            <th width="6%">.6</th>
-            <th width="6%">.7</th>
-            <th width="6%">.8</th>
-            <th width="6%">.9</th>
-            <th width="6%">.A</th>
-            <th width="6%">.B</th>
-            <th width="6%">.C</th>
-            <th width="6%">.D</th>
-            <th width="6%">.E</th>
-            <th width="6%">.F</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>8.</th>
-            <td>
-              <span>─</span><br><small>2500</small>
-            </td>
-            <td>
-              <span>│</span><br><small>2502</small>
-            </td>
-            <td>
-              <span>┌</span><br><small>250C</small>
-            </td>
-            <td>
-              <span>┐</span><br><small>2510</small>
-            </td>
-            <td>
-              <span>└</span><br><small>2514</small>
-            </td>
-            <td>
-              <span>┘</span><br><small>2518</small>
-            </td>
-            <td>
-              <span>├</span><br><small>251C</small>
-            </td>
-            <td>
-              <span>┤</span><br><small>2524</small>
-            </td>
-            <td>
-              <span>┬</span><br><small>252C</small>
-            </td>
-            <td>
-              <span>┴</span><br><small>2534</small>
-            </td>
-            <td>
-              <span>┼</span><br><small>253C</small>
-            </td>
-            <td>
-              <span>▀</span><br><small>2580</small>
-            </td>
-            <td>
-              <span>▄</span><br><small>2584</small>
-            </td>
-            <td>
-              <span>█</span><br><small>2588</small>
-            </td>
-            <td>
-              <span>▌</span><br><small>258C</small>
-            </td>
-            <td>
-              <span>▐</span><br><small>2590</small>
-            </td>
-          </tr>
-          <tr>
-            <th>9.</th>
-            <td>
-              <span>░</span><br><small>2591</small>
-            </td>
-            <td>
-              <span>▒</span><br><small>2592</small>
-            </td>
-            <td>
-              <span>▓</span><br><small>2593</small>
-            </td>
-            <td>
-              <span>⌠</span><br><small>2320</small>
-            </td>
-            <td>
-              <span>■</span><br><small>25A0</small>
-            </td>
-            <td>
-              <span>∙</span><br><small>2219</small>
-            </td>
-            <td>
-              <span>√</span><br><small>221A</small>
-            </td>
-            <td>
-              <span>≈</span><br><small>2248</small>
-            </td>
-            <td>
-              <span>≤</span><br><small>2264</small>
-            </td>
-            <td>
-              <span>≥</span><br><small>2265</small>
-            </td>
-            <td>
-              <span>&nbsp;</span><br><small>A0</small>
-            </td>
-            <td>
-              <span>⌡</span><br><small>2321</small>
-            </td>
-            <td>
-              <span>°</span><br><small>B0</small>
-            </td>
-            <td>
-              <span>²</span><br><small>B2</small>
-            </td>
-            <td>
-              <span>·</span><br><small>B7</small>
-            </td>
-            <td>
-              <span>÷</span><br><small>F7</small>
-            </td>
-          </tr>
-          <tr>
-            <th>A.</th>
-            <td>
-              <span>═</span><br><small>2550</small>
-            </td>
-            <td>
-              <span>║</span><br><small>2551</small>
-            </td>
-            <td>
-              <span>╒</span><br><small>2552</small>
-            </td>
-            <td>
-              <span>ё</span><br><small>451</small>
-            </td>
-            <td>
-              <span>╓</span><br><small>2553</small>
-            </td>
-            <td>
-              <span>╔</span><br><small>2554</small>
-            </td>
-            <td>
-              <span>╕</span><br><small>2555</small>
-            </td>
-            <td>
-              <span>╖</span><br><small>2556</small>
-            </td>
-            <td>
-              <span>╗</span><br><small>2557</small>
-            </td>
-            <td>
-              <span>╘</span><br><small>2558</small>
-            </td>
-            <td>
-              <span>╙</span><br><small>2559</small>
-            </td>
-            <td>
-              <span>╚</span><br><small>255A</small>
-            </td>
-            <td>
-              <span>╛</span><br><small>255B</small>
-            </td>
-            <td>
-              <span>╜</span><br><small>255C</small>
-            </td>
-            <td>
-              <span>╝</span><br><small>255D</small>
-            </td>
-            <td>
-              <span>╞</span><br><small>255E</small>
-            </td>
-          </tr>
-          <tr>
-            <th>B.</th>
-            <td>
-              <span>╟</span><br><small>255F</small>
-            </td>
-            <td>
-              <span>╠</span><br><small>2560</small>
-            </td>
-            <td>
-              <span>╡</span><br><small>2561</small>
-            </td>
-            <td>
-              <span>Ё</span><br><small>401</small>
-            </td>
-            <td>
-              <span>╢</span><br><small>2562</small>
-            </td>
-            <td>
-              <span>╣</span><br><small>2563</small>
-            </td>
-            <td>
-              <span>╤</span><br><small>2564</small>
-            </td>
-            <td>
-              <span>╥</span><br><small>2565</small>
-            </td>
-            <td>
-              <span>╦</span><br><small>2566</small>
-            </td>
-            <td>
-              <span>╧</span><br><small>2567</small>
-            </td>
-            <td>
-              <span>╨</span><br><small>2568</small>
-            </td>
-            <td>
-              <span>╩</span><br><small>2569</small>
-            </td>
-            <td>
-              <span>╪</span><br><small>256A</small>
-            </td>
-            <td>
-              <span>╫</span><br><small>256B</small>
-            </td>
-            <td>
-              <span>╬</span><br><small>256C</small>
-            </td>
-            <td>
-              <span>©</span><br><small>A9</small>
-            </td>
-          </tr>
-          <tr>
-            <th>C.</th>
-            <td>
-              <span>ю</span><br><small>44E</small>
-            </td>
-            <td>
-              <span>а</span><br><small>430</small>
-            </td>
-            <td>
-              <span>б</span><br><small>431</small>
-            </td>
-            <td>
-              <span>ц</span><br><small>446</small>
-            </td>
-            <td>
-              <span>д</span><br><small>434</small>
-            </td>
-            <td>
-              <span>е</span><br><small>435</small>
-            </td>
-            <td>
-              <span>ф</span><br><small>444</small>
-            </td>
-            <td>
-              <span>г</span><br><small>433</small>
-            </td>
-            <td>
-              <span>х</span><br><small>445</small>
-            </td>
-            <td>
-              <span>и</span><br><small>438</small>
-            </td>
-            <td>
-              <span>й</span><br><small>439</small>
-            </td>
-            <td>
-              <span>к</span><br><small>43A</small>
-            </td>
-            <td>
-              <span>л</span><br><small>43B</small>
-            </td>
-            <td>
-              <span>м</span><br><small>43C</small>
-            </td>
-            <td>
-              <span>н</span><br><small>43D</small>
-            </td>
-            <td>
-              <span>о</span><br><small>43E</small>
-            </td>
-          </tr>
-          <tr>
-            <th>D.</th>
-            <td>
-              <span>п</span><br><small>43F</small>
-            </td>
-            <td>
-              <span>я</span><br><small>44F</small>
-            </td>
-            <td>
-              <span>р</span><br><small>440</small>
-            </td>
-            <td>
-              <span>с</span><br><small>441</small>
-            </td>
-            <td>
-              <span>т</span><br><small>442</small>
-            </td>
-            <td>
-              <span>у</span><br><small>443</small>
-            </td>
-            <td>
-              <span>ж</span><br><small>436</small>
-            </td>
-            <td>
-              <span>в</span><br><small>432</small>
-            </td>
-            <td>
-              <span>ь</span><br><small>44C</small>
-            </td>
-            <td>
-              <span>ы</span><br><small>44B</small>
-            </td>
-            <td>
-              <span>з</span><br><small>437</small>
-            </td>
-            <td>
-              <span>ш</span><br><small>448</small>
-            </td>
-            <td>
-              <span>э</span><br><small>44D</small>
-            </td>
-            <td>
-              <span>щ</span><br><small>449</small>
-            </td>
-            <td>
-              <span>ч</span><br><small>447</small>
-            </td>
-            <td>
-              <span>ъ</span><br><small>44A</small>
-            </td>
-          </tr>
-          <tr>
-            <th>E.</th>
-            <td>
-              <span>Ю</span><br><small>42E</small>
-            </td>
-            <td>
-              <span>А</span><br><small>410</small>
-            </td>
-            <td>
-              <span>Б</span><br><small>411</small>
-            </td>
-            <td>
-              <span>Ц</span><br><small>426</small>
-            </td>
-            <td>
-              <span>Д</span><br><small>414</small>
-            </td>
-            <td>
-              <span>Е</span><br><small>415</small>
-            </td>
-            <td>
-              <span>Ф</span><br><small>424</small>
-            </td>
-            <td>
-              <span>Г</span><br><small>413</small>
-            </td>
-            <td>
-              <span>Х</span><br><small>425</small>
-            </td>
-            <td>
-              <span>И</span><br><small>418</small>
-            </td>
-            <td>
-              <span>Й</span><br><small>419</small>
-            </td>
-            <td>
-              <span>К</span><br><small>41A</small>
-            </td>
-            <td>
-              <span>Л</span><br><small>41B</small>
-            </td>
-            <td>
-              <span>М</span><br><small>41C</small>
-            </td>
-            <td>
-              <span>Н</span><br><small>41D</small>
-            </td>
-            <td>
-              <span>О</span><br><small>41E</small>
-            </td>
-          </tr>
-          <tr>
-            <th>F.</th>
-            <td>
-              <span>П</span><br><small>41F</small>
-            </td>
-            <td>
-              <span>Я</span><br><small>42F</small>
-            </td>
-            <td>
-              <span>Р</span><br><small>420</small>
-            </td>
-            <td>
-              <span>С</span><br><small>421</small>
-            </td>
-            <td>
-              <span>Т</span><br><small>422</small>
-            </td>
-            <td>
-              <span>У</span><br><small>423</small>
-            </td>
-            <td>
-              <span>Ж</span><br><small>416</small>
-            </td>
-            <td>
-              <span>В</span><br><small>412</small>
-            </td>
-            <td>
-              <span>Ь</span><br><small>42C</small>
-            </td>
-            <td>
-              <span>Ы</span><br><small>42B</small>
-            </td>
-            <td>
-              <span>З</span><br><small>417</small>
-            </td>
-            <td>
-              <span>Ш</span><br><small>428</small>
-            </td>
-            <td>
-              <span>Э</span><br><small>42D</small>
-            </td>
-            <td>
-              <span>Щ</span><br><small>429</small>
-            </td>
-            <td>
-              <span>Ч</span><br><small>427</small>
-            </td>
-            <td>
-              <span>Ъ</span><br><small>42A</small>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      
+      <div class="figure__content">
+        <table class="encoding-table">
+          <thead>
+            <tr>
+              <th width="4%"></th>
+              <th width="6%">.0</th>
+              <th width="6%">.1</th>
+              <th width="6%">.2</th>
+              <th width="6%">.3</th>
+              <th width="6%">.4</th>
+              <th width="6%">.5</th>
+              <th width="6%">.6</th>
+              <th width="6%">.7</th>
+              <th width="6%">.8</th>
+              <th width="6%">.9</th>
+              <th width="6%">.A</th>
+              <th width="6%">.B</th>
+              <th width="6%">.C</th>
+              <th width="6%">.D</th>
+              <th width="6%">.E</th>
+              <th width="6%">.F</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>8.</th>
+              <td>
+                <span>─</span><br><small>2500</small>
+              </td>
+              <td>
+                <span>│</span><br><small>2502</small>
+              </td>
+              <td>
+                <span>┌</span><br><small>250C</small>
+              </td>
+              <td>
+                <span>┐</span><br><small>2510</small>
+              </td>
+              <td>
+                <span>└</span><br><small>2514</small>
+              </td>
+              <td>
+                <span>┘</span><br><small>2518</small>
+              </td>
+              <td>
+                <span>├</span><br><small>251C</small>
+              </td>
+              <td>
+                <span>┤</span><br><small>2524</small>
+              </td>
+              <td>
+                <span>┬</span><br><small>252C</small>
+              </td>
+              <td>
+                <span>┴</span><br><small>2534</small>
+              </td>
+              <td>
+                <span>┼</span><br><small>253C</small>
+              </td>
+              <td>
+                <span>▀</span><br><small>2580</small>
+              </td>
+              <td>
+                <span>▄</span><br><small>2584</small>
+              </td>
+              <td>
+                <span>█</span><br><small>2588</small>
+              </td>
+              <td>
+                <span>▌</span><br><small>258C</small>
+              </td>
+              <td>
+                <span>▐</span><br><small>2590</small>
+              </td>
+            </tr>
+            <tr>
+              <th>9.</th>
+              <td>
+                <span>░</span><br><small>2591</small>
+              </td>
+              <td>
+                <span>▒</span><br><small>2592</small>
+              </td>
+              <td>
+                <span>▓</span><br><small>2593</small>
+              </td>
+              <td>
+                <span>⌠</span><br><small>2320</small>
+              </td>
+              <td>
+                <span>■</span><br><small>25A0</small>
+              </td>
+              <td>
+                <span>∙</span><br><small>2219</small>
+              </td>
+              <td>
+                <span>√</span><br><small>221A</small>
+              </td>
+              <td>
+                <span>≈</span><br><small>2248</small>
+              </td>
+              <td>
+                <span>≤</span><br><small>2264</small>
+              </td>
+              <td>
+                <span>≥</span><br><small>2265</small>
+              </td>
+              <td>
+                <span>&nbsp;</span><br><small>A0</small>
+              </td>
+              <td>
+                <span>⌡</span><br><small>2321</small>
+              </td>
+              <td>
+                <span>°</span><br><small>B0</small>
+              </td>
+              <td>
+                <span>²</span><br><small>B2</small>
+              </td>
+              <td>
+                <span>·</span><br><small>B7</small>
+              </td>
+              <td>
+                <span>÷</span><br><small>F7</small>
+              </td>
+            </tr>
+            <tr>
+              <th>A.</th>
+              <td>
+                <span>═</span><br><small>2550</small>
+              </td>
+              <td>
+                <span>║</span><br><small>2551</small>
+              </td>
+              <td>
+                <span>╒</span><br><small>2552</small>
+              </td>
+              <td>
+                <span>ё</span><br><small>451</small>
+              </td>
+              <td>
+                <span>╓</span><br><small>2553</small>
+              </td>
+              <td>
+                <span>╔</span><br><small>2554</small>
+              </td>
+              <td>
+                <span>╕</span><br><small>2555</small>
+              </td>
+              <td>
+                <span>╖</span><br><small>2556</small>
+              </td>
+              <td>
+                <span>╗</span><br><small>2557</small>
+              </td>
+              <td>
+                <span>╘</span><br><small>2558</small>
+              </td>
+              <td>
+                <span>╙</span><br><small>2559</small>
+              </td>
+              <td>
+                <span>╚</span><br><small>255A</small>
+              </td>
+              <td>
+                <span>╛</span><br><small>255B</small>
+              </td>
+              <td>
+                <span>╜</span><br><small>255C</small>
+              </td>
+              <td>
+                <span>╝</span><br><small>255D</small>
+              </td>
+              <td>
+                <span>╞</span><br><small>255E</small>
+              </td>
+            </tr>
+            <tr>
+              <th>B.</th>
+              <td>
+                <span>╟</span><br><small>255F</small>
+              </td>
+              <td>
+                <span>╠</span><br><small>2560</small>
+              </td>
+              <td>
+                <span>╡</span><br><small>2561</small>
+              </td>
+              <td>
+                <span>Ё</span><br><small>401</small>
+              </td>
+              <td>
+                <span>╢</span><br><small>2562</small>
+              </td>
+              <td>
+                <span>╣</span><br><small>2563</small>
+              </td>
+              <td>
+                <span>╤</span><br><small>2564</small>
+              </td>
+              <td>
+                <span>╥</span><br><small>2565</small>
+              </td>
+              <td>
+                <span>╦</span><br><small>2566</small>
+              </td>
+              <td>
+                <span>╧</span><br><small>2567</small>
+              </td>
+              <td>
+                <span>╨</span><br><small>2568</small>
+              </td>
+              <td>
+                <span>╩</span><br><small>2569</small>
+              </td>
+              <td>
+                <span>╪</span><br><small>256A</small>
+              </td>
+              <td>
+                <span>╫</span><br><small>256B</small>
+              </td>
+              <td>
+                <span>╬</span><br><small>256C</small>
+              </td>
+              <td>
+                <span>©</span><br><small>A9</small>
+              </td>
+            </tr>
+            <tr>
+              <th>C.</th>
+              <td>
+                <span>ю</span><br><small>44E</small>
+              </td>
+              <td>
+                <span>а</span><br><small>430</small>
+              </td>
+              <td>
+                <span>б</span><br><small>431</small>
+              </td>
+              <td>
+                <span>ц</span><br><small>446</small>
+              </td>
+              <td>
+                <span>д</span><br><small>434</small>
+              </td>
+              <td>
+                <span>е</span><br><small>435</small>
+              </td>
+              <td>
+                <span>ф</span><br><small>444</small>
+              </td>
+              <td>
+                <span>г</span><br><small>433</small>
+              </td>
+              <td>
+                <span>х</span><br><small>445</small>
+              </td>
+              <td>
+                <span>и</span><br><small>438</small>
+              </td>
+              <td>
+                <span>й</span><br><small>439</small>
+              </td>
+              <td>
+                <span>к</span><br><small>43A</small>
+              </td>
+              <td>
+                <span>л</span><br><small>43B</small>
+              </td>
+              <td>
+                <span>м</span><br><small>43C</small>
+              </td>
+              <td>
+                <span>н</span><br><small>43D</small>
+              </td>
+              <td>
+                <span>о</span><br><small>43E</small>
+              </td>
+            </tr>
+            <tr>
+              <th>D.</th>
+              <td>
+                <span>п</span><br><small>43F</small>
+              </td>
+              <td>
+                <span>я</span><br><small>44F</small>
+              </td>
+              <td>
+                <span>р</span><br><small>440</small>
+              </td>
+              <td>
+                <span>с</span><br><small>441</small>
+              </td>
+              <td>
+                <span>т</span><br><small>442</small>
+              </td>
+              <td>
+                <span>у</span><br><small>443</small>
+              </td>
+              <td>
+                <span>ж</span><br><small>436</small>
+              </td>
+              <td>
+                <span>в</span><br><small>432</small>
+              </td>
+              <td>
+                <span>ь</span><br><small>44C</small>
+              </td>
+              <td>
+                <span>ы</span><br><small>44B</small>
+              </td>
+              <td>
+                <span>з</span><br><small>437</small>
+              </td>
+              <td>
+                <span>ш</span><br><small>448</small>
+              </td>
+              <td>
+                <span>э</span><br><small>44D</small>
+              </td>
+              <td>
+                <span>щ</span><br><small>449</small>
+              </td>
+              <td>
+                <span>ч</span><br><small>447</small>
+              </td>
+              <td>
+                <span>ъ</span><br><small>44A</small>
+              </td>
+            </tr>
+            <tr>
+              <th>E.</th>
+              <td>
+                <span>Ю</span><br><small>42E</small>
+              </td>
+              <td>
+                <span>А</span><br><small>410</small>
+              </td>
+              <td>
+                <span>Б</span><br><small>411</small>
+              </td>
+              <td>
+                <span>Ц</span><br><small>426</small>
+              </td>
+              <td>
+                <span>Д</span><br><small>414</small>
+              </td>
+              <td>
+                <span>Е</span><br><small>415</small>
+              </td>
+              <td>
+                <span>Ф</span><br><small>424</small>
+              </td>
+              <td>
+                <span>Г</span><br><small>413</small>
+              </td>
+              <td>
+                <span>Х</span><br><small>425</small>
+              </td>
+              <td>
+                <span>И</span><br><small>418</small>
+              </td>
+              <td>
+                <span>Й</span><br><small>419</small>
+              </td>
+              <td>
+                <span>К</span><br><small>41A</small>
+              </td>
+              <td>
+                <span>Л</span><br><small>41B</small>
+              </td>
+              <td>
+                <span>М</span><br><small>41C</small>
+              </td>
+              <td>
+                <span>Н</span><br><small>41D</small>
+              </td>
+              <td>
+                <span>О</span><br><small>41E</small>
+              </td>
+            </tr>
+            <tr>
+              <th>F.</th>
+              <td>
+                <span>П</span><br><small>41F</small>
+              </td>
+              <td>
+                <span>Я</span><br><small>42F</small>
+              </td>
+              <td>
+                <span>Р</span><br><small>420</small>
+              </td>
+              <td>
+                <span>С</span><br><small>421</small>
+              </td>
+              <td>
+                <span>Т</span><br><small>422</small>
+              </td>
+              <td>
+                <span>У</span><br><small>423</small>
+              </td>
+              <td>
+                <span>Ж</span><br><small>416</small>
+              </td>
+              <td>
+                <span>В</span><br><small>412</small>
+              </td>
+              <td>
+                <span>Ь</span><br><small>42C</small>
+              </td>
+              <td>
+                <span>Ы</span><br><small>42B</small>
+              </td>
+              <td>
+                <span>З</span><br><small>417</small>
+              </td>
+              <td>
+                <span>Ш</span><br><small>428</small>
+              </td>
+              <td>
+                <span>Э</span><br><small>42D</small>
+              </td>
+              <td>
+                <span>Щ</span><br><small>429</small>
+              </td>
+              <td>
+                <span>Ч</span><br><small>427</small>
+              </td>
+              <td>
+                <span>Ъ</span><br><small>42A</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
     </figure>
   </section>
 
@@ -1208,6 +1216,30 @@
   <section class="slide slide--section-title slide--term">
     <h3>Unicode</h3>
     <p class="slide__term">Универсальная кодировка</p>
+  </section>
+
+  <section class="slide">
+    <h4>История</h4>
+
+    <ul>
+      <li>
+        1988 — первый черновик
+      </li>
+      <li>
+        1991 — опубликована версия 1.0.0
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/standards.png"/>
+        <figcaption class="copyright right">
+            <a href="https://xkcd.ru/927/">xkcd.ru/927/</a>
+        </figcaption>
+    </figure>
   </section>
 
   <section class="slide">
@@ -1249,10 +1281,34 @@
   </section>
 
   <section class="slide">
+    <h4>Форматы</h4>
+
+    <ul>
+      <li>
+        <code>EOT</code> — поддерживается только в IE
+      </li>
+      <li>
+        <code>OTF</code> — на основе PostScript
+      </li>
+      <li>
+        <code>TTF</code> — на основе TrueType
+      </li>
+      <li>
+        <code>WOFF</code> — <a href="http://www.w3.org/TR/WOFF/">сжатый</a> OpenType шрифт
+      </li>
+      <li>
+        <code>WOFF2</code> — <a href="https://www.w3.org/TR/WOFF2/">более лучше сжатый</a> OpenType шрифт
+      </li>
+    </ul>
+  </section>
+
+  <section class="slide">
     <h4>История</h4>
 
     <ul>
-      <li>Разрабатывается совместными усилиями Microsoft и Adobe на основе TrueType и PostScript</li>
+      <li>1994 — Microsoft разработала технологию <strong>TrueType Open</strong></li>
+      <li>1996 — Adobe присоединяется к разработке; <strong>OpenType</strong> анонсируется как название для комбинированных технологий двух компаний</li>
+      <li>2007 — стандартизируется как <strong>Open Font Format</strong></li>
     </ul>
   </section>
 
@@ -1269,28 +1325,70 @@
     </ul>
   </section>
 
+  <section class="slide slide--dark slide--section-title">
+    <h2>Кастомные шрифты</h2>
+  </section>
+
   <section class="slide">
+    <h4>Пример кода</h4>
+
+    <pre><code class="language-css">@font-face {
+  font-family: MyFont;
+  src: local('MyFont'),
+    url('path/MyFont.woff2') format('woff2'),
+    url('path/MyFont.woff') format('woff');
+}</code></pre>
+
+  <pre><code class="language-css">BODY {
+  font-family: MyFont, Helvetica, Arial, sans-serif;
+}</code></pre>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <figcaption
+        class="figure__caption">
+        <a
+          class="figure__caption-content"
+          href="https://fonts.google.com/">fonts.google.com</a>
+      </figcaption>
+
+      <div class="figure__img-wrapper">
+        <img
+          class="figure__img"
+          src="./assets/img/google-fonts.png"/>
+      </div>
+    </figure>
+  </section>
+
+  <section class="slide">
+    <h2>Где брать?</h2>
+
     <ul>
       <li>
-        <code>EOT</code> — поддерживается только в IE
+        <a href="https://fonts.google.com/">fonts.google.com</a> — бесплатно
       </li>
       <li>
-        <code>otf</code> — на основе PostScript
+        <a href="https://www.fontsquirrel.com/">fontsquirrel.com</a> — бесплатно
       </li>
+      <li><a href="https://fonts.adobe.com/">fonts.adobe.com</a> — в составе подписки на Creative Cloud</li>
+      <li><a href="https://www.myfonts.com/">myfonts.com</a> — покупка отдельных шрифтов</li>
+      <li><a href="https://www.fontspring.com/license/webfont">fontspring.com</a> — покупка отдельных шрифтов, есть бесплатные</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>Когда использовать?</h2>
+
+    <ul>
       <li>
-        <code>ttf</code> — на основе TrueType
-      </li>
-      <li>
-        <code>woff</code> — <a href="http://www.w3.org/TR/WOFF/">сжатый</a> OpenType шрифт
-      </li>
-      <li>
-        <code>woff2</code> — <a href="https://www.w3.org/TR/WOFF2/">более лучше сжатый</a> OpenType шрифт
+        ????
       </li>
     </ul>
   </section>
 
   <section class="slide slide--dark slide--section-title">
-    <h2>Проблема кастомных шрифтов</h2>
+    <h3>Проблема кастомных шрифтов</h3>
   </section>
 
   <section class="slide">
@@ -1309,11 +1407,69 @@
     <h2>Вариативные шрифты</h2>
   </section>
 
-  <section class="slide">
-    <img src="./assets/img/variations.png">
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <div class="figure__content">
+        <div class="variations-demo"></div>
+        
+        <script type="text/javascript">
+          (function(){
+              const target = document.querySelector('.variations-demo');
+              const container = document.createElement('div');
+              container.classList.add('variations-demo__container');
+              const charItem = document.createElement('div');
+              charItem.classList.add('variations-demo__char');
+              const tipItem = document.createElement('div');
+              tipItem.classList.add('variations-demo__tip');
+              charItem.innerHTML = 'a';
+              const itemsInLineX = 5 - 1;
+              const itemsInLineY = 5 - 1;
+              const itemsMax = itemsInLineX * itemsInLineY;
+              const wght = {
+                name: 'Weight',
+                min: 150,
+                max: 900
+              };
+              const wdth = {
+                name: 'Width',
+                min: 75,
+                max: 125
+              };
+              const weightStep = (wght.max - wght.min)/itemsInLineY;
+              const widthStep = (wdth.max - wdth.min)/itemsInLineX;
+        
+              const variationsList = [
+                wght,
+                wdth
+              ];
+        
+              for (var y = 0; y <= itemsInLineY; y ++) {
+                for (var x = 0; x <= itemsInLineX; x ++) {
+                  const elem = charItem.cloneNode(true);
+                  const itemWght = (itemsInLineY - y) * weightStep + wght.min;
+                  const itemWdth = (x) * widthStep + wdth.min;
+        
+                  elem.style["font-variation-settings"] = `"wght" ${itemWght}, "wdth" ${itemWdth}`;
+                  container.appendChild(elem);
+                }
+              }
+        
+              variationsList.forEach(item => {
+                const elem = tipItem.cloneNode();
+                elem.classList.add(`variations-demo__tip--${item.name}`);
+                elem.innerHTML = `${item.name} ${item.min} &#8596; ${item.max}`;
+                container.appendChild(elem);
+              });
+        
+              console.log(target);
+        
+              target.appendChild(container);
+            })()
+        </script>
+        
+      </div>
+    </figure>
   </section>
-
-
 
   <section class="slide slide--section-title">
     <h3>Настройки шрифта</h3>
@@ -1321,6 +1477,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--italic">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--ffmeta"></div>
 
       <div class="demo__range demo-range">
@@ -1336,7 +1496,7 @@
         max: 1,
         name: 'ital',
         fullName: 'Italic',
-        step: .1,
+        step: 1,
         targetClass: '.demo--italic'
       });
     </script>
@@ -1344,6 +1504,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--slant">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--kairo"></div>
 
       <div class="demo__range demo-range">
@@ -1367,6 +1531,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--optical">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--amstel"></div>
 
       <div class="demo__range demo-range">
@@ -1385,7 +1553,7 @@
         step: 1,
         additionalProps: [{
           name: 'wdth',
-          value: 400
+          value: 600
         }],
         targetClass: '.demo--optical'
       });
@@ -1395,9 +1563,11 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--optical-with-content">
-      <div class="demo__example font font--amstel">
-        <h1>Aliquam gravida</h1>
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
 
+      <div class="demo__example font font--amstel">
         <p>
           Fusce semper id arcu id porttitor. Etiam sed quam vel ante laoreet varius at sed purus. Morbi commodo est nec felis tempor sollicitudin. Aliquam gravida nunc quis vestibulum volutpat. Sed quis dui sodales, congue risus vel, blandit lectus. In porta odio purus, id posuere tortor viverra vel. Etiam nunc quam, rutrum non diam eu, cursus tincidunt lorem.
         </p>
@@ -1435,6 +1605,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--width">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--gingham"></div>
 
       <div class="demo__range demo-range">
@@ -1458,6 +1632,10 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--weight">
+      <code class="demo__code">
+        font-variation-settings: <span class="demo__code-value"></span>
+      </code>
+
       <div class="demo__example font font--ffmeta"></div>
 
       <div class="demo__range demo-range">
@@ -1619,6 +1797,135 @@
       <span class="font">💃</span>
     </div>
   </section>
+
+  <section class="slide">
+    https://www.youtube.com/watch?v=DUwZpLBSuiI
+    https://wsd.events/2017/10/21/pres/whats-emoji/#60
+    Что не так с эмоджи
+    Алексей Авдеев,
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/happy-pencil.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/1903699-Batik-India-Color-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/2259523-Funny-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/add-some-color-.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/Bouqet-Flower-Watercolor.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/ColorTube-Samples-A-to-P.png"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/FLEURO-Colour-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/loki-color-font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/MEMPHIS-Type-Collection.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/Sarah-Jon-Watercolor-Font.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure>
+        <img
+          class="cover"
+          src="./assets/img/fonts/yeah-balloon-colour-font-001.jpg"/>
+        <figcaption class="copyright right">
+            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+        </figcaption>
+    </figure>
+  </section>
+
 
   <section class="slide">
     <h4>Существующие форматы</h4>

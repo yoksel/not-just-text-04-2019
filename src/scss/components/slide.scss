@@ -67,6 +67,23 @@
 }
 
 /* Titles */
+
+.slide H2,
+.slide H3,
+.slide H4 {
+  color: var(--color-grey);
+  font: bold 50px/1 'PT Sans Narrow', sans-serif;
+  margin-bottom: 1em;
+}
+
+.slide H3 {
+  font-size: 42px;
+}
+
+.slide H4 {
+  font-size: 34px;
+}
+
 .slide--section-title H2,
 .slide--section-title H3,
 .slide--section-title H4  {
@@ -95,10 +112,15 @@
   font-size: 80px;
 }
 
-.slide--dark H1,
-.slide--dark H2,
-.slide--dark H3 {
-  color: #FFF;
+.slide--dark {
+
+  H1,
+  H2,
+  H3,
+  P {
+    color: #FFF;
+
+  }
 }
 
 /* Slide components */

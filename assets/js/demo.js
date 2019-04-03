@@ -10,6 +10,7 @@ function Demo (config) {
   const rangeMin = targetElem.querySelector('.demo-range__min');
   const rangeMax = targetElem.querySelector('.demo-range__max');
   const example = targetElem.querySelector('.demo__example');
+  const codeValue = targetElem.querySelector('.demo__code-value');
 
   if(!example.innerHTML) {
     example.innerHTML = config.fullName;
@@ -43,6 +44,12 @@ function Demo (config) {
         });
     }
 
-    example.style['font-variation-settings'] = styleValues.join(', ');
+    const strValues = styleValues.join(', ');
+    example.style['font-variation-settings'] = strValues;
+
+    if(codeValue) {
+     codeValue.innerHTML = strValues;
+    }
+
   }
 }

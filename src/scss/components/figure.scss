@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
 
-  &__img-wrapper {
+  &__img-wrapper,
+  &__content {
     flex-grow: 1;
     overflow: hidden;
   }
@@ -21,12 +22,20 @@
 
     .figure__caption {
       writing-mode: vertical-rl;
-
+      line-height: 1;
     }
+
     .figure__caption-content {
       display: inline-block;
       transform: rotate(180deg);
       background: none;
+    }
+
+    .figure__caption + .figure__img-wrapper,
+    .figure__caption + .figure__content,
+    .figure__img-wrapper + .figure__caption,
+    .figure__content + .figure__caption {
+      margin-left: 1rem;
     }
   }
 }
