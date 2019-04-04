@@ -4,6 +4,12 @@
 
 * [ASCII](https://ethw.org/ASCII)
 
+## Unicode
+
+* [History of Unicode Release and Publication Dates](http://www.unicode.org/history/publicationdates.html)
+* [Unicode over 60 percent of the web (Google 2012)](https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html)
+* [Current Usage of UTF-8 for websites](https://w3techs.com/technologies/details/en-utf8/all/all)
+
 ## OpenType
 
 * [OpenType specification change log](https://docs.microsoft.com/ru-ru/typography/opentype/spec/changes)
@@ -24,11 +30,15 @@
 ## Emoji
 
 * [Why and How I Created Emoji (web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
-* [Articles on Emoji](https://www.unicode.org//press/emoji.html)
+* [Emoji (Unicode)](http://www.unicode.org/emoji/)
+* [Unicode® Technical Standard #51: UNICODE EMOJI (Unicode)](http://www.unicode.org/reports/tr51/)
+* [Articles on Emoji (Unicode)](https://www.unicode.org/press/emoji.html)
+* [Emoji and Pictographs FAQ (Unicode)](http://unicode.org/faq/emoji_dingbats.html)
 * [Emojipedia](https://emojipedia.org/)
 * (SoftBank is now on Emojipedia)[https://blog.emojipedia.org/softbank-is-now-on-emojipedia/]
 * (SoftBank emoji (Emojipedia))[https://emojipedia.org/softbank/]
 * (Apple iPhone OS 2.2 (Emojipedia))[https://emojipedia.org/apple/iphone-os-2.2/]
+* (Can I Emoji❓)[http://caniemoji.com/]
 
 ## Color fonts
 
@@ -36,9 +46,11 @@
 * [Color fonts! What? When? Where?](https://learn.fontself.com/color-fonts-what-when-where-dd8c82e5a561)
 * [Create your first color font, step-by-step (Fontself)](https://learn.fontself.com/create-your-first-color-font-step-by-step-270ced3f0745)
 * [Bitmap fonts﹣the (other) future of type (Fontself)](https://blog.fontself.com/bitmap-fonts-the-other-future-of-type-ca8aa5b51aa7)
+* [Color Fonts 101: About using & making OpenType-SVG and chromatic fonts  (Fontself)](https://help.fontself.com/faqs/color-fonts-101)
 * [Colorful typography on the web: get ready for multicolor fonts](https://pixelambacht.nl/2014/multicolor-fonts/)
 * [ChromaCheck: JS for checking color browser fonts support](https://github.com/RoelN/ChromaCheck)
 * [It All Started With Emoji: Color Typography on the Web (css-tricks)](https://css-tricks.com/it-all-started-with-emoji-color-typography-on-the-web/)
 * [OpenType-SVG color fonts (Adobe)](https://helpx.adobe.com/fonts/using/ot-svg-color-fonts.html)
 * [What are OpenType SVG Color Fonts?](https://vectortwist.com/opentype-svg-color-fonts/)
 * [Trajan Color Font (Adobe fonts)](https://fonts.adobe.com/fonts/trajan-color)
+* [Emoji: Fonts, Technically. Making Faces (and Other Emoji)](https://medium.com/making-faces-and-other-emoji/emoji-fonts-technically-40f3fdc0869e)
