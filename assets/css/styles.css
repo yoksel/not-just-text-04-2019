@@ -149,7 +149,7 @@ UL {
   font-family: 'KairosSans';
   font-size: 180px;
   text-align: center; }
-  .slide--active .font--animated {
+  .active .font--animated {
     -webkit-animation: fontVariations 12s infinite;
             animation: fontVariations 12s infinite; }
 
@@ -241,7 +241,12 @@ UL {
 .slide H4 {
   color: var(--color-grey);
   font: bold 50px/1 'PT Sans Narrow', sans-serif;
-  margin-bottom: 1em; }
+  margin-bottom: .75em; }
+  .slide H2 SPAN,
+  .slide H3 SPAN,
+  .slide H4 SPAN {
+    font: normal 25px/2 'PT Sans', sans-serif;
+    color: #777; }
 
 .slide H3 {
   font-size: 42px; }
@@ -264,7 +269,7 @@ UL {
   font-size: 130px; }
 
 .slide--section-title H2 {
-  font-size: 115px; }
+  font-size: 110px; }
 
 .slide--section-title H3 {
   font-size: 100px; }

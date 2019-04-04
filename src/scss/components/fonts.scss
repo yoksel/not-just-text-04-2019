@@ -161,7 +161,7 @@
   font-size: 180px;
   text-align: center;
 
-  .slide--active & {
+  .active & {
     animation: fontVariations 12s infinite;
   }
 }
