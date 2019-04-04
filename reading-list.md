@@ -95,13 +95,13 @@
 * [Photoshop CC Adds Support for OpenType−SVG Fonts: An in-depth look](https://blogs.adobe.com/creativecloud/photoshop-cc-adds-support-for-opentype%E2%88%92svg-fonts-an-in-depth-look/)
 * [OpenType SVG color fonts coming to Windows 10 :)](http://typedrawers.com/discussion/1499/opentype-svg-color-fonts-coming-to-windows-10)
 
-**Спеки**
+**Specs**
 
 * [CBDT](https://docs.microsoft.com/ru-ru/typography/opentype/spec/cbdt)
 * [CBLC](https://docs.microsoft.com/ru-ru/typography/opentype/spec/cblc)
-* [SVG OpenType](https://docs.microsoft.com/ru-ru/typography/opentype/spec/svg)
 * [COLR](https://docs.microsoft.com/ru-ru/typography/opentype/spec/colr)
 * [CPAL](https://docs.microsoft.com/ru-ru/typography/opentype/spec/cpal)
+* [SVG OpenType](https://docs.microsoft.com/ru-ru/typography/opentype/spec/svg)
 
 **Promo**
 
@@ -136,14 +136,11 @@
 * [Create your first color font, step-by-step (Fontself)](https://learn.fontself.com/create-your-first-color-font-step-by-step-270ced3f0745)
 * [Color Fonts 101: About using & making OpenType-SVG and chromatic fonts  (Fontself)](https://help.fontself.com/faqs/color-fonts-101)
 * [How to Create Your Own Font](https://design.tutsplus.com/tutorials/how-to-create-your-own-font--cms-29019)
-* [Fontself](https://www.fontself.com/) — расширение для Illustrator и Photoshop CC, которое позволяет создать свой шрифт прямо в редакторе,
-  цена: ₽2398,
-  туториал: [Как создать цветной шрифт при помощи Adobe Illustrator и Fontself Maker](https://design.tutsplus.com/ru/tutorials/how-to-create-a-color-font--cms-30033)
-* [Fontlab](https://www.fontlab.com/) — шрифтовый редактор
-  цена: $459.00 или ~ 30тр в рублях, есть триалка 30 дней
-* [Fontlab pad](https://www.fontlab.com/fontlab-pad/ ) — добавляет в систему поддержку цветных шрифтов, позволяет использовать их и загрузить полученный результат в виде картинки
-  цена: бесплатно
-
+* [Fontself](https://www.fontself.com/) — font editor extension for Illustrator & Photoshop CC, allows create font right in graphic editor<br>
+  price: ₽2398<br>
+  Tutorial: [Как создать цветной шрифт при помощи Adobe Illustrator и Fontself Maker](https://design.tutsplus.com/ru/tutorials/how-to-create-a-color-font--cms-30033)
+* [Fontlab](https://www.fontlab.com/) — font editor<br>
+  price: $459.00, 30-day trial version
 
 **Tools**
 
