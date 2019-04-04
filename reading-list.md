@@ -32,15 +32,27 @@
 
 ## Emoji
 
+**History**
+
 * [Why and How I Created Emoji (web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
-* [Emoji (Unicode)](http://www.unicode.org/emoji/)
-* [Unicode® Technical Standard #51: UNICODE EMOJI (Unicode)](http://www.unicode.org/reports/tr51/)
-* [Articles on Emoji (Unicode)](https://www.unicode.org/press/emoji.html)
-* [Emoji and Pictographs FAQ (Unicode)](http://unicode.org/faq/emoji_dingbats.html)
+
+**Emoji in Unicode spec**
+
+* [Emoji](http://www.unicode.org/emoji/)
+* [Unicode® Technical Standard #51: UNICODE EMOJI](http://www.unicode.org/reports/tr51/)
+* [Articles on Emoji](https://www.unicode.org/press/emoji.html)
+* [Emoji and Pictographs FAQ](http://unicode.org/faq/emoji_dingbats.html)
+* [Recommended Emoji ZWJ Sequences, v12.0](http://unicode.org/emoji/charts/emoji-zwj-sequences.html)
+
+**Emojipedia**
+
 * [Emojipedia](https://emojipedia.org/)
 * [SoftBank is now on Emojipedia](https://blog.emojipedia.org/softbank-is-now-on-emojipedia/)
-* [SoftBank emoji (Emojipedia)](https://emojipedia.org/softbank/)
-* [Apple iPhone OS 2.2 (Emojipedia)](https://emojipedia.org/apple/iphone-os-2.2/)
+* [SoftBank emoji](https://emojipedia.org/softbank/)
+* [Apple iPhone OS 2.2](https://emojipedia.org/apple/iphone-os-2.2/)
+
+**Check support**
+
 * [Can I Emoji❓](http://caniemoji.com/)
 
 ## Color fonts
