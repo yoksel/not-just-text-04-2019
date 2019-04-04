@@ -7,8 +7,8 @@
 ## Unicode
 
 * [History of Unicode Release and Publication Dates](http://www.unicode.org/history/publicationdates.html)
-* [Unicode over 60 percent of the web (Google 2012)](https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html)
-* [Current Usage of UTF-8 for websites](https://w3techs.com/technologies/details/en-utf8/all/all)
+* [Unicode over 60 percent of the web (Google, 2012)](https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html)
+* [Current Usage of UTF-8 for websites (W3techs)](https://w3techs.com/technologies/details/en-utf8/all/all)
 
 ## OpenType
 
@@ -25,7 +25,10 @@
 
 * [CSS Almanac: font-feature-settings](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
 
-## * [Font features playground](http://clagnut.com/sandbox/css3/)
+## Variable fonts playgrounds
+
+* [Axis Praxis](https://www.axis-praxis.org/)
+* [Font features playground](http://clagnut.com/sandbox/css3/)
 
 ## Emoji
 
@@ -35,10 +38,10 @@
 * [Articles on Emoji (Unicode)](https://www.unicode.org/press/emoji.html)
 * [Emoji and Pictographs FAQ (Unicode)](http://unicode.org/faq/emoji_dingbats.html)
 * [Emojipedia](https://emojipedia.org/)
-* (SoftBank is now on Emojipedia)[https://blog.emojipedia.org/softbank-is-now-on-emojipedia/]
-* (SoftBank emoji (Emojipedia))[https://emojipedia.org/softbank/]
-* (Apple iPhone OS 2.2 (Emojipedia))[https://emojipedia.org/apple/iphone-os-2.2/]
-* (Can I Emoji❓)[http://caniemoji.com/]
+* [SoftBank is now on Emojipedia](https://blog.emojipedia.org/softbank-is-now-on-emojipedia/)
+* [SoftBank emoji (Emojipedia)](https://emojipedia.org/softbank/)
+* [Apple iPhone OS 2.2 (Emojipedia)](https://emojipedia.org/apple/iphone-os-2.2/)
+* [Can I Emoji❓](http://caniemoji.com/)
 
 ## Color fonts
 
