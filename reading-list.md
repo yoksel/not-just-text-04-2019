@@ -20,12 +20,18 @@
 * [Using @font-face (css-tricks)](https://css-tricks.com/snippets/css/using-font-face/)
 * [Understanding Web Fonts and Getting the Most Out of Them (css-tricks)](https://css-tricks.com/understanding-web-fonts-getting/)
 * [Web fonts on MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
+* [A comprehensive guide to font loading strategies (Zach Leatherman)](https://www.zachleat.com/web/comprehensive-webfonts/)
 
 ## Variable fonts
 
 * [CSS Almanac: font-feature-settings](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
 
-## Variable fonts playgrounds
+**Tools**
+
+* [FontDrop](https://fontdrop.info)
+* [WakamaiFondue](https://wakamaifondue.com)
+
+**Variable fonts playgrounds**
 
 * [Axis Praxis](https://www.axis-praxis.org/)
 * [Font features playground](http://clagnut.com/sandbox/css3/)
@@ -35,6 +41,9 @@
 **History**
 
 * [Why and How I Created Emoji (web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
+* [Mobile Gmail now supports mobile pictograms (2008)](https://japan.googleblog.com/2008/01/gmail.html)
+* [Emoticons are now available in Gmail (2008)](https://japan.googleblog.com/2008/10/gmail.html)
+* [Unicode Version 6.0: Support for Popular Symbols in Asia (2010)](http://blog.unicode.org/2010/10/unicode-version-60-support-for-popular.html)
 
 **Emoji in Unicode spec**
 
@@ -42,7 +51,10 @@
 * [Unicode® Technical Standard #51: UNICODE EMOJI](http://www.unicode.org/reports/tr51/)
 * [Articles on Emoji](https://www.unicode.org/press/emoji.html)
 * [Emoji and Pictographs FAQ](http://unicode.org/faq/emoji_dingbats.html)
+* [Unicode® Emoji Charts v12.0](http://www.unicode.org/emoji/charts/)
+* [Emoji List, v12.0](https://www.unicode.org/emoji/charts/emoji-list.html)
 * [Recommended Emoji ZWJ Sequences, v12.0](http://unicode.org/emoji/charts/emoji-zwj-sequences.html)
+* [Emoji Versions & Sources, v12.0](https://www.unicode.org/emoji/charts/emoji-versions-sources.html)
 
 **Emojipedia**
 
