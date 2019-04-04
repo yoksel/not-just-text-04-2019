@@ -12,6 +12,7 @@
 
 ## OpenType
 
+* [OpenType® specification](https://docs.microsoft.com/en-us/typography/opentype/spec/)
 * [OpenType (wiki)](https://ru.wikipedia.org/wiki/OpenType)
 * [OpenType specification change log](https://docs.microsoft.com/ru-ru/typography/opentype/spec/changes)
 
@@ -38,7 +39,9 @@
 
 **Usage**
 
-* [Как использовать вариативные шрифты в реальном мире](https://css-live.ru/articles/kak-ispolzovat-variativnye-shrifty-v-realnom-mire.html)
+* [Как использовать вариативные шрифты в реальном мире](https://css-live.ru/articles/kak-ispolzovat-variativnye-shrifty-v-realnom-mire.html)<br>
+  Source: [How to use variable fonts in the real world](https://clearleft.com/posts/how-to-use-variable-fonts-in-the-real-world)
+
 
 **Tools**
 
@@ -60,6 +63,7 @@
 * [Shigetaka Kurita, Emoji, 1998-1999 (MoMA, 2016)](https://www.moma.org/collection/works/196070)
 * [Why and How I Created Emoji (web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
 * [How emoji conquered the world](https://www.theverge.com/2013/3/4/3966140/how-emoji-conquered-the-world)
+* [](https://www.abc.net.au/news/2017-02-11/meet-the-man-who-invented-emoji/8249456)
 
 **Emoji in Unicode spec**
 
