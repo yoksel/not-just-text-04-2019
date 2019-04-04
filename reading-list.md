@@ -125,11 +125,14 @@
 * [Trajan Color Font (SVG OpenType, Adobe fonts)](https://fonts.adobe.com/fonts/trajan-color)
 * [Noto Color Emoji (Google)](https://www.google.com/get/noto/#emoji-zsye-color)
 * [Noto Color Emoji Help](https://www.google.com/get/noto/help/emoji/)
-* [Rocher Color](https://www.harbortype.com/rocher-color/) — цветной и вариабельный (COLR/CPAL), статья про шрифт: [Rocher Color: making a variable color font](https://www.harbortype.com/blog/rocher-color-making-a-variable-color-font/)
-* [Bixa Color](https://bixacolor.com/) (SVG OpenType) — бесплатно для некоммерческого использования, статья про шрифт [Building Bixa Color, a color font for the web](https://pixelambacht.nl/2016/building-bixa-color/)
-* [Bungee](https://djr.com/bungee/) — доступен во всех возможных цветных форматах (!!!) + как слоеный, есть на goole fonts + гитхабе
-* [Gibert](https://www.typewithpride.com/) — цветной радужный шрифт (SVG OpenType)
-* [Color fonts made with Fontself](https://creativemarket.com/fontself/collections/359610/Color-fonts-made-with-Fontself) — большая подборка платных цветных SVG и Bitmap шрифтов
+* [Rocher Color](https://www.harbortype.com/rocher-color/) — color & variable font (COLR/CPAL)<br>
+  Article about font [Rocher Color: making a variable color font](https://www.harbortype.com/blog/rocher-color-making-a-variable-color-font/)
+* [Bixa Color](https://bixacolor.com/) (SVG OpenType) — free for non-commercial use<br>
+  Article about font [Building Bixa Color, a color font for the web](https://pixelambacht.nl/2016/building-bixa-color/)
+* [Bungee](https://djr.com/bungee/) — available in all color formats (!) + layered version<br>
+  [Github](https://github.com/djrrb/bungee), [Google Fonts](https://fonts.google.com/?selection.family=Bungee&query=bungee)
+* [Gibert](https://www.typewithpride.com/) — rainbow font (SVG OpenType)
+* [Color fonts made with Fontself](https://creativemarket.com/fontself/collections/359610/Color-fonts-made-with-Fontself) — paid fonts on creativemarket.com
 
 **Creating font**
 
@@ -137,7 +140,7 @@
 * [Color Fonts 101: About using & making OpenType-SVG and chromatic fonts  (Fontself)](https://help.fontself.com/faqs/color-fonts-101)
 * [How to Create Your Own Font](https://design.tutsplus.com/tutorials/how-to-create-your-own-font--cms-29019)
 * [Fontself](https://www.fontself.com/) — font editor extension for Illustrator & Photoshop CC, allows create font right in graphic editor<br>
-  price: ₽2398<br>
+  Price: ₽2398<br>
   Tutorial: [Как создать цветной шрифт при помощи Adobe Illustrator и Fontself Maker](https://design.tutsplus.com/ru/tutorials/how-to-create-a-color-font--cms-30033)
 * [Fontlab](https://www.fontlab.com/) — font editor<br>
   price: $459.00, 30-day trial version
