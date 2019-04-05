@@ -15,6 +15,14 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    object-position: left top;
+  }
+
+  &__caption-content {
+    SPAN {
+      display: inline-block;
+      font-size: 0.7em;
+    }
   }
 
   &--caption-aside {
@@ -29,6 +37,11 @@
       display: inline-block;
       transform: rotate(180deg);
       background: none;
+
+      A {
+        background: none;
+      }
+
     }
 
     .figure__caption + .figure__img-wrapper,
