@@ -1,6 +1,5 @@
 .columns {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   grid-column-gap: 0;
 
@@ -9,6 +8,10 @@
     left: 0;
     top: 0;
     bottom: 0;
+  }
+
+  &--centered {
+    align-items: center;
   }
 
   .about-slide & {

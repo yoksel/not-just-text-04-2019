@@ -11,7 +11,7 @@
       --slide-ratio: calc(16 / 9);
     }
   </style>
-  <script src="assets/js/demo.js"></script>
+  <!-- <script src="assets/js/demo.js"></script> -->
 </head>
 <body class="shower list">
   <header class="caption">
@@ -1657,6 +1657,12 @@
     </script>
   </section>
 
+  <section class="slide slide--centered-content">
+    <div class="demo demo--centered">
+      <span class="font font--animated">Move<br>is life</span>
+    </div>
+  </section>
+
   <section class="slide">
     <div class="demo demo--full demo--decovar demo--cells fonts">
       <span class="font font--decovar">Text</span>
@@ -1715,20 +1721,25 @@
   </section>
 
   <section class="slide">
-    <h3>Плюсы</h3>
+    <div class="columns">
+      <div class="column">
+        <h3>Плюсы</h3>
 
-    <ul>
-      <li class="next">гибкость</li>
-      <li class="next">небольшой вес</li>
-    </ul>
+        <ul>
+          <li class="next">гибкость</li>
+          <li class="next">небольшой вес</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3 class="next">Минусы</h3>
 
-    <h3 class="next">Минусы</h3>
-
-    <ul>
-      <li class="next">подержка браузерами</li>
-      <li class="next">мало шрифтов</li>
-      <li class="next">мало шрифтов с кириллицей</li>
-    </ul>
+        <ul>
+          <li class="next">подержка браузерами</li>
+          <li class="next">мало шрифтов</li>
+          <li class="next">мало шрифтов с кириллицей</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="slide">
@@ -1745,7 +1756,7 @@
           </li>
         </ul>
       </div>
-      <div class="column">
+      <div class="column next">
         <h3>Инструменты</h3>
 
         <ul>
@@ -1782,12 +1793,6 @@
           <li><a href="https://github.com/twardoch/varfonts-ofl/tree/master/VotoSerifGX-OFL">VotoSerif</a></li>
         </ul>
       </div>
-    </div>
-  </section>
-
-  <section class="slide slide--centered-content">
-    <div class="demo">
-      <span class="font font--animated">Move<br>is life</span>
     </div>
   </section>
 
@@ -1879,7 +1884,7 @@
           <tr>
             <td class="nowrap"><strong>2000</strong>-04-26</td>
             <td>NTT DoCoMo Pictographs</td>
-            <td>Graham Asher (Symbian)</td>
+            <td>Graham Asher (<strong>Symbian</strong>)</td>
           </tr>
           <tr>
             <td class="nowrap"><strong>2006</strong>-11-01</td>
@@ -1899,7 +1904,97 @@
           <tr>
             <td class="nowrap"><strong>2007</strong>-09-18</td>
             <td>Japanese TV Symbols (ARIB)</td>
-            <td>Michel Suignard (Microsoft)</td>
+            <td>Michel Suignard (<strong>Microsoft</strong>)</td>
+          </tr>
+        </tbody>
+        </table>
+        
+      </div>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <figcaption
+        class="figure__caption">
+        <span class="figure__caption-content">
+          <a
+            href="https://japan.googleblog.com/2008/10/gmail.html">Emoticons are now available in Gmail</a>
+          <span>(2008)</span>
+        </span>
+      </figcaption>
+
+      <div class="figure__img-wrapper">
+        <img
+          class="figure__img"
+          src="./assets/img/emoji-gmail-10-2008.png"/>
+      </div>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <figcaption
+        class="figure__caption">
+        <span class="figure__caption-content">
+          <a
+            href="https://www.macrumors.com/2008/10/05/iphone-2-2-includes-hidden-japanese-emoji-icons/">iPhone 2.2 Includes Hidden Japanese Emoji Icons</a>
+          <span>(2008)</span>
+        </span>
+      </figcaption>
+
+      <div class="figure__img-wrapper">
+        <img
+          class="figure__img"
+          src="./assets/img/emoji-iPhone-2-2.jpg"/>
+      </div>
+    </figure>
+  </section>
+
+  <section class="slide slide--no-label">
+    <figure class="figure figure--caption-aside">
+      <figcaption
+        class="figure__caption">
+        <a
+          class="figure__caption-content"
+          href="http://www.unicode.org/reports/tr51/#Proposals">
+          Emoji Proposals</a>
+      </figcaption>
+
+      <div class="figure__content">
+        <table class="emoji-proposals-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Title</th>
+              <th>Authors</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="nowrap"><strong>2000</strong>-04-26</td>
+            <td>NTT DoCoMo Pictographs</td>
+            <td>Graham Asher (<strong>Symbian</strong>)</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>2006</strong>-11-01</td>
+            <td>Symbols (scope extension)</td>
+            <td>Mark Davis (<strong>Google</strong>)</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>2007</strong>-08-03</td>
+            <td>Working Draft Proposal for Encoding Emoji Symbols</td>
+            <td>Kat Momoi, Mark Davis, Markus Scherer (<strong>Google</strong>)</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>2007</strong>-08-09</td>
+            <td>Symbols draft resolution</td>
+            <td>Mark Davis (<strong>Google</strong>)</td>
+          </tr>
+          <tr>
+            <td class="nowrap"><strong>2007</strong>-09-18</td>
+            <td>Japanese TV Symbols (ARIB)</td>
+            <td>Michel Suignard (<strong>Microsoft</strong>)</td>
           </tr>
           <tr>
             <td class="nowrap"><strong>2009</strong>-01-30</td>
@@ -1928,27 +2023,6 @@
     </figure>
   </section>
 
-
-
-  <section class="slide slide--no-label">
-    <figure class="figure figure--caption-aside">
-      <figcaption
-        class="figure__caption">
-        <span class="figure__caption-content">
-          <a
-            href="https://japan.googleblog.com/2008/10/gmail.html">Emoticons are now available in Gmail</a>
-          <span>(2008)</span>
-        </span>
-      </figcaption>
-
-      <div class="figure__img-wrapper">
-        <img
-          class="figure__img"
-          src="./assets/img/emoji_gmail-10-2008.png"/>
-      </div>
-    </figure>
-  </section>
-
   <section class="slide slide--no-label">
     <figure class="figure figure--caption-aside">
       <figcaption
@@ -1962,34 +2036,167 @@
 
       <div class="figure__img-wrapper">
         <img
-          class="figure__img"
+          class="figure__img figure__img--black  figure__img--centered"
           src="./assets/img/millennials_centered_infographic_part.png"/>
       </div>
     </figure>
   </section>
 
-  <section class="slide slide--no-label">
-    <figure class="figure">
-      <figcaption
-        class="figure__caption">
-        <span class="figure__caption-content">
+  <section class="slide">
+    <h4>Почитать</h4>
+    <ul>
+      <li>
+        <a href="http://www.unicode.org/emoji/">Emoji на unicode.org</a>
+      </li>
+      <li>
+        <a href="https://emojipedia.org/">Emojipedia</a>
+      </li>
+      <li>
         <a
           href="https://www.youtube.com/watch?v=DUwZpLBSuiI">Что не так с эмоджи</a>
-          <br>
           Алексей Авдеев, WSD в Минске, 2017
-        </span>
-      </figcaption>
-
-      <div class="figure__img-wrapper">
-        <img
-          class="figure__img"
-          src="./assets/img/whats-emoji-wsd-2017.png"/>
-      </div>
-    </figure>
+      </li>
+    </ul>
   </section>
 
   <section class="slide slide--dark slide--section-title">
     <h2>Цветные шрифты</h2>
+  </section>
+
+  <section class="slide">
+    <h4>Существующие форматы</h4>
+
+    <ul>
+      <li>SBIX (Apple)</li>
+      <li>CBDT/CBLC (Google)</li>
+      <li>COLR/CPAL (Microsoft)</li>
+      <li>SVG Open Type (Mozilla/Adobe)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h4>Существующие форматы таблицей</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <td>Формат</td>
+          <td>Вектор</td>
+          <td>Растр</td>
+          <td>Браузеры</td>
+          <td>Windows</td>
+          <td>MacOS</td>
+          <td>В OpenType</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>SBIX (Apple)</th>
+          <td></td>
+          <td>+</td>
+          <td>Chrome, Safari, Edge</td>
+          <td>?</td>
+          <td>MacOS, iOS</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <th>CBDT/CBLC (Google)</th>
+          <td></td>
+          <td>+</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>COLR/CPAL (Microsoft)</th>
+        </tr>
+        <tr>
+          <th>SVG Open Type (Mozilla/Adobe)</th>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="slide">
+    <h5>SBIX (Apple)</h5>
+
+    <ul>
+      <li>содержит растровые изображения</li>
+      <li>много весит (десятки мегабайт)</li>
+      <li>не входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>MacOS, iOS, и только в приложениях, которые используют системный рендеринг</li>
+      <li>Chrome, Safari  Edge (check it)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>CBDT/CBLC (Google)</h5>
+
+    <ul>
+      <li>содержит растровые изображения</li>
+      <li>много весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Android, Chrome OS</li>
+      <li>Chrome Linux, Firefox, Edge (check it)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>COLR/CPAL (Microsoft)</h5>
+
+    <ul>
+      <li>глифы в кривых</li>
+      <li>для каждого символа несколько глифов, которые накладываются друг на друга</li>
+      <li>в будущем можно будет перекрашивать через CSS</li>
+      <li>мало весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Windows с 8.1 в шрифте Segoe UI Emoji.</li>
+      <li>Браузеры: Firefox, Chrome, Safai, Edge (need to check)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>SVG Open Type (Mozilla/Adobe)</h5>
+
+    <ul>
+      <li>глифы в SVG, могут содержать градиенты и растроввые изображения</li>
+      <li>в будущем можно будет перекрашивать через CSS</li>
+      <li>мало весит</li>
+      <li>входит в стандарт OpenType</li>
+    </ul>
+
+    <h5>Поддержка</h5>
+
+    <ul>
+      <li>Illustrator CC 2018+, Photoshop CC 2017+ и InDesign CC 2019+</li>
+      <li>MacOS Mojave</li>
+      <li>Браузеры: Firefox, Edge (need to check)</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h5>Поддержка в браузерах</h5>
+
+    <ul>
+      <li>Edge: все форматы</li>
+      <li>Firefox: SVG, COLR, SBIX</li>
+      <li>Chrome: все, кроме SVG Open Type</li>
+      <li>Safari: SBIX, COLR, SVG Open Type (Mojave)</li>
+    </ul>
   </section>
 
   <section class="slide slide--no-label">
@@ -2114,101 +2321,6 @@
   </section>
 
 
-  <section class="slide">
-    <h4>Существующие форматы</h4>
-
-    <ul>
-      <li>SBIX (Apple)</li>
-      <li>CBDT/CBLC (Google)</li>
-      <li>COLR/CPAL (Microsoft)</li>
-      <li>SVG Open Type (Mozilla/Adobe)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>SBIX (Apple)</h5>
-
-    <ul>
-      <li>содержит растровые изображения</li>
-      <li>много весит (десятки мегабайт)</li>
-      <li>не входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>MacOS, iOS, и только в приложениях, которые используют системный рендеринг</li>
-      <li>Chrome, Safari  Edge (check it)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>CBDT/CBLC (Google)</h5>
-
-    <ul>
-      <li>содержит растровые изображения</li>
-      <li>много весит</li>
-      <li>входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>Android, Chrome OS</li>
-      <li>Chrome Linux, Firefox, Edge (check it)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>COLR/CPAL (Microsoft)</h5>
-
-    <ul>
-      <li>глифы в кривых</li>
-      <li>для каждого символа несколько глифов, которые накладываются друг на друга</li>
-      <li>в будущем можно будет перекрашивать через CSS</li>
-      <li>мало весит</li>
-      <li>входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>Windows с 8.1 в шрифте Segoe UI Emoji.</li>
-      <li>Браузеры: Firefox, Chrome, Safai, Edge (need to check)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>SVG Open Type (Mozilla/Adobe)</h5>
-
-    <ul>
-      <li>глифы в SVG, могут содержать градиенты и растроввые изображения</li>
-      <li>в будущем можно будет перекрашивать через CSS</li>
-      <li>мало весит</li>
-      <li>входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>Illustrator CC 2018+, Photoshop CC 2017+ и InDesign CC 2019+</li>
-      <li>MacOS Mojave</li>
-      <li>Браузеры: Firefox, Edge (need to check)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>Поддержка в браузерах</h5>
-
-    <ul>
-      <li>Edge: все форматы</li>
-      <li>Firefox: SVG, COLR, SBIX</li>
-      <li>Chrome: все, кроме SVG Open Type</li>
-      <li>Safari: SBIX, COLR, SVG Open Type (Mojave)</li>
-    </ul>
-  </section>
-
-
   <section class="slide slide--section-title slide--questions">
     <h2>Вопросы?</h2>
 
@@ -2221,7 +2333,7 @@
 
   <script src="node_modules/shower-core/shower.min.js"></script>
   <script src="assets/js/prism.js"></script>
-  <script src="assets/js/highlightLines.js"></script>
-  <script src="assets/js/autorun.js"></script>
+  <!-- <script src="assets/js/highlightLines.js"></script>
+  <script src="assets/js/autorun.js"></script> -->
 </body>
 </html>

@@ -358,6 +358,9 @@ UL {
   position: relative;
   height: 100%; }
 
+.demo--centered {
+  height: auto; }
+
 .demo--full {
   position: absolute;
   top: 0;
@@ -712,10 +715,8 @@ pre[class*="language-"] {
   height: 100%;
   max-height: 100%;
   display: flex;
-  flex-direction: column; }
-  .figure__img-wrapper, .figure__content {
-    flex-grow: 1;
-    overflow: hidden; }
+  flex-direction: column;
+  justify-content: center; }
   .figure__img {
     width: 100%;
     height: 100%;
@@ -723,12 +724,21 @@ pre[class*="language-"] {
        object-fit: contain;
     -o-object-position: left top;
        object-position: left top; }
+    .figure__img--black {
+      background: #000; }
+    .figure__img--centered {
+      -o-object-position: center center;
+         object-position: center center; }
+  .figure__caption {
+    line-height: 1.2;
+    margin-bottom: 1rem; }
   .figure__caption-content SPAN {
     display: inline-block;
-    font-size: 0.7em; }
+    font-size: 0.8em; }
   .figure--caption-aside {
     flex-direction: row; }
     .figure--caption-aside .figure__caption {
+      margin-bottom: 0;
       -webkit-writing-mode: vertical-rl;
           -ms-writing-mode: tb-rl;
               writing-mode: vertical-rl;
@@ -737,7 +747,8 @@ pre[class*="language-"] {
       display: inline-block;
       -webkit-transform: rotate(180deg);
               transform: rotate(180deg);
-      background: none; }
+      background: none;
+      text-align: right; }
       .figure--caption-aside .figure__caption-content A {
         background: none; }
     .figure--caption-aside .figure__caption + .figure__img-wrapper,
@@ -748,7 +759,6 @@ pre[class*="language-"] {
 
 .columns {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   grid-column-gap: 0; }
   .columns--full-page {
@@ -756,6 +766,8 @@ pre[class*="language-"] {
     left: 0;
     top: 0;
     bottom: 0; }
+  .columns--centered {
+    align-items: center; }
   .about-slide .columns {
     align-items: flex-start; }
 
@@ -790,7 +802,6 @@ pre[class*="language-"] {
 
 .emoji-proposals-table {
   width: 100% !important;
-  height: 100%;
   margin-left: 0 !important;
   margin-bottom: 0 !important;
   padding: 1rem;
@@ -800,7 +811,7 @@ pre[class*="language-"] {
   .emoji-proposals-table TD,
   .emoji-proposals-table TH {
     background-size: 2px 100% !important;
-    padding: .5rem !important;
+    padding: .55rem !important;
     border: none;
     vertical-align: top; }
   .emoji-proposals-table TH {
