@@ -57,16 +57,17 @@
 
 **History**
 
-* [Mobile Gmail now supports mobile pictograms (2008)](https://japan.googleblog.com/2008/01/gmail.html)
-* [Emoticons are now available in Gmail (2008)](https://japan.googleblog.com/2008/10/gmail.html)
+* [Mobile Gmail now supports mobile pictograms (01/2008)](https://japan.googleblog.com/2008/01/gmail.html)
+* [Emoticons are now available in Gmail (10/2008)](https://japan.googleblog.com/2008/10/gmail.html)
+* [iPhone 2.2 Includes Hidden Japanese Emoji Icons (10/2008)](https://www.macrumors.com/2008/10/05/iphone-2-2-includes-hidden-japanese-emoji-icons)
+
 * [Unicode Version 6.0: Support for Popular Symbols in Asia (2010)](http://blog.unicode.org/2010/10/unicode-version-60-support-for-popular.html)
+* [How emoji conquered the world (2013)](https://www.theverge.com/2013/3/4/3966140/how-emoji-conquered-the-world)
+* [Why the White House Is Using Emoji (2014)](https://www.theatlantic.com/technology/archive/2014/10/why-the-white-house-is-using-emojis/381307/) [Millenials, image of report with emoji](https://cdn.theatlantic.com/assets/media/img/posts/2014/10/millennials_centered_infographic_v3/47ec5dff2.jpg)
 * [Shigetaka Kurita, Emoji, 1998-1999 (MoMA, 2016)](https://www.moma.org/collection/works/196070)
-* [Why and How I Created Emoji (web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
-* [How emoji conquered the world](https://www.theverge.com/2013/3/4/3966140/how-emoji-conquered-the-world)
-* [Emoji inventor Shigetaka Kurita says MoMA New York acquisition 'feels like a dream'](https://www.abc.net.au/news/2017-02-11/meet-the-man-who-invented-emoji/8249456)
-* [Why the White House Is Using Emoji](https://www.theatlantic.com/technology/archive/2014/10/why-the-white-house-is-using-emojis/381307/) [Millenials, image of report with emoji](https://cdn.theatlantic.com/assets/media/img/posts/2014/10/millennials_centered_infographic_v3/47ec5dff2.jpg)
-* [The inventor of emoji on his famous creations – and his all-time favorite](https://www.theguardian.com/technology/2016/oct/27/emoji-inventor-shigetaka-kurita-moma-new-york-text)
-* [List of additional symbols of ARIB Gaiji (Japan TV Broadcast Symbols)](https://ja.wikipedia.org/wiki/ARIB%E5%A4%96%E5%AD%97%E3%81%AE%E8%BF%BD%E5%8A%A0%E8%A8%98%E5%8F%B7%E4%B8%80%E8%A6%A7)
+* [The inventor of emoji on his famous creations – and his all-time favorite (2016)](https://www.theguardian.com/technology/2016/oct/27/emoji-inventor-shigetaka-kurita-moma-new-york-text)
+* [Why and How I Created Emoji (2016, web.archive.org)](https://web.archive.org/web/20160610220635/http://ignition.co/105)
+* [Emoji inventor Shigetaka Kurita says MoMA New York acquisition 'feels like a dream' (2017)](https://www.abc.net.au/news/2017-02-11/meet-the-man-who-invented-emoji/8249456)
 
 **Emoji in Unicode spec**
 
@@ -82,6 +83,7 @@
 **Emoji sources**
 
 * [ARIB STD B24 character set](https://en.wikipedia.org/wiki/ARIB_STD_B24_character_set)
+* [List of additional symbols of ARIB Gaiji (Japan TV Broadcast Symbols)](https://ja.wikipedia.org/wiki/ARIB%E5%A4%96%E5%AD%97%E3%81%AE%E8%BF%BD%E5%8A%A0%E8%A8%98%E5%8F%B7%E4%B8%80%E8%A6%A7)
 
 **Emojipedia**
 
