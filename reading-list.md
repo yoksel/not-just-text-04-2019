@@ -81,7 +81,7 @@
 
 **Emoji sources**
 
-* [ARIB STD B24 character set](https://en.wikipedia.org/wiki/ARIB_STD_B24_character_set)
+* [ARIB STD B24 character set (1999)](https://en.wikipedia.org/wiki/ARIB_STD_B24_character_set)
 * [List of additional symbols of ARIB Gaiji (Japan TV Broadcast Symbols)](https://ja.wikipedia.org/wiki/ARIB%E5%A4%96%E5%AD%97%E3%81%AE%E8%BF%BD%E5%8A%A0%E8%A8%98%E5%8F%B7%E4%B8%80%E8%A6%A7)
 * [Zapf Dingbats (1978)](https://en.wikipedia.org/wiki/Zapf_Dingbats)
 * [Webdings (1997)](https://en.wikipedia.org/wiki/Webdings)
