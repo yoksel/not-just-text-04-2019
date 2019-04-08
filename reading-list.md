@@ -34,6 +34,7 @@
 
 ## Variable fonts
 
+* [Variable Fonts on the Web (webkit.org, 2016)](https://webkit.org/blog/7051/variable-fonts-on-the-web/)
 * [CSS Almanac: font-feature-settings](https://css-tricks.com/almanac/properties/f/font-feature-settings/)
 * [caniuse.com/#feat=variable-fonts](https://caniuse.com/#feat=variable-fonts)
 
@@ -41,7 +42,8 @@
 
 * [Как использовать вариативные шрифты в реальном мире](https://css-live.ru/articles/kak-ispolzovat-variativnye-shrifty-v-realnom-mire.html)<br>
   Source: [How to use variable fonts in the real world](https://clearleft.com/posts/how-to-use-variable-fonts-in-the-real-world)
-
+* [Using OpenType features (Adobe)](https://helpx.adobe.com/fonts/using/use-open-type-features.html)
+* [Syntax for OpenType features in CSS](https://helpx.adobe.com/fonts/using/open-type-syntax.html)
 
 **Tools**
 
@@ -109,6 +111,7 @@
 * [Open Standard Color Font Fun for Everyone (Google, 2013)](https://opensource.googleblog.com/2013/05/open-standard-color-font-fun-for.html)
 * [Photoshop CC Adds Support for OpenType−SVG Fonts: An in-depth look](https://blogs.adobe.com/creativecloud/photoshop-cc-adds-support-for-opentype%E2%88%92svg-fonts-an-in-depth-look/)
 * [OpenType SVG color fonts coming to Windows 10 :)](http://typedrawers.com/discussion/1499/opentype-svg-color-fonts-coming-to-windows-10)
+* [Issue 306078: SVG in OpenType support (bugs.chromium.org)](https://bugs.chromium.org/p/chromium/issues/detail?id=306078)
 
 **Specs**
 
@@ -134,6 +137,12 @@
 * [Emoji: Fonts, Technically. Making Faces (and Other Emoji)](https://medium.com/making-faces-and-other-emoji/emoji-fonts-technically-40f3fdc0869e)
 * [Color fonts. Overview of the proposals for color extensions of the OpenType font format.](https://blog.fontlab.com/font-tech/color-fonts/color-font-format-proposals/)
 * [What Are Color Fonts?](https://design.tutsplus.com/articles/the-beginners-guide-to-color-fonts--cms-29861)
+
+**Support**
+
+* [OpenType-SVG color fonts: applications that support OpenType-SVG fonts
+](https://helpx.adobe.com/fonts/using/ot-svg-color-fonts.html#application-support)
+* [colorfonts.wtf](https://www.colorfonts.wtf/)
 
 **Fonts**
 
