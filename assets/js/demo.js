@@ -50,6 +50,5 @@ function Demo (config) {
     if(codeValue) {
      codeValue.innerHTML = strValues;
     }
-
   }
 }

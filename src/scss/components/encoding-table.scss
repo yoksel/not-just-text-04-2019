@@ -13,16 +13,8 @@
     border: none;
   }
 
-  TH {
-    background-color: #EEE !important;
-    color: #999;
-
-    &:empty {
-      background: none !important;
-    }
-  }
-
   TD {
+    min-width: 2em;
     font-family: Georgia, serif;
   }
 

@@ -29,6 +29,10 @@
     border-left: 1px solid var(--color-line);
   }
 
+  &__colored-tr {
+    border-top: 2px solid #000;
+  }
+
   .nowrap {
     white-space: nowrap;
   }

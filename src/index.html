@@ -11,7 +11,7 @@
       --slide-ratio: calc(16 / 9);
     }
   </style>
-  <!-- <script src="assets/js/demo.js"></script> -->
+  <script src="assets/js/demo.js"></script>
 </head>
 <body class="shower list">
   <header class="caption">
@@ -333,10 +333,13 @@
       <li><a href="https://fonts.adobe.com/">fonts.adobe.com</a> — в составе подписки на Creative Cloud</li>
       <li><a href="https://www.myfonts.com/">myfonts.com</a> — покупка отдельных шрифтов</li>
       <li><a href="https://www.fontspring.com/license/webfont">fontspring.com</a> — покупка отдельных шрифтов, есть бесплатные</li>
+      <li>
+        <a href="https://www.fontfabric.com/fonts/?sort=free-fonts">fontfabric.com</a> — покупка отдельных шрифтов, есть бесплатные
+      </li>
     </ul>
   </section>
 
-  <section class="slide">
+  <!-- <section class="slide">
     <h2>Когда использовать?</h2>
 
     <ul>
@@ -344,7 +347,7 @@
         ????
       </li>
     </ul>
-  </section>
+  </section> -->
 
   <section class="slide slide--dark slide--section-title">
     <h3>Проблема кастомных шрифтов</h3>
@@ -874,6 +877,10 @@
   </section>
 
   <section class="slide">
+    (примеры шрифтов, как с вектором так и с растром)
+  </section>
+
+  <section class="slide">
     <h4>Существующие форматы</h4>
 
     <ul>
@@ -885,33 +892,69 @@
   </section>
 
   <section class="slide">
-    <h4>Существующие форматы таблицей</h4>
+    <h4>Свойства форматов</h4>
 
     <table>
       <thead>
         <tr>
-          <td>Формат</td>
-          <td>Вектор</td>
-          <td>Растр</td>
-          <td>Браузеры</td>
-          <td>Windows</td>
-          <td>MacOS</td>
-          <td>В OpenType</td>
+          <th>Формат</th>
+          <th>Содержимое</th>
+          <th>В OpenType</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>SBIX (Apple)</th>
-          <td></td>
-          <td>+</td>
-          <td>Chrome, Safari, Edge</td>
-          <td>?</td>
-          <td>MacOS, iOS</td>
+          <td>Растр</td>
           <td>-</td>
         </tr>
         <tr>
           <th>CBDT/CBLC (Google)</th>
-          <td></td>
+          <td>Растр</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <th>COLR/CPAL (Microsoft)</th>
+          <td>Векторные глифы</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <th>SVG Open Type (Mozilla/Adobe)</th>
+          <td>SVG, растр</td>
+          <td>+</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="slide">
+    <h4>Поддержка</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Формат</th>
+          <th>Windows</th>
+          <th>MacOS/iOS</th>
+          <th>Браузеры</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>SBIX (Apple)</th>
+          <td>?</td>
+          <td>+</td>
+          <td>
+            Chrome, Safari, Edge
+            <span class="browser chrome"></span>
+            <span class="browser safari"></span>
+            <span class="browser opera"></span>
+            <span class="browser firefox"></span>
+            <span class="browser edge"></span>
+          </td>
+        </tr>
+        <tr>
+          <th>CBDT/CBLC (Google)</th>
           <td>+</td>
           <td></td>
           <td></td>
@@ -1015,7 +1058,7 @@
           class="cover"
           src="./assets/img/fonts/happy-pencil.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/Alena_Morgunova/2262462-Happy-Pencil-bitmap-color-font">Happy Pencil bitmap color font</a>
         </figcaption>
     </figure>
   </section>
@@ -1026,7 +1069,7 @@
           class="cover"
           src="./assets/img/fonts/1903699-Batik-India-Color-Font.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/ilonitta/1903699-Batik-India-Color-Font">Batik India Color Font</a>
         </figcaption>
     </figure>
   </section>
@@ -1037,7 +1080,7 @@
           class="cover"
           src="./assets/img/fonts/2259523-Funny-Font.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/MayaIva/2259523-Funny-Font">Funny Font</a>
         </figcaption>
     </figure>
   </section>
@@ -1048,7 +1091,7 @@
           class="cover"
           src="./assets/img/fonts/add-some-color-.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/Twinbrush/2663476-Candy-Display-Script-SVG">Candy Display Script + SVG</a>
         </figcaption>
     </figure>
   </section>
@@ -1059,7 +1102,7 @@
           class="cover"
           src="./assets/img/fonts/Bouqet-Flower-Watercolor.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/bloomxxvi/2207870-Bouqet-Flower-Watercolor">Bouqet Flower & Watercolor</a>
         </figcaption>
     </figure>
   </section>
@@ -1070,7 +1113,7 @@
           class="cover"
           src="./assets/img/fonts/ColorTube-Samples-A-to-P.png"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://www.fontsquirrel.com/fonts/colortube">Colortube</a>
         </figcaption>
     </figure>
   </section>
@@ -1081,7 +1124,7 @@
           class="cover"
           src="./assets/img/fonts/FLEURO-Colour-Font.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/Nickylaatz/2019433-NEW%21-FLEURO-Colour-Font-%29">FLEURO Colour Font </a>
         </figcaption>
     </figure>
   </section>
@@ -1092,7 +1135,7 @@
           class="cover"
           src="./assets/img/fonts/loki-color-font.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/Olga_Otryvanova/2266201-Loki-Color-Font">Loki Color Font</a>
         </figcaption>
     </figure>
   </section>
@@ -1103,7 +1146,7 @@
           class="cover"
           src="./assets/img/fonts/MEMPHIS-Type-Collection.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/anugrahadesign/1331225-MEMPHIS-Type-Collection">MEMPHIS Type Collection</a>
         </figcaption>
     </figure>
   </section>
@@ -1114,7 +1157,7 @@
           class="cover"
           src="./assets/img/fonts/Sarah-Jon-Watercolor-Font.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/Imknottangled/1840383-Sarah-Jon-Watercolor-Font">Sarah & Jon Watercolor Font</a>
         </figcaption>
     </figure>
   </section>
@@ -1125,7 +1168,7 @@
           class="cover"
           src="./assets/img/fonts/yeah-balloon-colour-font-001.jpg"/>
         <figcaption class="copyright right">
-            <a href="http://fiftyfootshadows.net/">ССЫЛКУ НА ШРИФТ</a>
+            <a href="https://creativemarket.com/itsmesimon/2355840-Yeah-foil-balloon-colour-font">Yeah foil balloon colour font</a>
         </figcaption>
     </figure>
   </section>
@@ -1143,7 +1186,7 @@
 
   <script src="node_modules/shower-core/shower.min.js"></script>
   <script src="assets/js/prism.js"></script>
-  <!-- <script src="assets/js/highlightLines.js"></script>
-  <script src="assets/js/autorun.js"></script> -->
+  <script src="assets/js/highlightLines.js"></script>
+  <script src="assets/js/autorun.js"></script>
 </body>
 </html>

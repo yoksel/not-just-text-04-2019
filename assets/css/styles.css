@@ -21,6 +21,12 @@ UL {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+THEAD TH {
+  background-color: #EEE !important;
+  color: #999; }
+  THEAD TH:empty {
+    background: none !important; }
+
 @font-face {
   font-family: 'Pacifico-Regular';
   src: url("../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
@@ -790,12 +796,8 @@ pre[class*="language-"] {
   .encoding-table TH {
     padding: .45rem !important;
     border: none; }
-  .encoding-table TH {
-    background-color: #EEE !important;
-    color: #999; }
-    .encoding-table TH:empty {
-      background: none !important; }
   .encoding-table TD {
+    min-width: 2em;
     font-family: Georgia, serif; }
   .encoding-table SMALL {
     display: none; }
@@ -821,6 +823,8 @@ pre[class*="language-"] {
       background: none !important; }
   .emoji-proposals-table TD[rowspan] {
     border-left: 1px solid var(--color-line); }
+  .emoji-proposals-table__colored-tr {
+    border-top: 2px solid #000; }
   .emoji-proposals-table .nowrap {
     white-space: nowrap; }
 
@@ -867,3 +871,85 @@ pre[class*="language-"] {
     margin-right: 1.5em;
     -webkit-transform: translateX(50%) rotate(-90deg);
             transform: translateX(50%) rotate(-90deg); }
+
+.browsers {
+  display: inline-block;
+  text-indent: 0; }
+  .browsers DT {
+    display: inline-block;
+    width: 360px;
+    margin-right: 40px; }
+
+.browser {
+  display: inline-block;
+  position: relative;
+  width: 64px !important;
+  height: 64px !important;
+  margin-right: 20px;
+  background: url(../../assets/img/sprite-browsers-64.png) 0 0 no-repeat;
+  vertical-align: middle;
+  text-indent: 0; }
+  .browser:after {
+    display: inline-block;
+    margin: -.5em 0 0;
+    padding: 0 5px 0 3.3em;
+    vertical-align: top;
+    font-size: .75em;
+    line-height: 1.4;
+    font-weight: bold;
+    white-space: nowrap; }
+  .list--glasses .browser {
+    margin-right: 0; }
+
+.list--support-stacks .browser {
+  margin-right: 11px; }
+
+.no-support {
+  opacity: .5; }
+
+.browser-partial {
+  overflow: hidden; }
+
+.browser-flag:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: -13px;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  border: 10px solid crimson;
+  border-width: 8px 12px;
+  border-right-color: transparent; }
+
+.browser-partial:after,
+.browser-flag:after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  width: 70px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom; }
+
+.chrome {
+  background-position: 0 0; }
+
+.firefox {
+  background-position: 0 -64px; }
+
+.ie {
+  background-position: 0 -128px; }
+
+.edge {
+  background-position: 0 -192px; }
+
+.opera {
+  background-position: 0 -256px; }
+
+.safari {
+  background-position: 0 -320px; }

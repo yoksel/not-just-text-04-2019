@@ -30,3 +30,13 @@ UL {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+THEAD TH {
+  background-color: #EEE !important;
+  color: #999;
+
+  &:empty {
+    background: none !important;
+  }
+}
