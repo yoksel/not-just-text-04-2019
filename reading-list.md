@@ -20,6 +20,7 @@
 
 **History**
 
+* [The history of a model for fonts on the Web (Bert Bos)](https://www.w3.org/Talks/2010/0313-Fonts-SXSW/)
 * [TypeKit launches, hopes to save typography on the Web (techcrunch, 2009)](https://techcrunch.com/2009/11/11/typekit-launches-hopes-to-save-typography-on-the-web/)
 * [Introducing the Google Font API & Google Font Directory (2010)](http://googlecode.blogspot.com/2010/05/introducing-google-font-api-google-font.html)
 * [Adobe Acquires Web Typography Innovator Typekit (news.adobe, 2011)](https://news.adobe.com/press-release/adobe-creative-cloud-dps/adobe-acquires-web-typography-innovator-typekit)
@@ -43,7 +44,7 @@
 * [Как использовать вариативные шрифты в реальном мире](https://css-live.ru/articles/kak-ispolzovat-variativnye-shrifty-v-realnom-mire.html)<br>
   Source: [How to use variable fonts in the real world](https://clearleft.com/posts/how-to-use-variable-fonts-in-the-real-world)
 * [Using OpenType features (Adobe)](https://helpx.adobe.com/fonts/using/use-open-type-features.html)
-* [Syntax for OpenType features in CSS](https://helpx.adobe.com/fonts/using/open-type-syntax.html)
+* [Syntax for OpenType features in CSS (Adobe)](https://helpx.adobe.com/fonts/using/open-type-syntax.html)
 
 **Tools**
 
@@ -108,6 +109,7 @@
 
 **History**
 
+* [Color Emoji support in OpenType](https://rawgit.com/behdad/color-emoji/master/specification/v1.html)
 * [Open Standard Color Font Fun for Everyone (Google, 2013)](https://opensource.googleblog.com/2013/05/open-standard-color-font-fun-for.html)
 * [Photoshop CC Adds Support for OpenType−SVG Fonts: An in-depth look](https://blogs.adobe.com/creativecloud/photoshop-cc-adds-support-for-opentype%E2%88%92svg-fonts-an-in-depth-look/)
 * [OpenType SVG color fonts coming to Windows 10 :)](http://typedrawers.com/discussion/1499/opentype-svg-color-fonts-coming-to-windows-10)
