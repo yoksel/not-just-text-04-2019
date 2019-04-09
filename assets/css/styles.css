@@ -5,9 +5,6 @@
 .video {
   height: 100%; }
 
-UL {
-  margin-left: 20px; }
-
 .disabled {
   color: #999; }
 
@@ -20,12 +17,6 @@ UL {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden; }
-
-THEAD TH {
-  background-color: #EEE !important;
-  color: #999; }
-  THEAD TH:empty {
-    background: none !important; }
 
 @font-face {
   font-family: 'Pacifico-Regular';
@@ -90,8 +81,13 @@ THEAD TH {
   src: url("../fonts/Gingham/Gingham.ttf") format("truetype"); }
 
 @font-face {
-  font-family: Decovar;
+  font-family: 'Decovar';
   src: url("../fonts/Decovar/DecovarAlpha-VF.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'ColorTube';
+  src: url("../fonts/colortube%20by%20neogrey%20creative/ColorTube.otf") format("opentype");
   font-display: swap; }
 
 .font {
@@ -108,8 +104,8 @@ THEAD TH {
 .fonts--colored .font:nth-child(4) {
   color: gold; }
 
-.font--pacifico {
-  font-family: 'Pacifico-Regular' !important; }
+.font--colortube {
+  font-family: 'ColorTube' !important; }
 
 .font--gilbert {
   font-family: 'Gilbert'; }
@@ -156,8 +152,8 @@ THEAD TH {
   font-size: 180px;
   text-align: center; }
   .active .font--animated {
-    -webkit-animation: fontVariations 12s infinite;
-            animation: fontVariations 12s infinite; }
+    -webkit-animation: fontVariations 5s infinite;
+            animation: fontVariations 5s infinite; }
 
 @supports (-webkit-background-clip: text) {
   .font--animated {
@@ -196,12 +192,24 @@ THEAD TH {
   font: italic 25px/1 'PT Sans', sans-serif; }
 
 .slide {
-  padding: 40px 50px; }
+  padding: 40px 50px;
+  /* Tables */ }
   .slide UL {
     margin-left: 1.25em; }
   .slide IMG {
     display: block;
     margin: auto; }
+  .slide TD, .slide TH {
+    text-align: center; }
+    .slide TD:first-child, .slide TH:first-child {
+      text-align: left; }
+  .slide TH SPAN {
+    font-weight: normal; }
+  .slide THEAD TH {
+    background-color: #EEE !important;
+    color: #999; }
+    .slide THEAD TH:empty {
+      background: none !important; }
 
 .slide::after {
   z-index: 10;
@@ -377,7 +385,7 @@ THEAD TH {
 .demo--column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center; }
 
 .demo--cells {
@@ -452,6 +460,7 @@ THEAD TH {
   align-items: center; }
 
 .demo-range__input {
+  height: 3em;
   cursor: pointer; }
 
 /* PrismJS 1.15.0
@@ -815,7 +824,8 @@ pre[class*="language-"] {
     background-size: 2px 100% !important;
     padding: .55rem !important;
     border: none;
-    vertical-align: top; }
+    vertical-align: top;
+    text-align: left; }
   .emoji-proposals-table TH {
     background-color: #EEE !important;
     color: #999; }
@@ -885,7 +895,7 @@ pre[class*="language-"] {
   position: relative;
   width: 64px !important;
   height: 64px !important;
-  margin-right: 20px;
+  margin: -.5rem 1rem;
   background: url(../../assets/img/sprite-browsers-64.png) 0 0 no-repeat;
   vertical-align: middle;
   text-indent: 0; }
@@ -953,3 +963,12 @@ pre[class*="language-"] {
 
 .safari {
   background-position: 0 -320px; }
+
+.check-sign {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 1.5; }
+  .check-sign--yes {
+    color: yellowgreen; }
+  .check-sign--no {
+    color: #DDD; }

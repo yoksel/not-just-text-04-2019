@@ -9,6 +9,32 @@
     display: block;
     margin: auto;
   }
+
+  /* Tables */
+
+  TD, TH {
+    text-align: center;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  TH {
+    SPAN {
+      font-weight: normal;
+    }
+  }
+
+  THEAD TH {
+    background-color: #EEE !important;
+    color: #999;
+
+    &:empty {
+      background: none !important;
+    }
+  }
+
 }
 
 .slide::after {

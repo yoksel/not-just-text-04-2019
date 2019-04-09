@@ -71,8 +71,14 @@
 }
 
 @font-face {
-  font-family: Decovar;
+  font-family: 'Decovar';
   src: url('../fonts/Decovar/DecovarAlpha-VF.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ColorTube';
+  src: url('../fonts/colortube%20by%20neogrey%20creative/ColorTube.otf') format("opentype");
   font-display: swap;
 }
 
@@ -96,8 +102,8 @@
   }
 }
 
-.font--pacifico {
-  font-family: 'Pacifico-Regular' !important;
+.font--colortube {
+  font-family: 'ColorTube' !important;
 }
 
 .font--gilbert {
@@ -162,7 +168,7 @@
   text-align: center;
 
   .active & {
-    animation: fontVariations 12s infinite;
+    animation: fontVariations 5s infinite;
   }
 }
 

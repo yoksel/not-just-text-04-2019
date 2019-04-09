@@ -64,6 +64,18 @@
   </section>
 
   <section class="slide">
+    <h3>Темы</h3>
+
+    <ul>
+      <li>Кодировки</li>
+      <li>Юникод</li>
+      <li>OpenType</li>
+      <li>Кастомные, вариативные и цветные шрифты</li>
+    </ul>
+
+  </section>
+
+  <section class="slide">
     <div class="demo demo--full demo--cells demo--languages">
       <span class="font">
         Привет
@@ -201,28 +213,12 @@
   </section>
 
   <section class="slide">
-    <h4>История</h4>
-
-    <ul>
-      <li>
-        1988 — первый черновик
-      </li>
-      <li>
-        1991 — опубликована версия 1.0.0
-      </li>
-      <li>
-        2012 — Юникод используют более 60% сайтов
-      </li>
-    </ul>
-  </section>
-
-  <section class="slide">
     <figure class="figure">
       <figcaption
         class="figure__caption">
         <a
           class="figure__caption-content"
-          href="https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html">Unicode over 60 percent of the web (Google)</a>
+          href="https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html">Unicode over 60 percent of the web</a>  (Google, 2012)
       </figcaption>
 
       <div class="figure__img-wrapper">
@@ -236,28 +232,6 @@
   <section class="slide slide--section-title slide--term">
     <h3>OpenType</h3>
     <p class="slide__term">Расширяемый шрифтовой формат</p>
-  </section>
-
-  <section class="slide">
-    <h4>Форматы</h4>
-
-    <ul>
-      <li>
-        <code>EOT</code> — поддерживается только в IE
-      </li>
-      <li>
-        <code>OTF</code> — на основе PostScript
-      </li>
-      <li>
-        <code>TTF</code> — на основе TrueType
-      </li>
-      <li>
-        <code>WOFF</code> — <a href="http://www.w3.org/TR/WOFF/">сжатый</a> OpenType шрифт
-      </li>
-      <li>
-        <code>WOFF2</code> — <a href="https://www.w3.org/TR/WOFF2/">более лучше сжатый</a> OpenType шрифт
-      </li>
-    </ul>
   </section>
 
   <section class="slide">
@@ -284,6 +258,28 @@
     </ul>
   </section>
 
+  <section class="slide">
+    <h4>Форматы</h4>
+
+    <ul>
+      <li>
+        <code>EOT</code> — поддерживается только в IE
+      </li>
+      <li>
+        <code>OTF</code> — на основе PostScript
+      </li>
+      <li>
+        <code>TTF</code> — на основе TrueType
+      </li>
+      <li>
+        <code>WOFF</code> — <a href="http://www.w3.org/TR/WOFF/">сжатый</a> OpenType шрифт
+      </li>
+      <li>
+        <code>WOFF2</code> — <a href="https://www.w3.org/TR/WOFF2/">более лучше сжатый</a> OpenType шрифт
+      </li>
+    </ul>
+  </section>
+
   <section class="slide slide--dark slide--section-title">
     <h2>Кастомные шрифты</h2>
   </section>
@@ -298,7 +294,7 @@
     url('path/MyFont.woff') format('woff');
 }</code></pre>
 
-  <pre><code class="language-css">BODY {
+  <pre><code class="language-css">body {
   font-family: MyFont, Helvetica, Arial, sans-serif;
 }</code></pre>
   </section>
@@ -339,16 +335,6 @@
     </ul>
   </section>
 
-  <!-- <section class="slide">
-    <h2>Когда использовать?</h2>
-
-    <ul>
-      <li>
-        ????
-      </li>
-    </ul>
-  </section> -->
-
   <section class="slide slide--dark slide--section-title">
     <h3>Проблема кастомных шрифтов</h3>
   </section>
@@ -381,12 +367,24 @@
     <h3>Настройки шрифта</h3>
   </section>
 
+  <section class="slide">
+    <h4>Низкоуровневые настройки</h4>
+
+    <pre><code>font-feature-settings: <mark>"liga"</mark> on, <mark>"zero"</mark> on;</code></pre>
+
+    <br>
+    <h4>Высокоуровневые настройки</h4>
+
+    <pre><code>font-variant-ligatures: <mark>common-ligatures</mark>;
+font-variant-numeric: <mark>slashed-zero</mark>; </code></pre>
+  </section>
+
+  <section class="slide slide--section-title">
+    <h4>Стандартные настройки</h4>
+  </section>
+
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--italic">
-      <code class="demo__code">
-        font-variation-settings: <span class="demo__code-value"></span>
-      </code>
-
       <div class="demo__example font font--ffmeta"></div>
 
       <div class="demo__range demo-range">
@@ -410,10 +408,6 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--slant">
-      <code class="demo__code">
-        font-variation-settings: <span class="demo__code-value"></span>
-      </code>
-
       <div class="demo__example font font--kairo"></div>
 
       <div class="demo__range demo-range">
@@ -437,10 +431,6 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--optical">
-      <code class="demo__code">
-        font-variation-settings: <span class="demo__code-value"></span>
-      </code>
-
       <div class="demo__example font font--amstel"></div>
 
       <div class="demo__range demo-range">
@@ -468,10 +458,6 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--optical-with-content">
-      <code class="demo__code">
-        font-variation-settings: <span class="demo__code-value"></span>
-      </code>
-
       <div class="demo__example font font--amstel">
         <p>
           Fusce semper id arcu id porttitor. Etiam sed quam vel ante laoreet varius at sed purus. Morbi commodo est nec felis tempor sollicitudin. Aliquam gravida nunc quis vestibulum volutpat. Sed quis dui sodales, congue risus vel, blandit lectus. In porta odio purus, id posuere tortor viverra vel. Etiam nunc quam, rutrum non diam eu, cursus tincidunt lorem.
@@ -510,10 +496,6 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--width">
-      <code class="demo__code">
-        font-variation-settings: <span class="demo__code-value"></span>
-      </code>
-
       <div class="demo__example font font--gingham"></div>
 
       <div class="demo__range demo-range">
@@ -537,10 +519,6 @@
 
   <section class="slide slide--centered-content">
     <div class="demo demo--column demo--weight">
-      <code class="demo__code">
-        font-variation-settings: <span class="demo__code-value"></span>
-      </code>
-
       <div class="demo__example font font--ffmeta"></div>
 
       <div class="demo__range demo-range">
@@ -566,6 +544,14 @@
     <div class="demo demo--centered">
       <span class="font font--animated">Move<br>is life</span>
     </div>
+  </section>
+
+  <section class="slide slide--section-title">
+    <h4>Кастомные настройки</h4>
+  </section>
+
+  <section class="slide">
+    <h4>Пример кода</h4>
   </section>
 
   <section class="slide">
@@ -614,15 +600,19 @@
   </section>
 
   <section class="slide">
-    <pre data-highlight-lines="5"><code class="language-css">html {
+    <pre><code class="language-css">html {
   font-family: 'MyFont', sans-serif;
-}
+}</code></pre>
 
-@supports (font-variation-settings: normal) {
+<pre class="next" data-highlight-lines="3"><code class="language-css">@supports (font-variation-settings: normal) {
   html {
     font-family: 'MyFontVariable', sans-serif;
   }
 }</code></pre>
+
+    <p class="next">
+      <a href="https://css-live.ru/articles/kak-ispolzovat-variativnye-shrifty-v-realnom-mire.html">Как использовать вариативные шрифты в реальном мире</a>
+    </p>
   </section>
 
   <section class="slide">
@@ -701,6 +691,10 @@
     </div>
   </section>
 
+  <section class="slide slide--dark slide--section-title">
+    <h2>Цветные шрифты</h2>
+  </section>
+
   <section class="slide">
     <div class="demo demo--full demo--upper demo--cells fonts fonts--colored">
       <span class="font">Text</span>
@@ -728,7 +722,7 @@
     </div>
   </section>
 
-  <section class="slide slide--no-label">
+  <section class="slide">
     <figure class="figure figure--caption-aside">
       <figcaption
         class="figure__caption">
@@ -745,7 +739,7 @@
     </figure>
   </section>
 
-  <section class="slide slide--no-label">
+  <section class="slide">
     <figure class="figure">
       <figcaption
         class="figure__caption">
@@ -782,7 +776,7 @@
     </figure>
   </section>
 
-  <section class="slide slide--no-label">
+  <section class="slide">
     <figure class="figure figure--caption-aside">
       <figcaption
         class="figure__caption">
@@ -801,7 +795,7 @@
     </figure>
   </section>
 
-  <section class="slide slide--no-label">
+  <section class="slide">
     <figure class="figure figure--caption-aside">
       <figcaption
         class="figure__caption">
@@ -836,7 +830,7 @@
     </figure>
   </section>
 
-  <section class="slide slide--no-label">
+  <section class="slide">
     <figure class="figure figure--caption-aside">
       <figcaption
         class="figure__caption">
@@ -872,206 +866,208 @@
     </ul>
   </section>
 
-  <section class="slide slide--dark slide--section-title">
-    <h2>Цветные шрифты</h2>
+  <section class="slide">
+    <div class="demo demo--full demo--upper demo--cells fonts fonts--colored">
+      <span class="font font--gilbert">Text</span>
+      <span class="font font--abelone">Text</span>
+      <span class="font font--bixa">Text</span>
+      <span class="font font--playbox">Text</span>
+    </div>
   </section>
 
   <section class="slide">
-    (примеры шрифтов, как с вектором так и с растром)
+    <figure class="figure figure--caption-aside">
+      <div class="figure__img-wrapper">
+        <img
+          class="figure__img"
+          src="./assets/img/emojipedia-smiles.png"/>
+      </div>
+    </figure>
   </section>
 
-  <section class="slide">
-    <h4>Существующие форматы</h4>
-
-    <ul>
-      <li>SBIX (Apple)</li>
-      <li>CBDT/CBLC (Google)</li>
-      <li>COLR/CPAL (Microsoft)</li>
-      <li>SVG Open Type (Mozilla/Adobe)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h4>Свойства форматов</h4>
+  <section class="slide slide--no-label">
+    <h4>Форматы</h4>
 
     <table>
       <thead>
         <tr>
           <th>Формат</th>
-          <th>Содержимое</th>
-          <th>В OpenType</th>
+          <th>Растр</th>
+          <th>Вектор</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>SBIX (Apple)</th>
-          <td>Растр</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>CBDT/CBLC (Google)</th>
-          <td>Растр</td>
-          <td>+</td>
-        </tr>
-        <tr>
-          <th>COLR/CPAL (Microsoft)</th>
-          <td>Векторные глифы</td>
-          <td>+</td>
-        </tr>
-        <tr>
-          <th>SVG Open Type (Mozilla/Adobe)</th>
-          <td>SVG, растр</td>
-          <td>+</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <section class="slide">
-    <h4>Поддержка</h4>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Формат</th>
-          <th>Windows</th>
-          <th>MacOS/iOS</th>
-          <th>Браузеры</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>SBIX (Apple)</th>
-          <td>?</td>
-          <td>+</td>
+          <th>SBIX <span>(Apple)</span></th>
           <td>
-            Chrome, Safari, Edge
-            <span class="browser chrome"></span>
-            <span class="browser safari"></span>
-            <span class="browser opera"></span>
-            <span class="browser firefox"></span>
-            <span class="browser edge"></span>
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td>
+            <span class="check-sign check-sign--no">—</span>
           </td>
         </tr>
         <tr>
-          <th>CBDT/CBLC (Google)</th>
-          <td>+</td>
-          <td></td>
-          <td></td>
+          <th>CBDT/CBLC <span>(Google)</span></th>
+          <td>
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td>
+            <span class="check-sign check-sign--no">—</span>
+          </td>
         </tr>
         <tr>
-          <th>COLR/CPAL (Microsoft)</th>
+          <th>COLR/CPAL <span>(Microsoft)</span></th>
+          <td>
+            <span class="check-sign check-sign--no">—</span>
+          </td>
+          <td>
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
         </tr>
         <tr>
-          <th>SVG Open Type (Mozilla/Adobe)</th>
+          <th>SVG Open Type <span>(Mozilla/Adobe)</span></th>
+          <td>
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td>
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
         </tr>
       </tbody>
     </table>
   </section>
 
-  <section class="slide">
-    <h5>SBIX (Apple)</h5>
+  <section class="slide slide--no-label">
+    <h4>Поддержка браузерами</h4>
 
-    <ul>
-      <li>содержит растровые изображения</li>
-      <li>много весит (десятки мегабайт)</li>
-      <li>не входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>MacOS, iOS, и только в приложениях, которые используют системный рендеринг</li>
-      <li>Chrome, Safari  Edge (check it)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>CBDT/CBLC (Google)</h5>
-
-    <ul>
-      <li>содержит растровые изображения</li>
-      <li>много весит</li>
-      <li>входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>Android, Chrome OS</li>
-      <li>Chrome Linux, Firefox, Edge (check it)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>COLR/CPAL (Microsoft)</h5>
-
-    <ul>
-      <li>глифы в кривых</li>
-      <li>для каждого символа несколько глифов, которые накладываются друг на друга</li>
-      <li>в будущем можно будет перекрашивать через CSS</li>
-      <li>мало весит</li>
-      <li>входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>Windows с 8.1 в шрифте Segoe UI Emoji.</li>
-      <li>Браузеры: Firefox, Chrome, Safai, Edge (need to check)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>SVG Open Type (Mozilla/Adobe)</h5>
-
-    <ul>
-      <li>глифы в SVG, могут содержать градиенты и растроввые изображения</li>
-      <li>в будущем можно будет перекрашивать через CSS</li>
-      <li>мало весит</li>
-      <li>входит в стандарт OpenType</li>
-    </ul>
-
-    <h5>Поддержка</h5>
-
-    <ul>
-      <li>Illustrator CC 2018+, Photoshop CC 2017+ и InDesign CC 2019+</li>
-      <li>MacOS Mojave</li>
-      <li>Браузеры: Firefox, Edge (need to check)</li>
-    </ul>
-  </section>
-
-  <section class="slide">
-    <h5>Поддержка в браузерах</h5>
-
-    <ul>
-      <li>Edge: все форматы</li>
-      <li>Firefox: SVG, COLR, SBIX</li>
-      <li>Chrome: все, кроме SVG Open Type</li>
-      <li>Safari: SBIX, COLR, SVG Open Type (Mojave)</li>
-    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Формат</th>
+          <th>
+            <span class="browser edge"></span>
+          </th>
+          <th>
+            <span class="browser firefox"></span>
+          </th>
+          <th>
+            <span class="browser safari"></span>
+          </th>
+          <th>
+            <span class="browser chrome"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>SBIX <span>(Apple)</span></th>
+          <td><!-- edge -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- firefox -->
+            <span class="check-sign check-sign--no">—</span>
+          </td>
+          <td><!-- safari -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- chrome -->
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+        </tr>
+        <tr>
+          <th>CBDT/CBLC <span>(Google)</span></th>
+          <td><!-- edge -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- firefox -->
+            <span class="check-sign check-sign--no">—</span>
+          </td>
+          <td><!-- safari -->
+           <span class="check-sign check-sign--no">—</span>
+          </td>
+          <td><!-- chrome -->
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+        </tr>
+        <tr>
+          <th>COLR/CPAL <span>(Microsoft)</span></th>
+          <td><!-- edge -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+           <sup>Win 8.1</sup>
+          </td>
+          <td><!-- firefox -->
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- safari -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- chrome -->
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+        </tr>
+        <tr>
+          <th>SVG Open Type <span>(Mozilla/Adobe)</span></th>
+          <td><!-- edge -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- firefox -->
+            <span class="check-sign check-sign--yes">✔︎</span>
+          </td>
+          <td><!-- safari -->
+           <span class="check-sign check-sign--yes">✔︎</span>
+           <sup>MacOS 10.14</sup>
+          </td>
+          <td><!-- chrome -->
+            <span class="check-sign check-sign--no">—</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <section class="slide slide--no-label">
-    <figure>
-        <img
-          class="cover"
-          src="./assets/img/fonts/happy-pencil.jpg"/>
-        <figcaption class="copyright right">
-            <a href="https://creativemarket.com/Alena_Morgunova/2262462-Happy-Pencil-bitmap-color-font">Happy Pencil bitmap color font</a>
-        </figcaption>
-    </figure>
+    <h4>Поддержка приложениями Adobe</h4>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Формат</th>
+          <th>
+            Поддерживается
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>SBIX <span>(Apple)</span></th>
+          <td>
+            <span class="check-sign check-sign--yes">✔︎</span> AI CC 2018+, PS CC 2017+
+          </td>
+        </tr>
+        <tr>
+          <th>CBDT/CBLC <span>(Google)</span></th>
+          <td>
+            <span class="check-sign check-sign--no">—</span>
+          </td>
+        </tr>
+        <tr>
+          <th>COLR/CPAL <span>(Microsoft)</span></th>
+          <td>
+            <span class="check-sign check-sign--no">—</span>
+          </td>
+        </tr>
+        <tr>
+          <th>SVG Open Type <span>(Mozilla/Adobe)</span></th>
+          <td>
+            <span class="check-sign check-sign--yes">✔︎</span> AI CC 2018+, PS CC 2017+
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
-  <section class="slide slide--no-label">
-    <figure>
-        <img
-          class="cover"
-          src="./assets/img/fonts/1903699-Batik-India-Color-Font.jpg"/>
-        <figcaption class="copyright right">
-            <a href="https://creativemarket.com/ilonitta/1903699-Batik-India-Color-Font">Batik India Color Font</a>
-        </figcaption>
-    </figure>
+  <section class="slide slide--section-title">
+    <h3>Примеры шрифтов</h3>
   </section>
 
   <section class="slide slide--no-label">
@@ -1100,31 +1096,9 @@
     <figure>
         <img
           class="cover"
-          src="./assets/img/fonts/Bouqet-Flower-Watercolor.jpg"/>
-        <figcaption class="copyright right">
-            <a href="https://creativemarket.com/bloomxxvi/2207870-Bouqet-Flower-Watercolor">Bouqet Flower & Watercolor</a>
-        </figcaption>
-    </figure>
-  </section>
-
-  <section class="slide slide--no-label">
-    <figure>
-        <img
-          class="cover"
           src="./assets/img/fonts/ColorTube-Samples-A-to-P.png"/>
         <figcaption class="copyright right">
             <a href="https://www.fontsquirrel.com/fonts/colortube">Colortube</a>
-        </figcaption>
-    </figure>
-  </section>
-
-  <section class="slide slide--no-label">
-    <figure>
-        <img
-          class="cover"
-          src="./assets/img/fonts/FLEURO-Colour-Font.jpg"/>
-        <figcaption class="copyright right">
-            <a href="https://creativemarket.com/Nickylaatz/2019433-NEW%21-FLEURO-Colour-Font-%29">FLEURO Colour Font </a>
         </figcaption>
     </figure>
   </section>
@@ -1144,28 +1118,6 @@
     <figure>
         <img
           class="cover"
-          src="./assets/img/fonts/MEMPHIS-Type-Collection.jpg"/>
-        <figcaption class="copyright right">
-            <a href="https://creativemarket.com/anugrahadesign/1331225-MEMPHIS-Type-Collection">MEMPHIS Type Collection</a>
-        </figcaption>
-    </figure>
-  </section>
-
-  <section class="slide slide--no-label">
-    <figure>
-        <img
-          class="cover"
-          src="./assets/img/fonts/Sarah-Jon-Watercolor-Font.jpg"/>
-        <figcaption class="copyright right">
-            <a href="https://creativemarket.com/Imknottangled/1840383-Sarah-Jon-Watercolor-Font">Sarah & Jon Watercolor Font</a>
-        </figcaption>
-    </figure>
-  </section>
-
-  <section class="slide slide--no-label">
-    <figure>
-        <img
-          class="cover"
           src="./assets/img/fonts/yeah-balloon-colour-font-001.jpg"/>
         <figcaption class="copyright right">
             <a href="https://creativemarket.com/itsmesimon/2355840-Yeah-foil-balloon-colour-font">Yeah foil balloon colour font</a>
@@ -1173,6 +1125,17 @@
     </figure>
   </section>
 
+  <section class="slide slide--section-title">
+    (примеры кода с фолбеками)
+  </section>
+
+  <section class="slide slide--section-title">
+    (слоеные шрифты)
+  </section>
+
+  <section class="slide slide--section-title">
+    (где брать)
+  </section>
 
   <section class="slide slide--section-title slide--questions">
     <h2>Вопросы?</h2>
