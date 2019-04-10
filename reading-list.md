@@ -159,6 +159,7 @@
   [Github](https://github.com/djrrb/bungee), [Google Fonts](https://fonts.google.com/?selection.family=Bungee&query=bungee)
 * [Gibert](https://www.typewithpride.com/) — rainbow font (SVG OpenType)
 * [Color fonts made with Fontself](https://creativemarket.com/fontself/collections/359610/Color-fonts-made-with-Fontself) — paid fonts on creativemarket.com
+* [Colortube](https://www.fontfabric.com/fonts/colortube/)
 
 **Creating font**
 
