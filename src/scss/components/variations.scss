@@ -12,10 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
-  outline: 5px solid #DDD;
+  border: 5px solid #DDD;
   width: 600px;
   padding-bottom: 10px;
-
 }
 
 .variations-demo__char {
@@ -32,10 +31,10 @@
   font-weight: bold;
 
   &--Width {
-    bottom: 100%;
+    top: 100%;
     left: 0;
     right: 0;
-    margin-bottom: .5em;
+    margin-top: .5em;
     text-align: center;
   }
   &--Weight {

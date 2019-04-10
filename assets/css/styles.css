@@ -86,14 +86,21 @@
   font-display: swap; }
 
 @font-face {
-  font-family: 'ColorTube';
-  src: url("../fonts/colortube%20by%20neogrey%20creative/ColorTube.otf") format("opentype");
-  font-display: swap; }
+  font-family: 'VotoSerif';
+  font-display: swap;
+  src: url("../fonts/VotoSerif/VotoSerifGX.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'dTJakob';
+  font-display: swap;
+  src: url("../fonts/dT_Jakob_VariableConcept/dTJakobVariableConceptGX.ttf") format("truetype"); }
 
 .font {
   position: relative;
   font: 160px/1 Arial Black, sans-serif;
   color: yellowgreen; }
+  .font--large {
+    font-size: 500px; }
 
 .fonts--colored .font:nth-child(1) {
   color: tomato; }
@@ -104,9 +111,7 @@
 .fonts--colored .font:nth-child(4) {
   color: gold; }
 
-.font--colortube {
-  font-family: 'ColorTube' !important; }
-
+/* Color */
 .font--gilbert {
   font-family: 'Gilbert'; }
 
@@ -119,6 +124,7 @@
 .font--playbox {
   font-family: 'Playbox'; }
 
+/* Variable */
 .font--kairo {
   font-family: 'KairosSans'; }
 
@@ -130,6 +136,15 @@
 
 .font--gingham {
   font-family: 'Gingham'; }
+
+.font--votoserif {
+  font-family: 'VotoSerif';
+  font-variation-settings: "wght" 100, "wdth" 200;
+  -webkit-font-feature-settings: "liga" off;
+          font-feature-settings: "liga" off; }
+
+.font--dtjakob {
+  font-family: 'dTJakob'; }
 
 .font--decovar {
   font-family: 'Decovar'; }
@@ -422,6 +437,18 @@
     .demo--languages .font--big {
       font-size: 150px; }
 
+.demo--emoji {
+  padding: 0 50px; }
+  .demo--emoji .font {
+    font-size: 190px; }
+
+.demo--tiny {
+  display: flex;
+  height: auto; }
+  .demo--tiny .font {
+    margin-right: 2rem;
+    font-size: 120px; }
+
 .demo__example {
   font-size: 250px;
   line-height: .75;
@@ -462,6 +489,49 @@
 .demo-range__input {
   height: 3em;
   cursor: pointer; }
+
+.demo--layered .font {
+  position: relative;
+  margin-bottom: 3rem;
+  z-index: 1;
+  -webkit-font-feature-settings: 'liga' 0, 'dlig' 0, 'calt' 1;
+          font-feature-settings: 'liga' 0, 'dlig' 0, 'calt' 1;
+  font-variation-settings: "wght" 10;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  color: turquoise; }
+  .demo--layered .font:hover {
+    text-shadow: 0 10px 5px rgba(0, 0, 0, 0.25); }
+
+.demo--layered .font::before,
+.demo--layered .font::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-shadow: inherit;
+  transition: all .25s; }
+
+.demo--layered .font::before {
+  -webkit-font-feature-settings: 'liga' 1, 'dlig' 0, 'calt' 0;
+          font-feature-settings: 'liga' 1, 'dlig' 0, 'calt' 0;
+  color: honeydew; }
+
+.demo--layered .font:hover::before {
+  top: -10%;
+  left: -10%; }
+
+.demo--layered .font::after {
+  z-index: -1;
+  -webkit-font-feature-settings: 'liga' 0, 'dlig' 1, 'calt' 0;
+          font-feature-settings: 'liga' 0, 'dlig' 1, 'calt' 0;
+  color: lightseagreen; }
+
+.demo--layered .font:hover::after {
+  top: 10%;
+  right: -10%;
+  text-shadow: none; }
 
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism-coy&languages=markup+css+clike+javascript&plugins=line-numbers */
@@ -851,7 +921,7 @@ pre[class*="language-"] {
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 0;
-  outline: 5px solid #DDD;
+  border: 5px solid #DDD;
   width: 600px;
   padding-bottom: 10px; }
 
@@ -867,10 +937,10 @@ pre[class*="language-"] {
   font-size: 2rem;
   font-weight: bold; }
   .variations-demo__tip--Width {
-    bottom: 100%;
+    top: 100%;
     left: 0;
     right: 0;
-    margin-bottom: .5em;
+    margin-top: .5em;
     text-align: center; }
   .variations-demo__tip--Weight {
     background: red;

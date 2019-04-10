@@ -77,15 +77,25 @@
 }
 
 @font-face {
-  font-family: 'ColorTube';
-  src: url('../fonts/colortube%20by%20neogrey%20creative/ColorTube.otf') format("opentype");
+  font-family: 'VotoSerif';
   font-display: swap;
+  src: url('../fonts/VotoSerif/VotoSerifGX.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'dTJakob';
+  font-display: swap;
+  src: url('../fonts/dT_Jakob_VariableConcept/dTJakobVariableConceptGX.ttf') format("truetype");
 }
 
 .font {
   position: relative;
   font: 160px/1 Arial Black, sans-serif;
   color: yellowgreen;
+
+  &--large {
+    font-size: 500px;
+  }
 }
 
 .fonts--colored {
@@ -102,9 +112,7 @@
   }
 }
 
-.font--colortube {
-  font-family: 'ColorTube' !important;
-}
+/* Color */
 
 .font--gilbert {
   font-family: 'Gilbert';
@@ -122,6 +130,8 @@
   font-family: 'Playbox';
 }
 
+/* Variable */
+
 .font--kairo {
   font-family: 'KairosSans';
 }
@@ -136,6 +146,16 @@
 
 .font--gingham {
   font-family: 'Gingham';
+}
+
+.font--votoserif {
+  font-family: 'VotoSerif';
+  font-variation-settings: "wght" 100, "wdth" 200;
+  font-feature-settings: "liga" off;
+}
+
+.font--dtjakob {
+  font-family: 'dTJakob';
 }
 
 .font--decovar {
