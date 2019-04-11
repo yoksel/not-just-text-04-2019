@@ -21,6 +21,9 @@
 **History**
 
 * [The history of a model for fonts on the Web (Bert Bos)](https://www.w3.org/Talks/2010/0313-Fonts-SXSW/)
+* [The @Font-Face Rule And Useful Web Font Tricks](https://www.smashingmagazine.com/2011/03/the-font-face-rule-revisited-and-useful-tricks/)
+* [Tired of looking at boring system fonts at websites?
+Look at this page with Safari 3.1! (web.archive.org)](https://web.archive.org/web/20080406214731/http://www.fonts.info/info/press/font-face-embedding-demo.htm)
 * [TypeKit launches, hopes to save typography on the Web (techcrunch, 2009)](https://techcrunch.com/2009/11/11/typekit-launches-hopes-to-save-typography-on-the-web/)
 * [Introducing the Google Font API & Google Font Directory (2010)](http://googlecode.blogspot.com/2010/05/introducing-google-font-api-google-font.html)
 * [Adobe Acquires Web Typography Innovator Typekit (news.adobe, 2011)](https://news.adobe.com/press-release/adobe-creative-cloud-dps/adobe-acquires-web-typography-innovator-typekit)
@@ -139,6 +142,8 @@
 * [Emoji: Fonts, Technically. Making Faces (and Other Emoji)](https://medium.com/making-faces-and-other-emoji/emoji-fonts-technically-40f3fdc0869e)
 * [Color fonts. Overview of the proposals for color extensions of the OpenType font format.](https://blog.fontlab.com/font-tech/color-fonts/color-font-format-proposals/)
 * [What Are Color Fonts?](https://design.tutsplus.com/articles/the-beginners-guide-to-color-fonts--cms-29861)
+* [SVG & colors in OpenType fonts](https://colorfonts.langustefonts.com/howto.html)
+* [How to Use Color Fonts on the Web](https://webdesign.tutsplus.com/tutorials/what-are-color-fonts--cms-31467)
 
 **Support**
 
