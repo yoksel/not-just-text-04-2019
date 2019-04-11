@@ -130,6 +130,17 @@
   font-family: 'Playbox';
 }
 
+.font--rainbow {
+  @supports (-webkit-background-clip: text) {
+    background: linear-gradient(to left bottom,
+      indigo, crimson, orange,
+      gold, yellowgreen, teal, indigo, purple
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
 /* Variable */
 
 .font--kairo {
