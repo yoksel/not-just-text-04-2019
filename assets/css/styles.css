@@ -140,6 +140,11 @@
   .font--rainbow SPAN {
     display: block;
     font-size: 120px; }
+  @supports (-webkit-background-clip: text) {
+    .font--rainbow {
+      background: linear-gradient(to left bottom, indigo, crimson, orange, gold, yellowgreen, teal, indigo, purple);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; } }
 
 .font--fallback-base {
   color: #000; }
@@ -340,6 +345,9 @@
   .slide--column IMG {
     margin-bottom: 0 !important;
     align-self: center; }
+  .slide--column A {
+    width: auto;
+    align-self: flex-start; }
 
 /* Titles */
 .slide H2,

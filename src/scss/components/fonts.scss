@@ -149,12 +149,12 @@
   }
 
   @supports (-webkit-background-clip: text) {
-    // background: linear-gradient(to left bottom,
-    //   indigo, crimson, orange,
-    //   gold, yellowgreen, teal, indigo, purple
-    // );
-    // -webkit-text-fill-color: transparent;
-    // -webkit-background-clip: text;
+    background: linear-gradient(to left bottom,
+      indigo, crimson, orange,
+      gold, yellowgreen, teal, indigo, purple
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   .active & {
@@ -165,7 +165,6 @@
 .font--fallback-base {
   color: #000;
 }
-
 
 .fonts--fallback {
   .font {
