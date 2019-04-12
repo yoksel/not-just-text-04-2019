@@ -1,5 +1,5 @@
-# SVG-фильтры
+# Не просто текст
 
-Слайды доклада для [Я ❤ Frontend](https://events.yandex.ru/events/meetings/yalovefrontend/), 9 февраля 2019 года
+Слайды доклада для [Web Standards Days](https://wsd.events/2019/04/13/), 13 апреля 2019 года
 
 Движок: [Shower](https://github.com/shower/shower)
