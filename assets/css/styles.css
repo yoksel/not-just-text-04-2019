@@ -18,6 +18,9 @@
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.no-bottom-margin {
+  margin-bottom: 0 !important; }
+
 @font-face {
   font-family: 'Pacifico-Regular';
   src: url("../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
@@ -138,6 +141,24 @@
     display: block;
     font-size: 120px; }
 
+.font--fallback-base {
+  color: #000; }
+
+.fonts--fallback .font {
+  font-size: 220px; }
+
+.font--fallback {
+  color: crimson; }
+  @supports (-webkit-background-clip: text) {
+    .font--fallback {
+      background: linear-gradient(to bottom, indigo 10%, purple 0, purple 20%, crimson 0, crimson 30%, orange 0, orange 40%, gold 0, gold 50%, yellowgreen 0, yellowgreen 60%, teal 0, teal 70%, purple 0, purple 80%, indigo 0);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-size: 100% 83%;
+      background-position: center; } }
+  .chromacheck-svg .font--fallback {
+    background: none; }
+
 @-webkit-keyframes fontStyles {
   0% {
     font-variation-settings: "STLE" 0; }
@@ -244,6 +265,16 @@
   font-size: 1rem;
   font: italic 25px/1 'PT Sans', sans-serif; }
 
+.fallbacks LI {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.fallbacks IMG {
+  max-width: 200px;
+  margin-right: 0 !important; }
+
 .slide {
   padding: 40px 50px;
   /* Tables */ }
@@ -301,6 +332,14 @@
   align-items: center;
   align-content: center;
   justify-content: center; }
+
+.slide--column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .slide--column IMG {
+    margin-bottom: 0 !important;
+    align-self: center; }
 
 /* Titles */
 .slide H2,

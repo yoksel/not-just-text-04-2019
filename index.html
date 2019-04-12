@@ -2368,8 +2368,32 @@ font-variant-numeric: <mark>slashed-zero</mark>; </code></pre>
     </figure>
   </section>
 
-  <section class="slide slide--section-title">
-    (примеры кода с фолбеками)
+  <section class="slide slide--column">
+    <pre class="no-bottom-margin"><code class="language-css">.myFancyLetters {
+  font-family: 'Gilbert';
+}</code></pre>
+
+    <img src="./assets/img/fallback--black.png"/>
+  </section>
+
+  <section class="slide slide--column">
+    <pre class="no-bottom-margin"><code class="language-css">@supports (-webkit-background-clip: text) {
+  .myFancyLetters {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background: linear-gradient(...);
+  }
+}</code></pre>
+
+    <img src="./assets/img/fallback--gradient.png"/>
+  </section>
+
+  <section class="slide slide--column">
+    <pre class="no-bottom-margin"><code class="language-css">chromacheck-svg .myFancyLetters {
+  background: none;
+}</code></pre>
+
+    <img src="./assets/img/fallback--colorfont.png"/>
   </section>
 
   <section class="slide slide--centered-content">
@@ -2429,5 +2453,6 @@ font-variant-numeric: <mark>slashed-zero</mark>; </code></pre>
   <script src="assets/js/prism.js"></script>
   <script src="assets/js/highlightLines.js"></script>
   <script src="assets/js/autorun.js"></script>
+  <script src="assets/js/chromacheck-min.js"></script>
 </body>
 </html>

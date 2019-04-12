@@ -162,6 +162,45 @@
   }
 }
 
+.font--fallback-base {
+  color: #000;
+}
+
+
+.fonts--fallback {
+  .font {
+    font-size: 220px;
+  }
+}
+
+.font--fallback {
+  color: crimson;
+
+  @supports (-webkit-background-clip: text) {
+    background: linear-gradient(to bottom,
+      indigo 10%,
+      purple 0, purple 20%,
+      crimson 0, crimson 30%,
+      orange 0, orange 40%,
+      gold 0, gold 50%,
+      yellowgreen 0, yellowgreen 60%,
+      // skyblue 0, skyblue 70%,
+      teal 0, teal 70%,
+      purple 0, purple 80%,
+      indigo 0
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 100% 83%;
+    background-position: center;
+  }
+
+  .chromacheck-svg & {
+    background: none;
+  }
+}
+
+
 @keyframes fontStyles {
   0% {
     font-variation-settings: "STLE" 0;
@@ -277,4 +316,18 @@
   color: #777;
   font-size: 1rem;
   font: italic 25px/1 'PT Sans', sans-serif;
+}
+
+.fallbacks {
+  LI {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  IMG {
+    max-width: 200px;
+    margin-right: 0 !important;
+  }
 }

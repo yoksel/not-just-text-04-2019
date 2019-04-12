@@ -92,6 +92,17 @@
   justify-content: center;
 }
 
+ .slide--column {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+  IMG {
+    margin-bottom: 0 !important;
+    align-self: center;
+  }
+ }
+
 /* Titles */
 
 .slide H2,
