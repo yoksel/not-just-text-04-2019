@@ -150,8 +150,18 @@
 
   @supports (-webkit-background-clip: text) {
     background: linear-gradient(to left bottom,
-      indigo, crimson, orange,
-      gold, yellowgreen, teal, indigo, purple
+      // indigo, crimson, orange,
+      // gold, yellowgreen, teal, indigo, purple
+      indigo 10%,
+      purple 0, purple 20%,
+      crimson 0, crimson 30%,
+      orange 0, orange 40%,
+      gold 0, gold 50%,
+      yellowgreen 0, yellowgreen 60%,
+      // skyblue 0, skyblue 70%,
+      teal 0, teal 70%,
+      purple 0, purple 80%,
+      indigo 0
     );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
