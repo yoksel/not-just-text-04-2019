@@ -34,6 +34,7 @@ Look at this page with Safari 3.1! (web.archive.org)](https://web.archive.org/we
 * [A Brief History of Web Typography](https://prowebtype.com/history/)
 * [The Decade-Long Path to Web Fonts](https://thehistoryoftheweb.com/web-fonts/)
 * [System shock. A story of a 25-year-old font coming back with a vengeance](https://medium.design/system-shock-6b1dc6d6596f)
+* [The history of fonts](https://www.prepressure.com/fonts/basics/history)
 
 **Usage**
 
