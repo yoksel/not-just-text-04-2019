@@ -20,6 +20,10 @@
 
 **History**
 
+* [Core fonts for the Web (wiki)](https://en.wikipedia.org/wiki/Core_fonts_for_the_Web)
+* [Downloadable Fonts (webkit, 2007)](https://webkit.org/blog/124/downloadable-fonts/)
+* [CSS @ Ten: The Next Big Thing (alistapart, 2007)](http://alistapart.com/article/cssatten/)
+* [Custom Web Fonts: Pick Your Poison](https://www.sitepoint.com/custom-web-fonts-pick-your-poison/)
 * [The history of a model for fonts on the Web (Bert Bos)](https://www.w3.org/Talks/2010/0313-Fonts-SXSW/)
 * [The @Font-Face Rule And Useful Web Font Tricks](https://www.smashingmagazine.com/2011/03/the-font-face-rule-revisited-and-useful-tricks/)
 * [Tired of looking at boring system fonts at websites?
@@ -27,11 +31,14 @@ Look at this page with Safari 3.1! (web.archive.org)](https://web.archive.org/we
 * [TypeKit launches, hopes to save typography on the Web (techcrunch, 2009)](https://techcrunch.com/2009/11/11/typekit-launches-hopes-to-save-typography-on-the-web/)
 * [Introducing the Google Font API & Google Font Directory (2010)](http://googlecode.blogspot.com/2010/05/introducing-google-font-api-google-font.html)
 * [Adobe Acquires Web Typography Innovator Typekit (news.adobe, 2011)](https://news.adobe.com/press-release/adobe-creative-cloud-dps/adobe-acquires-web-typography-innovator-typekit)
+* [A Brief History of Web Typography](https://prowebtype.com/history/)
+* [The Decade-Long Path to Web Fonts](https://thehistoryoftheweb.com/web-fonts/)
+* [System shock. A story of a 25-year-old font coming back with a vengeance](https://medium.design/system-shock-6b1dc6d6596f)
 
 **Usage**
 
 * [Overview of web fonts using @font-face (webplatform)](https://webplatform.github.io/docs/tutorials/typography/font-face/)
-* [Using @font-face (css-tricks)](https://css-tricks.com/snippets/css/using-font-face/)
+* [Using @font-face (css-tricks, 2009)](https://css-tricks.com/snippets/css/using-font-face/)
 * [Understanding Web Fonts and Getting the Most Out of Them (css-tricks)](https://css-tricks.com/understanding-web-fonts-getting/)
 * [Web fonts on MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
 * [A comprehensive guide to font loading strategies (Zach Leatherman)](https://www.zachleat.com/web/comprehensive-webfonts/)
