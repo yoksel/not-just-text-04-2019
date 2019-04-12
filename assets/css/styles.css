@@ -95,6 +95,11 @@
   font-display: swap;
   src: url("../fonts/dT_Jakob_VariableConcept/dTJakobVariableConceptGX.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'Slovic';
+  font-display: swap;
+  src: url("../fonts/Slovic/Slovic_Demo_VarGX.ttf") format("truetype"); }
+
 .font {
   position: relative;
   font: 160px/1 Arial Black, sans-serif;
@@ -124,11 +129,38 @@
 .font--playbox {
   font-family: 'Playbox'; }
 
-@supports (-webkit-background-clip: text) {
-  .font--rainbow {
-    background: linear-gradient(to left bottom, indigo, crimson, orange, gold, yellowgreen, teal, indigo, purple);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; } }
+.font--rainbow {
+  text-align: center;
+  font-family: 'Slovic';
+  font-size: 300px;
+  color: #000; }
+  .font--rainbow SPAN {
+    display: block;
+    font-size: 120px; }
+
+@-webkit-keyframes fontStyles {
+  0% {
+    font-variation-settings: "STLE" 0; }
+  25% {
+    font-variation-settings: "STLE" 75; }
+  50% {
+    font-variation-settings: "STLE" 50; }
+  75% {
+    font-variation-settings: "STLE" 25; }
+  100% {
+    font-variation-settings: "STLE" 100; } }
+
+@keyframes fontStyles {
+  0% {
+    font-variation-settings: "STLE" 0; }
+  25% {
+    font-variation-settings: "STLE" 75; }
+  50% {
+    font-variation-settings: "STLE" 50; }
+  75% {
+    font-variation-settings: "STLE" 25; }
+  100% {
+    font-variation-settings: "STLE" 100; } }
 
 /* Variable */
 .font--kairo {
@@ -183,7 +215,7 @@
     -webkit-background-clip: text; } }
 
 @-webkit-keyframes fontVariations {
-  0% {
+  25% {
     font-variation-settings: "ital" 0, "wght" 900, "wdth" 75; }
   50% {
     font-variation-settings: "ital" 0, "wght" 250, "wdth" 75; }
@@ -193,7 +225,7 @@
     font-variation-settings: "ital" 0, "wght" 900, "wdth" 75; } }
 
 @keyframes fontVariations {
-  0% {
+  25% {
     font-variation-settings: "ital" 0, "wght" 900, "wdth" 75; }
   50% {
     font-variation-settings: "ital" 0, "wght" 250, "wdth" 75; }
