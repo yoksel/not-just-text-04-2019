@@ -7,14 +7,6 @@
 }
 
 @font-face {
-  font-family: 'Bungee';
-  src: url('../fonts/Bungee/Bungee_Color_Fonts/BungeeColor-Regular_svg.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Gilbert';
   src: url('../fonts/Gilbert_1.004_alpha/Gilbert-Color-Bold-Preview_1004.otf') format('opentype');
   font-weight: normal;
@@ -150,17 +142,15 @@
 
   @supports (-webkit-background-clip: text) {
     background: linear-gradient(to left bottom,
-      // indigo, crimson, orange,
-      // gold, yellowgreen, teal, indigo, purple
       indigo 10%,
-      purple 0, purple 20%,
-      crimson 0, crimson 30%,
-      orange 0, orange 40%,
-      gold 0, gold 50%,
-      yellowgreen 0, yellowgreen 60%,
-      // skyblue 0, skyblue 70%,
-      teal 0, teal 70%,
-      purple 0, purple 80%,
+      gold 0, gold 20%,
+      teal 0, teal 30%,
+      purple 0, purple 40%,
+      orange 0, orange 50%,
+      crimson 0, crimson 60%,
+      yellowgreen 0, yellowgreen 70%,
+      skyblue 0, skyblue 80%,
+      purple 0, purple 90%,
       indigo 0
     );
     -webkit-text-fill-color: transparent;

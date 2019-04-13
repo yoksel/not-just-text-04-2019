@@ -18,6 +18,7 @@ gulp.task('prepare', () => {
   const shower = gulp.src([
       '**',
       '!docs{,/**}',
+      '!src{,/**}',
       '!node_modules{,/**}',
       '!prepared{,/**}',
       '!CONTRIBUTING.md',
@@ -26,7 +27,9 @@ gulp.task('prepare', () => {
       '!gulpfile.js',
       '!netlify.toml',
       '!package.json',
-      '!package-lock.json'
+      '!package-lock.json',
+      '!plan.md',
+      '!save.md'
     ])
     .pipe(replace(
       /(<link rel="stylesheet" href=")(node_modules\/@shower\/)([^\/]*)\/(.*\.css">)/g,

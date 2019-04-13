@@ -127,6 +127,68 @@
   margin-bottom: 40px;
 }
 
+.demo--shaped {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 100%;
+
+  P {
+    max-height: 100%;
+    margin: 0;
+    flex-basis: 50%;
+    overflow: hidden;
+    text-align: justify;
+    line-height: 1.11;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+
+  P:nth-child(1)::before {
+    content: "";
+    display: block;
+    float: right;
+    width: 85%;
+    height: 100%;
+    shape-outside: polygon(90% 0, 0 100%, 100% 100%);
+  }
+  P:nth-child(2)::before {
+    content: "";
+    display: block;
+    float: left;
+    width: 85%;
+    height: 100%;
+    shape-outside: polygon(0 0, 100% 0, 10% 100%);
+  }
+
+  .demo__title {
+    position: absolute;
+    top: 43%;
+    left: 51.5%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%) rotate(-55deg);
+    font: 10rem/1 'Gilbert';
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    SPAN {
+      flex-basis: 100%;
+    }
+
+    SPAN:first-child {
+      position: relative;
+      left: -105px;
+      bottom: -40px;
+    }
+    SPAN:last-child {
+      position: relative;
+      left: 15px;
+      font-size: 16rem;
+    }
+  }
+}
+
 .demo-range {
   width: 100%;
   margin-top: 32px;

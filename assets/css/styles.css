@@ -29,13 +29,6 @@
   font-display: swap; }
 
 @font-face {
-  font-family: 'Bungee';
-  src: url("../fonts/Bungee/Bungee_Color_Fonts/BungeeColor-Regular_svg.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
   font-family: 'Gilbert';
   src: url("../fonts/Gilbert_1.004_alpha/Gilbert-Color-Bold-Preview_1004.otf") format("opentype");
   font-weight: normal;
@@ -142,7 +135,7 @@
     font-size: 120px; }
   @supports (-webkit-background-clip: text) {
     .font--rainbow {
-      background: linear-gradient(to left bottom, indigo 10%, purple 0, purple 20%, crimson 0, crimson 30%, orange 0, orange 40%, gold 0, gold 50%, yellowgreen 0, yellowgreen 60%, teal 0, teal 70%, purple 0, purple 80%, indigo 0);
+      background: linear-gradient(to left bottom, indigo 10%, gold 0, gold 20%, teal 0, teal 30%, purple 0, purple 40%, orange 0, orange 50%, crimson 0, crimson 60%, yellowgreen 0, yellowgreen 70%, skyblue 0, skyblue 80%, purple 0, purple 90%, indigo 0);
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text; } }
 
@@ -555,6 +548,56 @@
 
 .demo__code {
   margin-bottom: 40px; }
+
+.demo--shaped {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 100%; }
+  .demo--shaped P {
+    max-height: 100%;
+    margin: 0;
+    flex-basis: 50%;
+    overflow: hidden;
+    text-align: justify;
+    line-height: 1.11;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px; }
+  .demo--shaped P:nth-child(1)::before {
+    content: "";
+    display: block;
+    float: right;
+    width: 85%;
+    height: 100%;
+    shape-outside: polygon(90% 0, 0 100%, 100% 100%); }
+  .demo--shaped P:nth-child(2)::before {
+    content: "";
+    display: block;
+    float: left;
+    width: 85%;
+    height: 100%;
+    shape-outside: polygon(0 0, 100% 0, 10% 100%); }
+  .demo--shaped .demo__title {
+    position: absolute;
+    top: 43%;
+    left: 51.5%;
+    white-space: nowrap;
+    -webkit-transform: translate(-50%, -50%) rotate(-55deg);
+            transform: translate(-50%, -50%) rotate(-55deg);
+    font: 10rem/1 'Gilbert';
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; }
+    .demo--shaped .demo__title SPAN {
+      flex-basis: 100%; }
+    .demo--shaped .demo__title SPAN:first-child {
+      position: relative;
+      left: -105px;
+      bottom: -40px; }
+    .demo--shaped .demo__title SPAN:last-child {
+      position: relative;
+      left: 15px;
+      font-size: 16rem; }
 
 .demo-range {
   width: 100%;
