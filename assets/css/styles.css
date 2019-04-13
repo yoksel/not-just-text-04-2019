@@ -580,7 +580,7 @@
   .demo--shaped .demo__title {
     position: absolute;
     top: 43%;
-    left: 51.5%;
+    left: 51.65%;
     white-space: nowrap;
     -webkit-transform: translate(-50%, -50%) rotate(-55deg);
             transform: translate(-50%, -50%) rotate(-55deg);
