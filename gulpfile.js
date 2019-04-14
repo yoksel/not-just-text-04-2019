@@ -29,7 +29,8 @@ gulp.task('prepare', () => {
       '!package.json',
       '!package-lock.json',
       '!plan.md',
-      '!save.md'
+      '!save.md',
+      '!reading-list.md',
     ])
     .pipe(replace(
       /(<link rel="stylesheet" href=")(node_modules\/@shower\/)([^\/]*)\/(.*\.css">)/g,
